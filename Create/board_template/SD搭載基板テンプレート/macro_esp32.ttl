@@ -1,0 +1,2 @@
+setdtr 0
+setrts 0
