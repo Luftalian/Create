@@ -3,6 +3,7 @@
 #include <SPICREATE.h>
 #include <H3LIS331.h>
 
+//ココナニ
 #define H3LIS331CS 26
 #define SPIFREQ 12000000
 
@@ -25,7 +26,7 @@ void setup()
   a = H3lis331.WhoImI();
   Serial.print("WhoAmI:");
   Serial.println(a);
-  if (a ==)
+  if (a == 0x32)
   {
     Serial.println("H3LIS331 is OK");
   }
