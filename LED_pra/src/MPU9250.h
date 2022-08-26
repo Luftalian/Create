@@ -5,14 +5,25 @@
 #include <SPICREATE.h>
 #include <Arduino.h>
 
-#define MPU_Data_Adress 0x3B
-#define MPU_GYRO_CONFIG 0x1B
-#define MPU_WhoAmI_Adress 0x75
-#define MPU_ACC_CONFIG 0x1C
+#define MPU_Data_Adress 0x3B   // ACCEL_XOUT_H
+#define MPU_GYRO_CONFIG 0x1B   // GYRO_CONFIG
+#define MPU_WhoAmI_Adress 0x75 // 7 WHO_AM_I
+#define MPU_ACC_CONFIG 0x1C    // ACCEL_CONFIG
+
+/*
+±2g (00), ±4g (01), ±8g (10), ±16g (11)
+*/
 #define MPU_16G 0b00011000
 #define MPU_8G 0b00010000
 #define MPU_4G 0b00001000
 #define MPU_2G 0b00000000
+
+/*
+00 = +250dps
+01= +500 dps
+10 = +1000 dps
+11 = +2000 dps
+*/
 #define MPU_2000dps 0b00011000
 #define MPU_1000dps 0b00010000
 #define MPU_500dps 0b00001000
@@ -38,7 +49,7 @@ void MPU::begin(SPICREATE::SPICreate *targetSPI, int cs, uint32_t freq)
     MPUSPI = targetSPI;
     spi_device_interface_config_t if_cfg = {};
 
-    //if_cfg.spics_io_num = cs;
+    // if_cfg.spics_io_num = cs;
     if_cfg.pre_cb = NULL;
     if_cfg.post_cb = NULL;
     if_cfg.cs_ena_pretrans = 0;
@@ -54,7 +65,7 @@ void MPU::begin(SPICREATE::SPICreate *targetSPI, int cs, uint32_t freq)
 
     deviceHandle = MPUSPI->addDevice(&if_cfg, cs);
 
-    //Init
+    // Init
     MPUSPI->setReg(MPU_ACC_CONFIG, MPU_16G, deviceHandle);
     MPUSPI->setReg(MPU_GYRO_CONFIG, MPU_2500deg, deviceHandle);
 
