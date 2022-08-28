@@ -3,59 +3,65 @@
 #include <SPICREATE.h>
 #include <SPIflash.h>
 
-#define S25FL512SSCK 12
-#define S25FL512SMISO 27
-#define S25FL512SMOSI 14
-#define S25FL512SCS 33
+#define S25FL512SSCK 33
+#define S25FL512SMISO 25
+#define S25FL512SMOSI 26
+#define S25FL512SCS 27
+
+// #define flashCS 27
+// #define SCK1 33
+// #define MISO1 25
+// #define MOSI1 26
+
 // #define S25FL512SSCK 14
 // #define S25FL512SMISO 12
 // #define S25FL512SMOSI 13
 // #define S25FL512SCS 33
 
-#define SPIFREQ 120000
-#define DATASETSIZE 256
+#define SPIFREQ 60000
+// #define DATASETSIZE 256
 
 // S25FL512S S25fl512s;
 Flash S25fl512s;
 
 SPICREATE::SPICreate SPIC;
 
-void Serial_printHEX(int n)
-{
-  char buf[2];
-  itoa(n, buf, 16);
-  Serial.print(buf);
-}
+// void Serial_printHEX(int n)
+// {
+//   char buf[2];
+//   itoa(n, buf, 16);
+//   Serial.print(buf);
+// }
 
-void data_debug_print(const uint8_t *data, uint16_t bytes)
-{
-  uint16_t depth = bytes / 16;
-  for (uint16_t j = 0; j < depth; ++j)
-  {
-    for (uint16_t i = 0; i < 16; ++i)
-    {
-      uint8_t d = data[i + (j * 16)];
-      Serial_printHEX((d >> 4) & 0x0F);
-      Serial_printHEX((d >> 0) & 0x0F);
-      Serial.print(",");
-    }
-    Serial.print("\r\n");
-  }
-}
+// void data_debug_print(const uint8_t *data, uint16_t bytes)
+// {
+//   uint16_t depth = bytes / 16;
+//   for (uint16_t j = 0; j < depth; ++j)
+//   {
+//     for (uint16_t i = 0; i < 16; ++i)
+//     {
+//       uint8_t d = data[i + (j * 16)];
+//       Serial_printHEX((d >> 4) & 0x0F);
+//       Serial_printHEX((d >> 0) & 0x0F);
+//       Serial.print(",");
+//     }
+//     Serial.print("\r\n");
+//   }
+// }
 
-void readAllFlash()
-{
-  for (int j = 0; j < 65536; j++)
-  {
-    unsigned char readbuffer[DATASETSIZE];
-    S25fl512s.read(j * DATASETSIZE, readbuffer);
-    for (int i = 0; i < DATASETSIZE; i++)
-    {
-      Serial.print(readbuffer[i]);
-      Serial.print(',');
-    }
-  }
-}
+// void readAllFlash()
+// {
+//   for (int j = 0; j < 65536; j++)
+//   {
+//     unsigned char readbuffer[DATASETSIZE];
+//     S25fl512s.read(j * DATASETSIZE, readbuffer);
+//     for (int i = 0; i < DATASETSIZE; i++)
+//     {
+//       Serial.print(readbuffer[i]);
+//       Serial.print(',');
+//     }
+//   }
+// }
 
 void setup()
 {
@@ -67,22 +73,22 @@ void setup()
 
   S25fl512s.begin(&SPIC, S25FL512SCS, SPIFREQ);
 
-  S25fl512s.erase();
+  // S25fl512s.erase();
   // S25fl512s.write(LOGGING::latestFlashPage * 256, dataset);
   // readAllFlash();
 
   // /*SPIflash用変数*/
-  uint8_t rx_buf[256], tx_buf[256], j = 2; //受信用,送信用,SPIのチップセレクト
+  // uint8_t rx_buf[256], tx_buf[256], j = 2; //受信用,送信用,SPIのチップセレクト
   // uint32_t addr = 0x00;                        // SPI flashの書き込み先アドレス
   // uint16_t length_ = 0x100, num_use_pages = 1; //データの長さ,SPI flashのページ
 
   // Serial.println("3");
-  for (uint16_t i = 0; i < 256; i++)
-  { //書き込み用データの作成 0から255の数字を格納
-    tx_buf[i] = i;
-  }
-  S25fl512s.write(0, tx_buf);
-  readAllFlash();
+  // for (uint16_t i = 0; i < 256; i++)
+  // { //書き込み用データの作成 0から255の数字を格納
+  //   tx_buf[i] = i;
+  // }
+  // S25fl512s.write(0, tx_buf);
+  // readAllFlash();
 
   // //書き込み用データの確認
   // data_debug_print(tx_buf, length_);
@@ -139,4 +145,42 @@ void setup()
 void loop()
 {
   // put your main code here, to run repeatedly:
+  if (Serial.available())
+  {
+    char cmd = Serial.read();
+    if (cmd == 'e')
+    {
+      S25fl512s.erase();
+    }
+
+    if (cmd == 't')
+    {
+      uint8_t rx[256];
+      S25fl512s.read(0, rx);
+      for (int i = 0; i < 256; i++)
+      {
+        Serial.print(rx[i]);
+      }
+      Serial.println();
+
+      delay(100);
+
+      uint8_t tx[256];
+      for (int i = 0; i < 256; i++)
+      {
+        tx[i] = 0xFF - i;
+      }
+      S25fl512s.write(0, tx);
+
+      delay(100);
+
+      S25fl512s.read(0, rx);
+      for (int i = 0; i < 256; i++)
+      {
+        Serial.print(rx[i]);
+      }
+      Serial.println();
+    }
+  }
+  delay(100);
 }
