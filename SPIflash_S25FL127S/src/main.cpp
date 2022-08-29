@@ -41,6 +41,7 @@ void loop()
       }
       Serial.println();
 
+      Serial.println("asd1");
       delay(100);
 
       uint8_t tx[256];
@@ -48,11 +49,14 @@ void loop()
       {
         tx[i] = 0xFF - i;
       }
+      Serial.println("asd2");
       flash1.write(0, tx);
+      Serial.println("asd3");
 
       delay(100);
 
       flash1.read(0, rx);
+      Serial.println("asd4");
       for (int i = 0; i < 256; i++)
       {
         Serial.print(rx[i]);
