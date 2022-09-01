@@ -9,6 +9,7 @@ using namespace arduino::esp32::spi::dma;
 
 #define CMD_RDID 0x9f
 #define CMD_READ 0x03
+#define CMD_4READ 0x13
 #define CMD_WREN 0x06
 #define CMD_WRDI 0x04
 
@@ -20,6 +21,7 @@ using namespace arduino::esp32::spi::dma;
 
 #define CMD_BE 0x60
 #define CMD_PP 0x02
+#define CMD_4PP 0x12
 #define CMD_RDSR 0x05
 
 class Flash
@@ -102,7 +104,7 @@ void Flash::write(uint32_t addr, uint8_t *tx)
     spi_transaction_t comm = {};
     comm.flags = SPI_TRANS_VARIABLE_CMD | SPI_TRANS_VARIABLE_ADDR;
     comm.length = (256) * 8;
-    comm.cmd = CMD_PP;
+    comm.cmd = CMD_4PP;
     comm.addr = addr;
     comm.tx_buffer = tx;
     comm.user = (void *)&CS;
@@ -112,7 +114,7 @@ void Flash::write(uint32_t addr, uint8_t *tx)
     spi_transaction.command_bits = 8;
 
     // 3バイトから4バイトに変更する
-    spi_transaction.address_bits = 24;
+    spi_transaction.address_bits = 32;
 
     flashSPI->transmit((spi_transaction_t *)&spi_transaction, deviceHandle);
     return;
@@ -122,7 +124,7 @@ void Flash::read(uint32_t addr, uint8_t *rx)
     spi_transaction_t comm = {};
     comm.flags = SPI_TRANS_VARIABLE_CMD | SPI_TRANS_VARIABLE_ADDR;
     comm.length = (256) * 8;
-    comm.cmd = CMD_READ;
+    comm.cmd = CMD_4READ;
     comm.addr = addr;
     comm.tx_buffer = NULL;
     comm.rx_buffer = rx;
@@ -133,7 +135,7 @@ void Flash::read(uint32_t addr, uint8_t *rx)
     spi_transaction.command_bits = 8;
 
     // 3バイトから4バイトに変更する
-    spi_transaction.address_bits = 24;
+    spi_transaction.address_bits = 32;
     flashSPI->transmit((spi_transaction_t *)&spi_transaction, deviceHandle);
 }
 

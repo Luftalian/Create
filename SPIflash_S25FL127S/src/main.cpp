@@ -15,7 +15,7 @@ Flash flash1;
 void setup()
 {
   Serial.begin(115200);
-  Serial.println("aaaddddfffffff");
+  Serial.println("ssttaarrtt");
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
   flash1.begin(&SPIC1, flashCS, 60000);
   // put your setup code here, to run once:
@@ -29,12 +29,14 @@ void loop()
     if (cmd == 'e')
     {
       flash1.erase();
+      delay(1000);
     }
 
     if (cmd == 't')
     {
       uint8_t rx[256];
       flash1.read(0, rx);
+      delay(1000);
       for (int i = 0; i < 256; i++)
       {
         Serial.print(rx[i]);
@@ -42,7 +44,7 @@ void loop()
       Serial.println();
 
       Serial.println("asd1");
-      delay(100);
+      delay(1000);
 
       uint8_t tx[256];
       for (int i = 0; i < 256; i++)
@@ -53,9 +55,10 @@ void loop()
       flash1.write(0, tx);
       Serial.println("asd3");
 
-      delay(100);
+      delay(1000);
 
       flash1.read(0, rx);
+      delay(1000);
       Serial.println("asd4");
       for (int i = 0; i < 256; i++)
       {

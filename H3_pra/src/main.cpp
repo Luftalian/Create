@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 #include <SPICREATE.h>
-#include <H3LIS331.h>
+#include <H3LIS331_var2.h>
 
 #define H3LIS331SCK 14
 #define H3LIS331MISO 12
@@ -18,7 +18,7 @@
 
 bool WhoAmI_Ok = false;
 
-#define SPIFREQ 120000
+#define SPIFREQ 1000
 
 H3LIS331 H3lis331;
 
@@ -65,6 +65,15 @@ void loop()
     Serial.print(rx[1]);
     Serial.print(", z: ");
     Serial.println(rx[2]);
+    // Serial.println(rx[3]);
+    // Serial.println(rx.size());
+    // for (int t = 0; t < 10; t++)
+    // {
+    //   Serial.print(t);
+    //   Serial.print(" ");
+    //   Serial.println(rx[t]);
+    //   delay(1000);
+    // }
     delay(100);
   }
 }
