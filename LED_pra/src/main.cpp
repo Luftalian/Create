@@ -15,6 +15,11 @@
 
 Adafruit_H3LIS331 lis = Adafruit_H3LIS331();
 
+bool first = true;
+float x_first;
+float y_first;
+float z_first;
+
 void setup(void)
 {
   Serial.begin(115200);
@@ -37,7 +42,7 @@ void setup(void)
   }
   Serial.println("H3LIS331 found!");
 
-  // lis.setRange(H3LIS331_RANGE_100_G);   // 100, 200, or 400 G!
+  // lis.setRange(H3LIS331_RANGE_100_G); // 100, 200, or 400 G!
   Serial.print("Range set to: ");
   switch (lis.getRange())
   {
@@ -51,7 +56,7 @@ void setup(void)
     Serial.println("400 g");
     break;
   }
-  // lis.setDataRate(LIS331_DATARATE_1000_HZ);
+  lis.setDataRate(LIS331_DATARATE_1000_HZ);
   Serial.print("Data rate set to: ");
   switch (lis.getDataRate())
   {
@@ -95,6 +100,14 @@ void loop()
   sensors_event_t event;
   lis.getEvent(&event);
 
+  if (first)
+  {
+    x_first = event.acceleration.x;
+    y_first = event.acceleration.y;
+    z_first = event.acceleration.z + 1;
+    first = false;
+  }
+
   /* Display the results (acceleration is measured in m/s^2) */
   // Serial.print("\t\tX: ");
   // Serial.print(event.acceleration.x);
@@ -106,11 +119,11 @@ void loop()
 
   /* Alternately, given the range of the H3LIS331, display the results measured in g */
   Serial.print("\t\tX:");
-  Serial.print(event.acceleration.x / SENSORS_GRAVITY_STANDARD);
+  Serial.print((event.acceleration.x - x_first) / SENSORS_GRAVITY_STANDARD);
   Serial.print(" \tY: ");
-  Serial.print(event.acceleration.y / SENSORS_GRAVITY_STANDARD);
+  Serial.print((event.acceleration.y - y_first) / SENSORS_GRAVITY_STANDARD);
   Serial.print(" \tZ: ");
-  Serial.print(event.acceleration.z / SENSORS_GRAVITY_STANDARD);
+  Serial.print((event.acceleration.z - z_first) / SENSORS_GRAVITY_STANDARD);
   Serial.println(" g");
 
   delay(1000);
