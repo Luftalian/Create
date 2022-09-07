@@ -15,6 +15,12 @@
 
 bool WhoAmI_Ok = false;
 
+int CountH3LIS331DataSetExistInBuff = 0;
+
+uint8_t H3LIS331FlashBuff[3];
+
+uint32_t H3LIS331FlashLatestAddress = 0x00;
+
 #define SPIFREQ 100000
 
 H3LIS331 H3lis331;
@@ -93,7 +99,7 @@ void loop()
         Serial.println("t is pushed");
         // read SPI Flash & check SPI Flash is clear or not
         uint8_t rx[256];
-        flash1.read(0x1000000, rx);
+        flash1.read(0x00, rx);
         for (int i = 0; i < 256; i++)
         {
           Serial.print(rx[i]);
@@ -108,9 +114,10 @@ void loop()
         Serial.println("rx_buf");
         for (int i = 0; i < 6; i++)
         {
+          Serial.print("i ");
           Serial.print(rx_buf[i]);
         }
-        H3lis331.Get(H3lisReceiveData, rx_buf);
+        Serial.println();
 
         // I have to change raw data to tx data.
 
@@ -136,27 +143,47 @@ void loop()
         //   CountMPUDataSetExistInBuff = 0;
         // }
 
+        for (int i = 0; i < 16; i++)
+        {
+          H3lis331.Get(H3lisReceiveData, rx_buf);
+
+          for (int index = 0; index < 6; index++)
+          {
+            H3LIS331FlashBuff[16 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index];
+          }
+          CountH3LIS331DataSetExistInBuff++;
+          if (CountH3LIS331DataSetExistInBuff == 16)
+          {
+            Serial.println("CountH3LIS331DataSetExistInBuff == 16");
+            // flash_wren(MPUDATAFLASH); // flash1.write(0x1000000, rx_buf);
+            // flash_pp(MPUFlashLatestAddress, MPUFlashBuff, 0x100, 0);
+            flash1.write(H3LIS331FlashLatestAddress, H3LIS331FlashBuff);
+            H3LIS331FlashLatestAddress += 0x100;
+            CountH3LIS331DataSetExistInBuff = 0;
+          }
+        }
+        Serial.print("CountH3LIS331DataSetExistInBuff: ");
+        Serial.println(CountH3LIS331DataSetExistInBuff);
         // End of change
-        flash1.write(0x1000000, rx_buf);
+        // flash1.write(0x1000000, rx_buf);
 
         delay(100);
 
-        flash1.read(0x1000000, rx);
-        for (int i = 0; i < 6; i++)
+        flash1.read(0x00, rx);
+        for (int i = 0; i < (16 * 16 + 6 + 2); i++) // 2個分はnull確認用
         {
           Serial.println(rx[i]);
         }
-        Serial.println();
 
         // 書き込んだのと読み込んだのが一致しているか確認する。
-        for (int i = 0; i < 6; i++)
-        {
-          if (rx[i] != rx_buf[i])
-          {
-            Serial.print(i);
-            Serial.println(" NG");
-          }
-        }
+        // for (int i = 0; i < 6; i++)
+        // {
+        //   if (rx[i] != rx_buf[i])
+        //   {
+        //     Serial.print(i);
+        //     Serial.println(" NG");
+        //   }
+        // }
         Serial.println("end");
       }
     }
