@@ -112,7 +112,7 @@ void H3LIS331::Get(int16_t *rx)
     comm.length = (6) * 8;
 
     // 0x40？
-    uint8_t register_address = H3LIS331_Data_Address;
+    uint16_t register_address = H3LIS331_Data_Address;
     register_address |= 0x40;
     comm.cmd = register_address | 0x80;
 
@@ -150,18 +150,18 @@ void H3LIS331::Get(int16_t *rx)
     // rx[0] = (rx_buf[1] << 8 | rx_buf[0]);
     // rx[1] = (rx_buf[3] << 8 | rx_buf[2]);
     // rx[2] = (rx_buf[5] << 8 | rx_buf[4]);
-    // rx[0] = rx_buf[0];
-    // rx[0] |= ((uint16_t)rx_buf[1]) << 8;
-    // rx[1] = rx_buf[2];
-    // rx[1] |= ((uint16_t)rx_buf[3]) << 8;
-    // rx[2] = rx_buf[4];
-    // rx[2] |= ((uint16_t)rx_buf[5]) << 8;
-    rx[0] = rx_buf[1];
-    rx[0] |= ((uint16_t)rx_buf[0]) << 8;
-    rx[1] = rx_buf[3];
-    rx[1] |= ((uint16_t)rx_buf[2]) << 8;
-    rx[2] = rx_buf[5];
-    rx[2] |= ((uint16_t)rx_buf[4]) << 8;
+    rx[0] = rx_buf[0];
+    rx[0] |= ((uint16_t)rx_buf[1]) << 8;
+    rx[1] = rx_buf[2];
+    rx[1] |= ((uint16_t)rx_buf[3]) << 8;
+    rx[2] = rx_buf[4];
+    rx[2] |= ((uint16_t)rx_buf[5]) << 8;
+    // rx[0] = rx_buf[1];
+    // rx[0] |= ((uint16_t)rx_buf[0]) << 8;
+    // rx[1] = rx_buf[3];
+    // rx[1] |= ((uint16_t)rx_buf[2]) << 8;
+    // rx[2] = rx_buf[5];
+    // rx[2] |= ((uint16_t)rx_buf[4]) << 8;
     return;
 }
 // void Adafruit_H3LIS331::_scaleValues(void) {

@@ -17,15 +17,16 @@
 // #define LIS331HH_CS 10
 
 bool WhoAmI_Ok = false;
-// int64_t avg_u[3];
-// int64_t avg_d[3];
-// int64_t count_u = 1;
-// int64_t count_d = 1;
+int64_t avg_u[3];
+int64_t avg_d[3];
+int64_t count_u = 1;
+int64_t count_d = 1;
+int count = 0;
 
-// bool first = true;
-// float x_first;
-// float y_first;
-// float z_first;
+bool first = true;
+float x_first;
+float y_first;
+float z_first;
 
 #define SPIFREQ 100000
 
@@ -71,8 +72,31 @@ void loop()
   // put your main code here, to run repeatedly:
   if (WhoAmI_Ok == true)
   {
+    if (count > 100)
+    {
+      Serial.println("end");
+      while (1)
+      {
+      }
+    }
     int16_t rx[3];
     H3lis331.Get(rx);
+
+    // float rx_400g[3];
+    // rx_400g[0] = (float)rx[0] * 2 * 400 / 65536;
+    // rx_400g[1] = (float)rx[1] * 2 * 400 / 65536;
+    // rx_400g[2] = (float)rx[2] * 2 * 400 / 65536;
+
+    // change value
+    // Serial.print("\t\tx: ");
+    Serial.print(rx[0]);
+    Serial.print(",");
+    // Serial.print("\ty: ");
+    Serial.print(rx[1]);
+    Serial.print(",");
+    // Serial.print("\tz: ");
+    Serial.println(rx[2]);
+    count++;
 
     // char cmd = Serial.read();
     // if (cmd == 'u')
@@ -116,9 +140,9 @@ void loop()
     //   z_first = rx[2] + 1;
     //   first = false;
     // }
-    int16_t x = rx[0];
-    int16_t y = rx[1];
-    int16_t z = rx[2];
+    // int16_t x_r = rx[0] - x_first;
+    // int16_t y_r = rx[1] - y_first;
+    // int16_t z_r = rx[2] - z_first;
     // x_r >>= 4;
     // y_r >>= 4;
     // z_r >>= 4;
@@ -130,12 +154,12 @@ void loop()
     // float x = x_g * SENSORS_GRAVITY_STANDARD;
     // float y = y_g * SENSORS_GRAVITY_STANDARD;
     // float z = z_g * SENSORS_GRAVITY_STANDARD;
-    Serial.print("\t\tx: ");
-    Serial.print(x);
-    Serial.print("\ty: ");
-    Serial.print(y);
-    Serial.print("\tz: ");
-    Serial.println(z);
+    // Serial.print("\t\tx: ");
+    // Serial.print(x);
+    // Serial.print("\ty: ");
+    // Serial.print(y);
+    // Serial.print("\tz: ");
+    // Serial.println(z);
 
     // Serial.print("\t\tx: ");
     // Serial.print(rx[0]);
