@@ -16,6 +16,7 @@
 bool WhoAmI_Ok = false;
 
 int CountH3LIS331DataSetExistInBuff = 0;
+int CountH3LIS331DataSetExistInBuff_READ = 0;
 
 uint8_t H3LIS331FlashBuff[256] = {0};
 
@@ -193,7 +194,7 @@ void loop()
         {
           for (int index = 0; index < 6; index++)
           {
-            Serial.print(tx[16 * CountH3LIS331DataSetExistInBuff + index]);
+            Serial.print(tx[16 * CountH3LIS331DataSetExistInBuff_READ + index]);
             if (index != 5)
             {
               Serial.print(",");
@@ -201,14 +202,14 @@ void loop()
           }
           Serial.println();
 
-          CountH3LIS331DataSetExistInBuff++;
-          if (CountH3LIS331DataSetExistInBuff == 16)
+          CountH3LIS331DataSetExistInBuff_READ++;
+          if (CountH3LIS331DataSetExistInBuff_READ == 16)
           {
-            Serial.println("2nd CountH3LIS331DataSetExistInBuff == 16");
+            Serial.println("2nd CountH3LIS331DataSetExistInBuff_READ == 16");
             // flash_wren(MPUDATAFLASH); // flash1.write(0x1000000, rx_buf);
             // flash_pp(MPUFlashLatestAddress, MPUFlashBuff, 0x100, 0);
             H3LIS331FlashLatestAddress_READ += 0x100;
-            CountH3LIS331DataSetExistInBuff = 0;
+            CountH3LIS331DataSetExistInBuff_READ = 0;
           }
         }
 
