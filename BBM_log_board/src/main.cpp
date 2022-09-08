@@ -188,7 +188,7 @@ void loop()
         // }
         delay(10000);
         // read Section
-        uint8_t tx[256] = {0};
+        uint8_t tx[256] = {};
         flash1.read(H3LIS331FlashLatestAddress_READ, tx);
         for (int i = 0; i < 16; i++)
         {
