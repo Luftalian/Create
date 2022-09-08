@@ -15,6 +15,7 @@
 
 bool WhoAmI_Ok = false;
 bool check = true;
+uint8_t count = 0;
 
 int CountH3LIS331DataSetExistInBuff = 0;
 int CountH3LIS331DataSetExistInBuff_READ = 0;
@@ -100,20 +101,27 @@ void loop()
       if (cmd == 'r')
       {
         Serial.println("r is pushed");
-        uint8_t rx[256 * H3LIS331FlashLatestAddress / 0x100];
-        flash1.read(0x00, rx);
-        for (int i = 0; i < 256; i++)
+        for (int i = 0; i < 20; i++)
         {
-          Serial.print(rx[i]);
+          uint8_t rx[256];
+          flash1.read(256 * i, rx);
+          for (int i = 0; i < 256; i++)
+          {
+            if (i % 16 == 0)
+            {
+              Serial.println();
+            }
+            Serial.print(rx[i]);
+          }
+          Serial.println();
         }
-        Serial.println();
       }
       if (cmd == 't')
       {
         Serial.println("t is pushed");
         // read SPI Flash & check SPI Flash is clear or not
         uint8_t rx[256];
-        flash1.read(0x00, rx);
+        flash1.read(H3LIS331FlashLatestAddress, rx);
         for (int i = 0; i < 256; i++)
         {
           Serial.print(rx[i]);
@@ -176,6 +184,8 @@ void loop()
         //     CountH3LIS331DataSetExistInBuff = 0;
         //   }
         // }
+
+        // CountH3LIS331DataSetExistInBuffは列。indexは行。
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
         {
           //時間をとる
@@ -210,14 +220,30 @@ void loop()
             for (int index = 28; index < 32; index++)
             {
               // H3LIS331FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = LPS_rx_buf[index - 28];
+              count = 0;
             }
           }
+          delay(100); // 1000Hzより早くたたいてない？
           count++;
         }
+
+        Serial.println("rx");
+        for (int i = 0; i < 256; i++)
+        {
+          Serial.print(H3LIS331FlashBuff[i]);
+        }
+        Serial.println();
         Serial.print("CountH3LIS331DataSetExistInBuff: ");
         Serial.println(CountH3LIS331DataSetExistInBuff);
         flash1.write(H3LIS331FlashLatestAddress, H3LIS331FlashBuff);
-        flash.read(H3LIS331FlashLatestAddress, tx);
+        delay(100);
+        flash1.read(H3LIS331FlashLatestAddress, tx);
+        Serial.println("tx");
+        for (int i = 0; i < 256; i++)
+        {
+          Serial.print(tx[i]);
+        }
+        Serial.println();
         // End of change
         // flash1.write(0x1000000, rx_buf);
 
@@ -234,6 +260,7 @@ void loop()
           Serial.print(".");
           delay(1000);
         }
+        Serial.println();
 
         // // read Section
         // uint8_t tx[256] = {};
@@ -264,12 +291,13 @@ void loop()
         {
           if (H3LIS331FlashBuff[i] != tx[i])
           {
-            Serial.println("Data is incorrect");
-            Serial.print(i);
-            Serial.print(" ");
-            Serial.print(H3LIS331FlashBuff[i]);
-            Serial.print(" ");
-            Serial.println(tx[i]);
+            // Serial.println("Data is incorrect");
+            // Serial.print("No.");
+            // Serial.print(i);
+            // Serial.print(" rx:");
+            // Serial.print(H3LIS331FlashBuff[i]);
+            // Serial.print(" tx:");
+            // Serial.println(tx[i]);
             check = false;
           }
         }
@@ -279,11 +307,12 @@ void loop()
         }
         else
         {
-          Serial.println("Data is incorrect");
+          Serial.println("error");
         }
         H3LIS331FlashLatestAddress += 0x100;
 
         Serial.println("end");
+        Serial.println(H3LIS331FlashLatestAddress);
       }
     }
     delay(100);
