@@ -7,10 +7,10 @@
 #define MISO1 25
 #define MOSI1 26
 
-uint8_t address = 0x00;
-
 SPICREATE::SPICreate SPIC1;
 Flash flash1;
+
+#define PAGE_LENGTH 512 // You can change this number to an aliquot part of 512.
 
 // SPIflash S25FL512S 用サンプルコード
 
@@ -34,9 +34,9 @@ void loop()
     if (cmd == 'r')
     {
       Serial.println("r is pushed");
-      uint8_t rx[256];
-      flash1.read(0x00, rx);
-      for (int i = 0; i < 256; i++)
+      uint8_t rx[512];
+      flash1.read(0x000, rx);
+      for (int i = 0; i < 512; i++)
       {
         if (i % 16 == 0)
         {
@@ -45,8 +45,8 @@ void loop()
         Serial.print(rx[i]);
       }
       Serial.println();
-      flash1.read(0x100, rx);
-      for (int i = 0; i < 256; i++)
+      flash1.read(0x200, rx);
+      for (int i = 0; i < 512; i++)
       {
         if (i % 16 == 0)
         {
@@ -54,13 +54,24 @@ void loop()
         }
         Serial.print(rx[i]);
       }
+      Serial.println();
+      flash1.read(0x400, rx);
+      for (int i = 0; i < 512; i++)
+      {
+        if (i % 16 == 0)
+        {
+          Serial.println();
+        }
+        Serial.print(rx[i]);
+      }
+      Serial.println();
       Serial.println();
     }
     if (cmd == 't')
     {
-      uint8_t rx[256];
-      flash1.read(address, rx);
-      for (int i = 0; i < 256; i++)
+      uint8_t rx[512];
+      flash1.read(0x000, rx);
+      for (int i = 0; i < 512; i++)
       {
         Serial.print(rx[i]);
       }
@@ -68,22 +79,23 @@ void loop()
 
       delay(100);
 
-      uint8_t tx[256 * 2] = {};
-      for (int i = 0; i < 256; i++)
+      uint8_t tx[512] = {};
+      for (int i = 0; i < 512; i++)
       {
-        tx[i] = 0xFF - i;
+        tx[i] = i / 2; // integer
+        // Serial.print(i / 2);
       }
-      flash1.write(0x00, tx);
+      Serial.println();
+      flash1.write(0x200, tx);
 
       delay(100);
 
-      flash1.read(address, rx);
-      for (int i = 0; i < 256; i++)
+      flash1.read(0x200, rx);
+      for (int i = 0; i < 512; i++)
       {
         Serial.print(rx[i]);
       }
       Serial.println();
-      address += 0x100;
     }
   }
   delay(100);
