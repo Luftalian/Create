@@ -29,6 +29,7 @@
 // #define H3LIS331CS 32
 
 bool WhoAmI_Ok = false;
+uint8_t count = 0;
 
 // int CountH3LIS331DataSetExistInBuff = 0;
 int CountH3LIS331DataSetExistInBuff_READ = 0;
@@ -82,22 +83,108 @@ void loop()
       // read Section
       uint8_t tx[256] = {};
       flash1.read(H3LIS331FlashLatestAddress_READ, tx);
-      for (int i = 0; i < 16; i++)
+      if (tx[0] == 255)
       {
-        for (int index = 0; index < 6; index++)
+        Serial.println("No Data");
+        for (int i = 0; i < 5; i++)
         {
-          Serial.print(tx[16 * CountH3LIS331DataSetExistInBuff_READ + index]);
-          if (index != 5)
+          Serial.print(".");
+          delay(1000);
+        }
+        Serial.println();
+      }
+      // for (int i = 0; i < 16; i++)
+      // {
+      //   for (int index = 0; index < 6; index++)
+      //   {
+      //     Serial.print(tx[16 * CountH3LIS331DataSetExistInBuff_READ + index]);
+      //     if (index != 5)
+      //     {
+      //       Serial.print(",");
+      //     }
+      //   }
+      //   Serial.println();
+      for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
+      {
+        //時間をとる
+        Serial.println("time");
+        for (int index = 0; index < 4; index++)
+        {
+          Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
+          if (index != 3)
           {
             Serial.print(",");
           }
         }
         Serial.println();
+        //加速度をとる
+        Serial.println("acceleration");
+        for (int index = 4; index < 10; index++)
+        {
+          Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
+          if (index != 9)
+          {
+            Serial.print(",");
+          }
+        }
+        Serial.println();
+        // MPUの加速度をとる
+        Serial.println("MPU Aceleration");
+        for (int index = 10; index < 16; index++)
+        {
+          Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
+          if (index != 15)
+          {
+            Serial.print(",");
+          }
+        }
+        Serial.println();
+        // MPUの角速度をとる
+        Serial.println("MPU Angular Velocity");
+        for (int index = 16; index < 22; index++)
+        {
+          Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
+          if (index != 21)
+          {
+            Serial.print(",");
+          }
+        }
+        Serial.println();
+        // MPUの地磁気をとる
+        Serial.println("MPU Magnetic Field");
+        for (int index = 22; index < 28; index++)
+        {
+          Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
+          if (index != 27)
+          {
+            Serial.print(",");
+          }
+        }
+        Serial.println();
+        // LPSの気圧をとる
+        Serial.println("LPS Pressure");
+        // if (count % 20 == 0)
+        // {
+        if ((tx[32 * CountH3LIS331DataSetExistInBuff + 28] != 0) || (tx[32 * CountH3LIS331DataSetExistInBuff + 29] != 0) || (tx[32 * CountH3LIS331DataSetExistInBuff + 30] != 0) || (tx[32 * CountH3LIS331DataSetExistInBuff + 31] != 0))
+        {
+          for (int index = 28; index < 31; index++)
+          {
+            Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
+            if (index != 30)
+            {
+              Serial.print(",");
+            }
+          }
+        }
+        Serial.println();
+        // }
+        // delay(100); // 1000Hzより早くたたいてない？
+        count++;
 
         CountH3LIS331DataSetExistInBuff_READ++;
-        if (CountH3LIS331DataSetExistInBuff_READ == 16)
+        if (CountH3LIS331DataSetExistInBuff_READ == 8)
         {
-          Serial.println("2nd CountH3LIS331DataSetExistInBuff_READ == 16");
+          Serial.println("2nd CountH3LIS331DataSetExistInBuff_READ == 8");
           // flash_wren(MPUDATAFLASH); // flash1.write(0x1000000, rx_buf);
           // flash_pp(MPUFlashLatestAddress, MPUFlashBuff, 0x100, 0);
           H3LIS331FlashLatestAddress_READ += 0x100;

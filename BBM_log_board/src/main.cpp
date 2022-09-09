@@ -23,8 +23,8 @@ int CountH3LIS331DataSetExistInBuff_READ = 0;
 uint8_t H3LIS331FlashBuff[256] = {};
 uint8_t tx[256] = {};
 
-uint32_t H3LIS331FlashLatestAddress = 0x00;
-uint32_t H3LIS331FlashLatestAddress_READ = 0x00;
+uint32_t H3LIS331FlashLatestAddress = 0x100;
+// uint32_t H3LIS331FlashLatestAddress_READ = 0x100;
 
 #define SPIFREQ 100000
 
@@ -97,6 +97,7 @@ void loop()
       {
         Serial.println("e is pushed");
         flash1.erase();
+        H3LIS331FlashLatestAddress = 0x100;
       }
       if (cmd == 'r')
       {
@@ -128,7 +129,7 @@ void loop()
         }
         Serial.println();
 
-        delay(100);
+        // delay(100);
 
         // From SPI, Get data is tx
         int16_t H3lisReceiveData[3];
@@ -217,13 +218,13 @@ void loop()
           // LPSの気圧をとる
           if (count % 20 == 0)
           {
-            for (int index = 28; index < 32; index++)
+            for (int index = 28; index < 31; index++)
             {
               // H3LIS331FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = LPS_rx_buf[index - 28];
               count = 0;
             }
           }
-          delay(100); // 1000Hzより早くたたいてない？
+          // delay(100); // 1000Hzより早くたたいてない？
           count++;
         }
 
@@ -254,13 +255,15 @@ void loop()
         // {
         //   Serial.println(rx[i]);
         // }
+
         // delay(10000);
-        for (int i = 0; i < 10; i++)
-        {
-          Serial.print(".");
-          delay(1000);
-        }
-        Serial.println();
+
+        // for (int i = 0; i < 10; i++)
+        // {
+        //   Serial.print(".");
+        //   delay(1000);
+        // }
+        // Serial.println();
 
         // // read Section
         // uint8_t tx[256] = {};
