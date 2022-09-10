@@ -186,15 +186,12 @@ void loop()
         }
         Serial.println();
         // }
-        // delay(100); // 1000Hzより早くたたいてない？
         count++;
 
         CountH3LIS331DataSetExistInBuff_READ++;
         if (CountH3LIS331DataSetExistInBuff_READ == 8)
         {
           Serial.println("2nd CountH3LIS331DataSetExistInBuff_READ == 8");
-          // flash_wren(MPUDATAFLASH); // flash1.write(0x1000000, rx_buf);
-          // flash_pp(MPUFlashLatestAddress, MPUFlashBuff, 0x100, 0);
           H3LIS331FlashLatestAddress_READ += 0x100;
           CountH3LIS331DataSetExistInBuff_READ = 0;
         }

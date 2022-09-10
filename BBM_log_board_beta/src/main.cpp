@@ -43,7 +43,7 @@ uint8_t SPI_FlashBuff[256] = {};
 int16_t H3lisReceiveData[3];
 uint8_t H3lis_rx_buf[6];
 
-uint32_t SPIFlashLatestAddress = 0x100;
+uint32_t SPIFlashLatestAddress = 0x000;
 // uint32_t SPIFlashLatestAddress_READ = 0x100;
 
 // timer1 is used to write data to flash
@@ -84,7 +84,7 @@ void RoutineWork()
   //時間をとる
   for (int index = 0; index < 4; index++)
   {
-    SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = 0xFF & (totalTimeCounter1 >> (8 * index));
+    SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = 0xFF & (totalTimeCounter2 >> (8 * index));
   }
   //加速度をとる
   H3lis331.Get(H3lisReceiveData, H3lis_rx_buf);
@@ -152,8 +152,8 @@ void setup()
   timerAttachInterrupt(timer1, &onTimer1, true);
   timerAttachInterrupt(timer2, &onTimer2, true);
 
-  timerAlarmWrite(timer1, 1000000, true); // 1000 // 1 second timer
-  timerAlarmWrite(timer2, 1000000, true); // 100000 // 1 second timer
+  timerAlarmWrite(timer1, 1000, true);   // 1000 // 1 second timer
+  timerAlarmWrite(timer2, 100000, true); // 100000 // 1 second timer
 
   timerAlarmEnable(timer1);
   timerAlarmEnable(timer2);
@@ -178,7 +178,7 @@ void setup()
 
 void loop()
 {
-  Serial.println("loop");
+  // Serial.println("loop");
   if (WhoAmI_Ok == true)
   {
     // Serial.println("WhoAmI_Ok");
@@ -201,7 +201,6 @@ void loop()
       portENTER_CRITICAL(&timerMux2);
       timeCounter2--;
       portEXIT_CRITICAL(&timerMux2);
-      // RoutineWork();
       totalTimeCounter2++;
       Serial.print("\t2: ");
       Serial.println(totalTimeCounter2);
