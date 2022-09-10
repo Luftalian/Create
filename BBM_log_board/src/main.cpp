@@ -4,12 +4,12 @@
 //----------------------------------------------------------------
 //----------------------------------------------------------------
 //----------------------------------------------------------------
-// This code write data since 0x000
-// This code write data since 0x000
-// This code write data since 0x000
-// This code write data since 0x000
-// This code write data since 0x000
-// This code write data since 0x000
+// This code write data since 0x100
+// This code write data since 0x100
+// This code write data since 0x100
+// This code write data since 0x100
+// This code write data since 0x100
+// This code write data since 0x100
 //----------------------------------------------------------------
 //----------------------------------------------------------------
 //----------------------------------------------------------------
@@ -40,7 +40,7 @@ int CountH3LIS331DataSetExistInBuff_READ = 0;
 uint8_t H3LIS331FlashBuff[256] = {};
 uint8_t tx[256] = {};
 
-uint32_t H3LIS331FlashLatestAddress = 0x000;
+uint32_t H3LIS331FlashLatestAddress = 0x100;
 // uint32_t H3LIS331FlashLatestAddress_READ = 0x100;
 
 #define SPIFREQ 100000
@@ -114,7 +114,7 @@ void loop()
       {
         Serial.println("e is pushed");
         flash1.erase();
-        H3LIS331FlashLatestAddress = 0x000;
+        H3LIS331FlashLatestAddress = 0x100;
       }
       if (cmd == 'r')
       {
