@@ -15,11 +15,14 @@ Our team will log data of two accelerometer & angular velocity & LPS25 which is 
 
 
 # File
-If you want to erase
-BBM_log_board
+If you want to erase,
 
-If you want write
-BBM_log_board_beta
+### BBM_log_board
 
-If you want read
-READ_log_board_beta
+If you want write,
+
+### BBM_log_board_beta
+
+If you want read,
+
+###READ_log_board_beta
