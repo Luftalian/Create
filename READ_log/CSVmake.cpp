@@ -6,6 +6,7 @@ int main()
 {
     cout << "Hello, World!" << endl;
     string str, str1, str2;
+
     int n1, n2, n3, n4, n5, n6;
     ifstream time;
     // time.open("time.csv", ios::in);
@@ -20,6 +21,7 @@ int main()
     // MPU_Magnetic_Field.open("MPU_Magnetic_Field.csv", ios::in);
     // ifstream LPS_Pressure;
     // LPS_Pressure.open("LPS_Pressure.csv", ios::in);
+
     while (1)
     {
         cin >> str;

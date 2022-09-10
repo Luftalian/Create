@@ -129,7 +129,9 @@ void loop()
         }
         Serial.println();
         // MPUの加速度をとる
+
         Serial.println("MPU_Acceleration");
+
         for (int index = 10; index < 16; index++)
         {
           Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
@@ -140,7 +142,9 @@ void loop()
         }
         Serial.println();
         // MPUの角速度をとる
+
         Serial.println("MPU_Angular_Velocity");
+
         for (int index = 16; index < 22; index++)
         {
           Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
@@ -151,7 +155,9 @@ void loop()
         }
         Serial.println();
         // MPUの地磁気をとる
+
         Serial.println("MPU_Magnetic_Field");
+
         for (int index = 22; index < 28; index++)
         {
           Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
@@ -162,7 +168,9 @@ void loop()
         }
         Serial.println();
         // LPSの気圧をとる
+
         Serial.println("LPS_Pressure");
+
         // if (count % 20 == 0)
         // {
         if ((tx[32 * CountH3LIS331DataSetExistInBuff + 28] != 0) || (tx[32 * CountH3LIS331DataSetExistInBuff + 29] != 0) || (tx[32 * CountH3LIS331DataSetExistInBuff + 30] != 0) || (tx[32 * CountH3LIS331DataSetExistInBuff + 31] != 0))
