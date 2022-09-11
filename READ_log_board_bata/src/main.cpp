@@ -109,13 +109,22 @@ void loop()
           // 時間をとる
           // Serial.println("time");
           time = tx[32 * CountH3LIS331DataSetExistInBuff + 0];
-          for (int i = 1; i < 5; i++)
+          for (int i = 1; i < 4; i++)
           {
             gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
             time |= gettime << (8 * i);
           }
           Serial.print(time);
           Serial.print(",");
+
+          // time = tx[32 * CountH3LIS331DataSetExistInBuff + 3];
+          // for (int i = 2; i >= 0; i--)
+          // {
+          //   gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
+          //   time |= gettime << (8 * i);
+          // }
+          // Serial.print(time);
+          // Serial.print(",");
 
           //加速度をとる
           // Serial.println("acceleration");
@@ -170,13 +179,22 @@ void loop()
           // 時間をとる
           // Serial.println("time");
           time = tx[32 * CountH3LIS331DataSetExistInBuff + 0];
-          for (int i = 1; i < 5; i++)
+          for (int i = 1; i < 4; i++)
           {
             gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
             time |= gettime << (8 * i);
           }
           Serial.print(time);
           Serial.print(",");
+
+          // time = tx[32 * CountH3LIS331DataSetExistInBuff + 3];
+          // for (int i = 2; i >= 0; i--)
+          // {
+          //   gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
+          //   time |= gettime << (8 * i);
+          // }
+          // Serial.print(time);
+          // Serial.print(",");
 
           // MPUの加速度をとる
           rx[3] = {};
@@ -230,13 +248,22 @@ void loop()
           // 時間をとる
           // Serial.println("time");
           time = tx[32 * CountH3LIS331DataSetExistInBuff + 0];
-          for (int i = 1; i < 5; i++)
+          for (int i = 1; i < 4; i++)
           {
             gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
             time |= gettime << (8 * i);
           }
           Serial.print(time);
           Serial.print(",");
+
+          // time = tx[32 * CountH3LIS331DataSetExistInBuff + 3];
+          // for (int i = 2; i >= 0; i--)
+          // {
+          //   gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
+          //   time |= gettime << (8 * i);
+          // }
+          // Serial.print(time);
+          // Serial.print(",");
 
           // MPUの角速度をとる
           rx[3] = {};
@@ -290,13 +317,22 @@ void loop()
           // 時間をとる
           // Serial.println("time");
           time = tx[32 * CountH3LIS331DataSetExistInBuff + 0];
-          for (int i = 1; i < 5; i++)
+          for (int i = 1; i < 4; i++)
           {
             gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
             time |= gettime << (8 * i);
           }
           Serial.print(time);
           Serial.print(",");
+
+          // time = tx[32 * CountH3LIS331DataSetExistInBuff + 3];
+          // for (int i = 2; i >= 0; i--)
+          // {
+          //   gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
+          //   time |= gettime << (8 * i);
+          // }
+          // Serial.print(time);
+          // Serial.print(",");
 
           // MPUの地磁気をとる
           rx[3] = {};
@@ -350,7 +386,7 @@ void loop()
           // 時間をとる
           // Serial.println("time");
           time = tx[32 * CountH3LIS331DataSetExistInBuff + 0];
-          for (int i = 1; i < 5; i++)
+          for (int i = 1; i < 4; i++)
           {
             gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
             time |= gettime << (8 * i);
@@ -358,15 +394,33 @@ void loop()
           Serial.print(time);
           Serial.print(",");
 
-          /// LPSの気圧をとる
-          for (int index = 28; index < 31; index++)
-          {
-            Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
-            if (index != 30)
-            {
-              Serial.print(",");
-            }
-          }
+          // time = tx[32 * CountH3LIS331DataSetExistInBuff + 3];
+          // for (int i = 2; i >= 0; i--)
+          // {
+          //   gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
+          //   time |= gettime << (8 * i);
+          // }
+          // Serial.print(time);
+          // Serial.print(",");
+
+          // / LPSの気圧をとる
+
+          // for (int index = 28; index < 31; index++)
+          // {
+          //   Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
+          //   if (index != 30)
+          //   {
+          //     Serial.print(",");
+          //   }
+          // }
+
+          // rx[3] = {};
+          // rx[0] = tx[32 * CountH3LIS331DataSetExistInBuff + 22];
+          // rx[0] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 23]) << 8;
+          // rx[1] = tx[32 * CountH3LIS331DataSetExistInBuff + 24];
+          // rx[1] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 25]) << 8;
+          // rx[2] = tx[32 * CountH3LIS331DataSetExistInBuff + 26];
+          // rx[2] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 27]) << 8;
           for (int i = 0; i < 3; i++)
           {
             Serial.print(rx[i]);
