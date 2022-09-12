@@ -87,6 +87,11 @@ void RoutineWork()
   {
     SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = 0xFF & (totalTimeCounter2 >> (8 * index));
   }
+  // for (int index = 3; index >= 0; index--)
+  // {
+  //   SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = 0xFF & (totalTimeCounter2 >> (8 * index));
+  // }
+
   //加速度をとる
   H3lis331.Get(H3lisReceiveData, H3lis_rx_buf);
   for (int index = 4; index < 10; index++)

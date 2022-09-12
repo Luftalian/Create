@@ -12,3 +12,24 @@ This is a SPI Flash which can record 512Mbite.
 
 Also I will make Board for logging data.
 Our team will log data of two accelerometer & angular velocity & LPS25 which is barometric pressure sensor.
+
+# About branch
+"main" is not main branch.
+"betabeta" is main branch.
+
+
+# File
+If you want to erase,
+
+### BBM_log_board
+
+
+If you want write,
+
+### BBM_log_board_beta
+
+
+If you want read,
+
+### READ_log_board_beta
+
