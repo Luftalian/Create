@@ -4,18 +4,19 @@
 //----------------------------------------------------------------
 //----------------------------------------------------------------
 //----------------------------------------------------------------
-// This code write data since 0x100
-// This code write data since 0x100
-// This code write data since 0x100
-// This code write data since 0x100
-// This code write data since 0x100
-// This code write data since 0x100
+// This code write data since 0x000
+// This code write data since 0x000
+// This code write data since 0x000
+// This code write data since 0x000
+// This code write data since 0x000
+// This code write data since 0x000
 //----------------------------------------------------------------
 //----------------------------------------------------------------
 //----------------------------------------------------------------
 //----------------------------------------------------------------
 //----------------------------------------------------------------
-//----------------------------------------------------------------#include <Arduino.h>
+//----------------------------------------------------------------
+#include <Arduino.h>
 #include <SPICREATE.h>
 #include <S25FL512S.h>
 #include <H3LIS331.h>
