@@ -148,7 +148,9 @@ void setup()
   // put your setup code here, to run once:
   Serial.begin(115200);
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
+  Serial.println("1");
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
+  Serial.println("2");
   H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
 
   // timer start

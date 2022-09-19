@@ -6,7 +6,6 @@
     It depends on SPICREATE.h and SPICREATE.h
 */
 
-
 #pragma once
 
 #ifndef MPU_H
@@ -44,15 +43,15 @@ public:
 
 void MPU::begin(SPICREATE::SPICreate *targetSPI, int cs, uint32_t freq)
 {
-    pinMode(cs,OUTPUT);
-    digitalWrite(cs,HIGH);
+    pinMode(cs, OUTPUT);
+    digitalWrite(cs, HIGH);
     delay(10);
-    digitalWrite(cs,LOW);
+    digitalWrite(cs, LOW);
     CS = cs;
     MPUSPI = targetSPI;
     spi_device_interface_config_t if_cfg = {};
 
-    //if_cfg.spics_io_num = cs;
+    // if_cfg.spics_io_num = cs;
     if_cfg.pre_cb = NULL;
     if_cfg.post_cb = NULL;
     if_cfg.cs_ena_pretrans = 0;
@@ -68,16 +67,15 @@ void MPU::begin(SPICREATE::SPICreate *targetSPI, int cs, uint32_t freq)
 
     deviceHandle = MPUSPI->addDevice(&if_cfg, cs);
 
-    //Init
+    // Init
     delay(100);
 
-
-    MPUSPI->setReg(MPU_ACC_CONFIG, MPU_16G, deviceHandle);//set range 16G
+    MPUSPI->setReg(MPU_ACC_CONFIG, MPU_16G, deviceHandle); // set range 16G
     delay(1);
-    MPUSPI->setReg(MPU_GYRO_CONFIG, MPU_2000dps, deviceHandle);//set range 2000 deg/s
+    MPUSPI->setReg(MPU_GYRO_CONFIG, MPU_2000dps, deviceHandle); // set range 2000 deg/s
     delay(1);
 
-    CheckReg();
+    // CheckReg(); //changed to comment out
     delay(1);
 
     return;
@@ -87,10 +85,12 @@ uint8_t MPU::WhoAmI()
     return MPUSPI->readByte(0x80 | 0x75, deviceHandle);
 }
 
-
-void MPU::CheckReg(){
-    if(WhoAmI()!=113){
-        while(1){
+void MPU::CheckReg()
+{
+    if (WhoAmI() != 113)
+    {
+        while (1)
+        {
             Serial.print("Wrong Who Am I MPU ");
             Serial.println(WhoAmI());
             delay(1000);

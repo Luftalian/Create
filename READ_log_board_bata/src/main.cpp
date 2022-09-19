@@ -32,11 +32,8 @@ bool WhoAmI_Ok = false;
 uint8_t count = 0;
 uint8_t tx[256] = {};
 int16_t rx[3] = {};
-<<<<<<< HEAD
-=======
 uint64_t gettime;
 uint64_t time;
->>>>>>> 2167aed4843abc08f28ed4e86c0ff4618125cfc8
 
 // int CountH3LIS331DataSetExistInBuff = 0;
 int CountH3LIS331DataSetExistInBuff_READ = 0;
