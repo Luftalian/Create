@@ -2,6 +2,8 @@
 #include <SPICREATE.h>
 
 #define loggingPeriod 2
+#define loggingPeriod1 1
+#define loggingPeriod2 0.9
 
 TimerHandle_t thand_test;
 xTaskHandle xlogHandle;
@@ -21,11 +23,14 @@ IRAM_ATTR void logging(void *parameters)
     //   ESP.restart();
     // }
     count++;
-    if (count % 500 == 0) // per 1s
+    if (count % 500 == 0) // per 1s 1Hz
     {
       Serial.println("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
+      Serial.println(xLastWakeTime);
     }
-    vTaskDelayUntil(&xLastWakeTime, loggingPeriod / portTICK_PERIOD_MS);
+    vTaskDelayUntil(&xLastWakeTime, loggingPeriod / portTICK_PERIOD_MS); // 2ms = 500Hz
+    // vTaskDelayUntil(&xLastWakeTime, loggingPeriod1 / portTICK_PERIOD_MS); // 1ms = 1000Hz
+    // vTaskDelayUntil(&xLastWakeTime, loggingPeriod2 / portTICK_PERIOD_MS); // 0.1ms = 10000Hz
   }
 }
 

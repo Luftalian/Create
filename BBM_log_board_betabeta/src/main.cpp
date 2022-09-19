@@ -32,6 +32,7 @@ uint32_t SPIFlashLatestAddress = 0x000;
 #define SPIFREQ 100000
 
 #define loggingPeriod 2
+#define loggingPeriod2 1
 
 TimerHandle_t thand_test;
 xTaskHandle xlogHandle;
@@ -106,7 +107,7 @@ void RoutineWork()
 
 IRAM_ATTR void logging(void *parameters)
 {
-  static int count = 0;
+  static uint64_t count = 0;
   portTickType xLastWakeTime = xTaskGetTickCount();
   for (;;)
   {
@@ -122,10 +123,9 @@ IRAM_ATTR void logging(void *parameters)
     if (count % 5 == 0) // per 0.01s = 1000Hz
     {
       Serial.println("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
-      RoutineWork();
     }
-
-    vTaskDelayUntil(&xLastWakeTime, loggingPeriod / portTICK_PERIOD_MS);
+    RoutineWork();
+    vTaskDelayUntil(&xLastWakeTime, loggingPeriod2 / portTICK_PERIOD_MS); // 1ms = 1000Hz
   }
 }
 
