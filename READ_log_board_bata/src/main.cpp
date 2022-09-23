@@ -89,7 +89,7 @@ void loop()
       tx[256] = {};
       rx[3] = {};
       // Serial.println("time,x,y,z");
-      Serial.println("x,y,z");
+      Serial.println("time,x,y,z");
       while (1)
       {
         flash1.read(H3LIS331FlashLatestAddress_READ, tx);
@@ -143,7 +143,7 @@ void loop()
               Serial.print(",");
             }
           }
-          Serial.println();
+          Serial.print("\n");
           CountH3LIS331DataSetExistInBuff_READ++;
           if (CountH3LIS331DataSetExistInBuff_READ == 8)
           {

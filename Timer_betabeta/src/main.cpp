@@ -8,6 +8,22 @@
 TimerHandle_t thand_test;
 xTaskHandle xlogHandle;
 
+class Timer
+{
+public:
+  uint64_t Gettime_record()
+  {
+    time = micros();
+    time -= start_time;
+    return time;
+  }
+  uint64_t start_time;
+  uint64_t time;
+  bool start_flag = true;
+};
+
+Timer timer;
+
 IRAM_ATTR void logging(void *parameters)
 {
   static int count = 100;
@@ -27,6 +43,15 @@ IRAM_ATTR void logging(void *parameters)
     {
       Serial.println("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
       Serial.println(xLastWakeTime);
+
+      if (timer.start_flag)
+      {
+        timer.start_time = micros();
+        timer.start_flag = false;
+      }
+      Serial.print("time: ");
+      Serial.println(timer.start_time);
+      Serial.println(timer.Gettime_record());
     }
     vTaskDelayUntil(&xLastWakeTime, loggingPeriod / portTICK_PERIOD_MS); // 2ms = 500Hz
     // vTaskDelayUntil(&xLastWakeTime, loggingPeriod1 / portTICK_PERIOD_MS); // 1ms = 1000Hz
@@ -37,7 +62,7 @@ IRAM_ATTR void logging(void *parameters)
 void setup()
 {
   Serial.begin(115200);
-
+  // Timer timer;
   xTaskCreateUniversal(logging, "logging", 8192, NULL, 1, &xlogHandle, PRO_CPU_NUM);
 }
 

@@ -37,9 +37,33 @@ uint32_t SPIFlashLatestAddress = 0x000;
 TimerHandle_t thand_test;
 xTaskHandle xlogHandle;
 
+uint64_t Record_time;
+
+class Timer
+{
+public:
+  uint64_t Gettime_record()
+  {
+    time = micros();
+    time -= start_time;
+    return time;
+  }
+  uint64_t start_time;
+  uint64_t time;
+  bool start_flag = true;
+};
+
+Timer timer;
+
 void RoutineWork()
 {
   Serial.println("Running");
+  if (timer.start_flag)
+  {
+    timer.start_time = micros();
+    timer.start_flag = false;
+  }
+  Record_time = timer.Gettime_record();
   // From SPI, Get data is tx
   H3lisReceiveData[3] = {};
   H3lis_rx_buf[6] = {};
@@ -47,7 +71,7 @@ void RoutineWork()
   //時間をとる
   for (int index = 0; index < 4; index++)
   {
-    SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = 0xFF & (0 >> (8 * index));
+    SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = 0xFF & (Record_time >> (8 * index));
   }
   // for (int index = 3; index >= 0; index--)
   // {
@@ -111,14 +135,6 @@ IRAM_ATTR void logging(void *parameters)
   portTickType xLastWakeTime = xTaskGetTickCount();
   for (;;)
   {
-    char bfChar[128] = "very tekitou na data\n";
-
-    // if (SDIO.appendQueue(bfChar) == 1)
-    // {
-    //   vTaskDelete(&xlogHandle);
-    //   Serial.println("queue filled!");
-    //   ESP.restart();
-    // }
     count++;
     if (count % 5 == 0) // per 0.01s = 1000Hz
     {
