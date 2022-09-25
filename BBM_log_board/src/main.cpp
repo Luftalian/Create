@@ -20,6 +20,7 @@
 #include <SPICREATE.h>
 #include <S25FL512S.h>
 #include <H3LIS331.h>
+#include <LPS25HB.h>
 
 #define flashCS 27
 #define SCK1 33
@@ -31,7 +32,10 @@
 // #define H3LIS331MOSI 13
 #define H3LIS331CS 32
 
-bool WhoAmI_Ok = false;
+#define LPS25HBCS 14
+
+bool WhoAmI_Ok_H3LIS331 = false;
+bool WhoAmI_Ok_LPS25HB = false;
 bool check = true;
 uint8_t count = 0;
 
@@ -47,6 +51,7 @@ uint32_t H3LIS331FlashLatestAddress = 0x000;
 #define SPIFREQ 100000
 
 H3LIS331 H3lis331;
+LPS25 Lps25;
 
 SPICREATE::SPICreate SPIC1;
 Flash flash1;
@@ -54,7 +59,7 @@ Flash flash1;
 // 無駄なものを書いてしまった。
 // void returndata(&rx)
 // {
-//   if (WhoAmI_Ok == true)
+//   if (WhoAmI_Ok_H3LIS331 == true)
 //   {
 //     int16_t rx[3];
 //     H3lis331.Get(rx);
@@ -83,6 +88,7 @@ void setup()
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
   H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
+  Lps25.begin(&SPIC1, LPS25HBCS, SPIFREQ);
   // put your setup code here, to run once:
 
   // WhoAmI
@@ -93,20 +99,32 @@ void setup()
   if (a == 0x32)
   {
     Serial.println("H3LIS331 is OK");
-    WhoAmI_Ok = true;
+    WhoAmI_Ok_H3LIS331 = true;
   }
   else
   {
     Serial.println("H3LIS331 is NG");
+  }
+  a = Lps25.WhoAmI();
+  Serial.print("WhoAmI:");
+  Serial.println(a);
+  if (a == 0b10111101)
+  {
+    Serial.println("LPS25HB is OK");
+    WhoAmI_Ok_LPS25HB = true;
+  }
+  else
+  {
+    Serial.println("LPS25HB is NG");
   }
 }
 
 void loop()
 {
   // Serial.println("loop");
-  if (WhoAmI_Ok == true)
+  if ((WhoAmI_Ok_H3LIS331 == true) && (WhoAmI_Ok_LPS25HB == true))
   {
-    // Serial.println("WhoAmI_Ok");
+    // Serial.println("WhoAmI_Ok_H3LIS331");
     if (Serial.available())
     {
       Serial.println("start");
