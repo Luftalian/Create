@@ -11,14 +11,14 @@ xTaskHandle xlogHandle;
 class Timer
 {
 public:
-  uint64_t Gettime_record()
+  unsigned long Gettime_record()
   {
     time = micros();
     time -= start_time;
     return time;
   }
-  uint64_t start_time;
-  uint64_t time;
+  unsigned long start_time;
+  unsigned long time;
   bool start_flag = true;
 };
 

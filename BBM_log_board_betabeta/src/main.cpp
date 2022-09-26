@@ -37,19 +37,19 @@ uint32_t SPIFlashLatestAddress = 0x000;
 TimerHandle_t thand_test;
 xTaskHandle xlogHandle;
 
-uint64_t Record_time;
+unsigned long Record_time;
 
 class Timer
 {
 public:
-  uint64_t Gettime_record()
+  unsigned long Gettime_record()
   {
     time = micros();
     time -= start_time;
     return time;
   }
-  uint64_t start_time;
-  uint64_t time;
+  unsigned long start_time;
+  unsigned long time;
   bool start_flag = true;
 };
 
