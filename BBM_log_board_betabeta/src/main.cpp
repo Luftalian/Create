@@ -8,6 +8,8 @@
 #define MISO1 25
 #define MOSI1 26
 #define H3LIS331CS 32
+#define LPSCS 14
+#define ICMCS 12
 
 H3LIS331 H3lis331;
 

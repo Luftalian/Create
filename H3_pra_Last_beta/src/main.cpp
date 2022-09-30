@@ -3,10 +3,10 @@
 #include <SPICREATE.h>
 #include <H3LIS331_var2.h>
 
-#define H3LIS331SCK 14
-#define H3LIS331MISO 12
-#define H3LIS331MOSI 13
-#define H3LIS331CS 33
+#define H3LIS331SCK 33  // 14
+#define H3LIS331MISO 25 // 12
+#define H3LIS331MOSI 26 // 13
+#define H3LIS331CS 32   // 33
 
 // count WhoAmIの回数
 // int count = 0;
@@ -72,13 +72,13 @@ void loop()
   // put your main code here, to run repeatedly:
   if (WhoAmI_Ok == true)
   {
-    if (count > 100)
-    {
-      Serial.println("end");
-      while (1)
-      {
-      }
-    }
+    // if (count > 100)
+    // {
+    //   Serial.println("end");
+    //   while (1)
+    //   {
+    //   }
+    // }
     int16_t rx[3];
     H3lis331.Get(rx);
 

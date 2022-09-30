@@ -1,0 +1,2010 @@
+OWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-29,29,2070,2619,-4011,-4796,2896,0
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+2,17,2045,2625,-4034,-4768,2960,0
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-20,-45,2219,2648,-4035,-4791,2960,0
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-14,23,2075,2618,-4044,-4798,2960,0
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-12,15,2052,2635,-4047,-4822,3008,0
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-10,22,2059,2645,-4098,-4804,2960,0
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-18,-10,2029,2659,-4061,-4804,3072,0
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+-1,-1,-1,-1,-1,-1,-1,-1
+
+Stack smashing protect failure!
+
+
+abort() was called at PC 0x400d914c on core 1
+
+
+Backtrace:0x40083a21:0x3ffb26f00x400886b5:0x3ffb2710 0x4008dab9:0x3ffb2730 0x400d914c:0x3ffb27b0 0x400d1501:0x3ffb27d0 0x400d27d1:0x3ffb2820 
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4

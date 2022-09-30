@@ -52,7 +52,7 @@ void H3LIS331::begin(SPICREATE::SPICreate *targetSPI, int cs, uint32_t freq)
 
     if_cfg.clock_speed_hz = freq;
 
-    if_cfg.mode = SPI_MODE0;
+    if_cfg.mode = SPI_MODE3;
     if_cfg.queue_size = 1;
 
     if_cfg.pre_cb = csReset;
@@ -76,7 +76,6 @@ uint8_t H3LIS331::WhoImI()
 {
     return H3LIS331SPI->readByte(H3LIS331_WhoAmI_Address | 0x80, deviceHandle);
 }
-
 
 // change to return rx_buf
 void H3LIS331::Get(int16_t *rx, uint8_t *rx_buf)
