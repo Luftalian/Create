@@ -26,11 +26,11 @@ Timer timer;
 
 IRAM_ATTR void logging(void *parameters)
 {
-  static int count = 100;
+  // static int count = 100;
   portTickType xLastWakeTime = xTaskGetTickCount();
   for (;;)
   {
-    char bfChar[128] = "very tekitou na data\n";
+    // char bfChar[128] = "very tekitou na data\n";
 
     // if (SDIO.appendQueue(bfChar) == 1)
     // {
@@ -38,23 +38,23 @@ IRAM_ATTR void logging(void *parameters)
     //   Serial.println("queue filled!");
     //   ESP.restart();
     // }
-    count++;
-    if (count % 500 == 0) // per 1s 1Hz
-    {
-      Serial.println("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
-      Serial.println(xLastWakeTime);
+    // count++;
+    // if (count % 500 == 0) // per 1s 1Hz
+    // {
+    // Serial.println("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
+    // Serial.println(xLastWakeTime);
 
-      if (timer.start_flag)
-      {
-        timer.start_time = micros();
-        timer.start_flag = false;
-      }
-      Serial.print("time: ");
-      Serial.println(timer.start_time);
-      Serial.println(timer.Gettime_record());
+    if (timer.start_flag)
+    {
+      timer.start_time = micros();
+      timer.start_flag = false;
     }
-    vTaskDelayUntil(&xLastWakeTime, loggingPeriod / portTICK_PERIOD_MS); // 2ms = 500Hz
-    // vTaskDelayUntil(&xLastWakeTime, loggingPeriod1 / portTICK_PERIOD_MS); // 1ms = 1000Hz
+    // Serial.print("time: ");
+    // Serial.println(timer.start_time);
+    Serial.println(timer.Gettime_record());
+    // }
+    // vTaskDelayUntil(&xLastWakeTime, loggingPeriod / portTICK_PERIOD_MS); // 2ms = 500Hz
+    vTaskDelayUntil(&xLastWakeTime, loggingPeriod1 / portTICK_PERIOD_MS); // 1ms = 1000Hz
     // vTaskDelayUntil(&xLastWakeTime, loggingPeriod2 / portTICK_PERIOD_MS); // 0.1ms = 10000Hz
   }
 }

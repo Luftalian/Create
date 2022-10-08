@@ -112,18 +112,18 @@ void setup()
     Serial.println("H3LIS331 is NG");
   }
 
-  // a = Lps25.WhoAmI();
-  // Serial.print("WhoAmI:");
-  // Serial.println(a);
-  // if (a == 0b10111101)
-  // {
-  //   Serial.println("LPS25HB is OK");
-  //   WhoAmI_Ok_LPS25HB = true;
-  // }
-  // else
-  // {
-  //   Serial.println("LPS25HB is NG");
-  // }
+  a = Lps25.WhoAmI();
+  Serial.print("WhoAmI:");
+  Serial.println(a);
+  if (a == 0b10111101)
+  {
+    Serial.println("LPS25HB is OK");
+    WhoAmI_Ok_LPS25HB = true;
+  }
+  else
+  {
+    Serial.println("LPS25HB is NG");
+  }
 
   for (int i = 0; i < 5; i++)
   {

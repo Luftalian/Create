@@ -3,6 +3,7 @@
 #include <S25FL512S.h>
 #include <H3LIS331_beta.h>
 #include <ICM20948_beta.h>
+#include <LPS25HB.h>
 
 #define flashCS 27
 #define SCK1 33
@@ -12,9 +13,12 @@
 #define LPSCS 14
 #define ICMCS 12
 
+// センサのクラス
 H3LIS331 H3lis331;
 
 ICM icm20948;
+
+LPS25 Lps25;
 
 SPICREATE::SPICreate SPIC1;
 Flash flash1;
@@ -132,21 +136,21 @@ void RoutineWork()
     flash1.write(SPIFlashLatestAddress, SPI_FlashBuff);
     SPIFlashLatestAddress += 0x100;
     CountSPIFlashDataSetExistInBuff = 0;
-    Serial.println("end");
+    // Serial.println("end");
   }
 }
 
 IRAM_ATTR void logging(void *parameters)
 {
-  static uint64_t count = 0;
+  // static uint64_t count = 0;
   portTickType xLastWakeTime = xTaskGetTickCount();
   for (;;)
   {
-    count++;
-    if (count % 5 == 0) // per 0.01s = 1000Hz
-    {
-      Serial.println("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
-    }
+    // count++;
+    // if (count % 5 == 0) // per 0.01s = 1000Hz
+    // {
+    //   Serial.println("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
+    // }
     RoutineWork();
     vTaskDelayUntil(&xLastWakeTime, loggingPeriod2 / portTICK_PERIOD_MS); // 1ms = 1000Hz
   }
@@ -165,6 +169,8 @@ void setup()
   Serial.println("H3lis331");
   icm20948.begin(&SPIC1, ICMCS, SPIFREQ);
   Serial.println("icm20948");
+  Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
+  Serial.println("Lps25hb");
 
   Serial.println("Timer Start!");
 
@@ -186,20 +192,37 @@ void setup()
     // }
   }
 
+  a = Lps25.WhoAmI();
+  Serial.print("WhoAmI:");
+  Serial.println(a);
+  if (a == 0b10111101)
+  {
+    Serial.println("LPS25HB is OK");
+    // WhoAmI_Ok_LPS25HB = true;
+  }
+  else
+  {
+    Serial.println("LPS25HB is NG");
+  }
+
+  for (int i = 0; i < 5; i++)
+  {
+    delay(1000);
+    Serial.print(".");
+  }
+  Serial.println();
+
   a = icm20948.WhoAmI();
   Serial.print("WhoAmI:");
   Serial.println(a);
   if (a == 0xEA)
   {
     Serial.println("ICM20948 is OK");
+    // WhoAmI_Ok_ICM20948 = true;
   }
   else
   {
     Serial.println("ICM20948 is NG");
-    while (1)
-    {
-      delay(1000);
-    }
   }
   xTaskCreateUniversal(logging, "logging", 8192, NULL, 1, &xlogHandle, PRO_CPU_NUM);
 }
