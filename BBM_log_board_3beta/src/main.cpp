@@ -21,7 +21,7 @@ ICM icm20948;
 LPS25 Lps25;
 
 SPICREATE::SPICreate SPIC1;
-Flash flash1;
+Flash flash1; // 524,288/2 (ページ)
 
 uint8_t count_lps = 0;
 
@@ -175,7 +175,7 @@ void setup()
   Serial.println("icm20948");
   Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
   Serial.println("Lps25hb");
-
+  micros();
   Serial.println("Timer Start!");
 
   // WhoAmI
