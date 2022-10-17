@@ -33,20 +33,20 @@
 // #define H3LIS331MOSI 13
 #define H3LIS331CS 32
 
-#define LPS25HBCS 14
+#define LPSCS 14
 
 #define ICMCS 35
 
-bool WhoAmI_Ok_H3LIS331 = false;
-bool WhoAmI_Ok_LPS25HB = false;
-bool WhoAmI_Ok_ICM20948 = false;
+// bool WhoAmI_Ok_H3LIS331 = false;
+// bool WhoAmI_Ok_LPS25HB = false;
+// bool WhoAmI_Ok_ICM20948 = false;
 bool check = true;
 uint8_t count = 0;
 
 int CountH3LIS331DataSetExistInBuff = 0;
-int CountH3LIS331DataSetExistInBuff_READ = 0;
+// int CountH3LIS331DataSetExistInBuff_READ = 0;
 
-uint8_t H3LIS331FlashBuff[256] = {};
+uint8_t FlashBuff[256] = {};
 uint8_t tx[256] = {};
 
 uint32_t H3LIS331FlashLatestAddress = 0x000;
@@ -87,15 +87,44 @@ Flash flash1;
 //   }
 // }
 
+class Timer
+{
+public:
+  unsigned long Gettime_record()
+  {
+    time = micros();
+    time -= start_time;
+    return time;
+  }
+  unsigned long start_time;
+  unsigned long time;
+  bool start_flag = true;
+};
+
+Timer timer;
+unsigned long Record_time;
+
 void setup()
 {
-  Serial.begin(115200);
-  SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
-  flash1.begin(&SPIC1, flashCS, SPIFREQ);
-  H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
-  Lps25.begin(&SPIC1, LPS25HBCS, SPIFREQ);
-  icm20948.begin(&SPIC1, ICMCS, SPIFREQ);
+  digitalWrite(flashCS, HIGH);
+  digitalWrite(H3LIS331CS, HIGH);
+  digitalWrite(ICMCS, HIGH);
+  digitalWrite(LPSCS, HIGH);
   // put your setup code here, to run once:
+  Serial.begin(115200);
+  Serial.println("start");
+  SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
+  Serial.println("SPIC1");
+  flash1.begin(&SPIC1, flashCS, SPIFREQ);
+  Serial.println("flash1");
+  H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
+  Serial.println("H3lis331");
+  icm20948.begin(&SPIC1, ICMCS, SPIFREQ);
+  Serial.println("icm20948");
+  Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
+  Serial.println("Lps25hb");
+
+  Serial.println("Timer Start!");
 
   // WhoAmI
   uint8_t a;
@@ -105,11 +134,14 @@ void setup()
   if (a == 0x32)
   {
     Serial.println("H3LIS331 is OK");
-    WhoAmI_Ok_H3LIS331 = true;
   }
   else
   {
     Serial.println("H3LIS331 is NG");
+    // while (1)
+    // {
+    //   delay(1000);
+    // }
   }
 
   a = Lps25.WhoAmI();
@@ -118,7 +150,7 @@ void setup()
   if (a == 0b10111101)
   {
     Serial.println("LPS25HB is OK");
-    WhoAmI_Ok_LPS25HB = true;
+    // WhoAmI_Ok_LPS25HB = true;
   }
   else
   {
@@ -138,7 +170,7 @@ void setup()
   if (a == 0xEA)
   {
     Serial.println("ICM20948 is OK");
-    WhoAmI_Ok_ICM20948 = true;
+    // WhoAmI_Ok_ICM20948 = true;
   }
   else
   {
@@ -190,6 +222,18 @@ void loop()
         Serial.print(rx[i]);
       }
       Serial.println();
+      int a = 0;
+      // Serial.println(a);
+      // a++;
+
+      if (timer.start_flag)
+      {
+        timer.start_time = micros();
+        timer.start_flag = false;
+      }
+      Record_time = timer.Gettime_record();
+      // Serial.println(a);
+      // a++;
 
       // delay(100);
 
@@ -198,6 +242,9 @@ void loop()
       uint8_t rx_buf[6];
       int16_t IcmReceiveData[6];
       uint8_t icm_rx_buf[12];
+      uint8_t Lps_rx_buf[3];
+      // Serial.println(a);
+      // a++;
       // Serial.println("rx_buf");
       // for (int i = 0; i < 6; i++)
       // {
@@ -236,7 +283,7 @@ void loop()
 
       //   for (int index = 0; index < 6; index++)
       //   {
-      //     H3LIS331FlashBuff[16 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index];
+      //     FlashBuff[16 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index];
       //   }
       //   CountH3LIS331DataSetExistInBuff++;
       //   if (CountH3LIS331DataSetExistInBuff == 16)
@@ -244,7 +291,7 @@ void loop()
       //     Serial.println("CountH3LIS331DataSetExistInBuff == 16");
       //     // flash_wren(MPUDATAFLASH); // flash1.write(0x1000000, rx_buf);
       //     // flash_pp(MPUFlashLatestAddress, MPUFlashBuff, 0x100, 0);
-      //     flash1.write(H3LIS331FlashLatestAddress, H3LIS331FlashBuff);
+      //     flash1.write(H3LIS331FlashLatestAddress, FlashBuff);
       //     H3LIS331FlashLatestAddress += 0x100;
       //     CountH3LIS331DataSetExistInBuff = 0;
       //   }
@@ -256,59 +303,78 @@ void loop()
         //時間をとる
         for (int index = 0; index < 4; index++)
         {
-          // H3LIS331FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = 0xFF & (clock_1kHz >> (8 * index));
+          FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = 0xFF & (Record_time >> (8 * index));
+          Serial.println(a);
+          a++;
         }
         //加速度をとる
         H3lis331.Get(H3lisReceiveData, rx_buf);
         for (int index = 4; index < 10; index++)
         {
-          H3LIS331FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index - 4];
+          FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index - 4];
+          Serial.print("\t");
+          Serial.println(a);
+          a++;
         }
         // ICM20948の加速度をとる
         icm20948.Get(IcmReceiveData, icm_rx_buf);
         for (int index = 10; index < 16; index++)
         {
-          H3LIS331FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = icm_rx_buf[index - 10];
+          FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = icm_rx_buf[index - 10];
         }
         // ICM20948の角速度をとる
         for (int index = 16; index < 22; index++)
         {
-          H3LIS331FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = icm_rx_buf[index - 10];
+          FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = icm_rx_buf[index - 10];
         }
         // ICM20948の地磁気をとる
-        // for (int index = 22; index < 28; index++)
-        // {
-        //   H3LIS331FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index - 10];
-        // }
+        for (int index = 22; index < 28; index++)
+        {
+          // FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index - 10];
+          FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = 111;
+        }
         // LPSの気圧をとる
         if (count % 20 == 0)
         {
+          Lps25.Get(Lps_rx_buf);
           for (int index = 28; index < 31; index++)
           {
-            // H3LIS331FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = LPS_rx_buf[index - 28];
+            FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = Lps_rx_buf[index - 28];
             count = 0;
           }
         }
-        // delay(100); // 1000Hzより早くたたいてない？
+        // Serial.println("--------");
+        // Serial.println(a);
+        // a++;
+        delay(100); // 1000Hzより早くたたいてない？
         count++;
       }
 
       Serial.println("rx");
       for (int i = 0; i < 256; i++)
       {
-        Serial.print(H3LIS331FlashBuff[i]);
-        Serial.print(" ");
+        Serial.print(FlashBuff[i]);
+        Serial.print(",");
+        if (i % 32 == 31)
+        {
+          Serial.println();
+        }
       }
       Serial.println();
       Serial.print("CountH3LIS331DataSetExistInBuff: ");
       Serial.println(CountH3LIS331DataSetExistInBuff);
-      flash1.write(H3LIS331FlashLatestAddress, H3LIS331FlashBuff);
+      flash1.write(H3LIS331FlashLatestAddress, FlashBuff);
       delay(100);
       flash1.read(H3LIS331FlashLatestAddress, tx);
       Serial.println("tx");
       for (int i = 0; i < 256; i++)
       {
         Serial.print(tx[i]);
+        Serial.print(",");
+        if (i % 32 == 31)
+        {
+          Serial.println();
+        }
       }
       Serial.println();
       // End of change
@@ -358,15 +424,15 @@ void loop()
       // }
       for (int i = 0; i < 256; i++)
       {
-        if (H3LIS331FlashBuff[i] != tx[i])
+        if (FlashBuff[i] != tx[i])
         {
           // Serial.println("Data is incorrect");
-          // Serial.print("No.");
-          // Serial.print(i);
-          // Serial.print(" rx:");
-          // Serial.print(H3LIS331FlashBuff[i]);
-          // Serial.print(" tx:");
-          // Serial.println(tx[i]);
+          Serial.print("No.");
+          Serial.print(i);
+          Serial.print(" rx:");
+          Serial.print(FlashBuff[i]);
+          Serial.print(" tx:");
+          Serial.println(tx[i]);
           check = false;
         }
       }

@@ -101,7 +101,7 @@ void loop()
             Serial.print(".");
             delay(1000);
           }
-          Serial.println();
+          Serial.print("\n");
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -171,7 +171,7 @@ void loop()
             Serial.print(".");
             delay(1000);
           }
-          Serial.println();
+          Serial.print("\n");
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -212,7 +212,7 @@ void loop()
               Serial.print(",");
             }
           }
-          Serial.println();
+          Serial.print("\n");
           CountH3LIS331DataSetExistInBuff_READ++;
           if (CountH3LIS331DataSetExistInBuff_READ == 8)
           {
@@ -240,7 +240,7 @@ void loop()
             Serial.print(".");
             delay(1000);
           }
-          Serial.println();
+          Serial.print("\n");
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -281,7 +281,7 @@ void loop()
               Serial.print(",");
             }
           }
-          Serial.println();
+          Serial.print("\n");
           CountH3LIS331DataSetExistInBuff_READ++;
           if (CountH3LIS331DataSetExistInBuff_READ == 8)
           {
@@ -309,7 +309,7 @@ void loop()
             Serial.print(".");
             delay(1000);
           }
-          Serial.println();
+          Serial.print("\n");
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -350,7 +350,7 @@ void loop()
               Serial.print(",");
             }
           }
-          Serial.println();
+          Serial.print("\n");
           CountH3LIS331DataSetExistInBuff_READ++;
           if (CountH3LIS331DataSetExistInBuff_READ == 8)
           {
@@ -378,7 +378,7 @@ void loop()
             Serial.print(".");
             delay(1000);
           }
-          Serial.println();
+          Serial.print("\n");
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -430,7 +430,7 @@ void loop()
               Serial.print(",");
             }
           }
-          Serial.println();
+          Serial.print("\n");
           CountH3LIS331DataSetExistInBuff_READ++;
           if (CountH3LIS331DataSetExistInBuff_READ == 8)
           {

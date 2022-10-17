@@ -49,6 +49,8 @@ xTaskHandle xlogHandle;
 
 unsigned long Record_time;
 
+uint8_t checker = 0;
+
 class Timer
 {
 public:
@@ -151,7 +153,8 @@ IRAM_ATTR void logging(void *parameters)
     // {
     //   Serial.println("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
     // }
-    RoutineWork();
+    // RoutineWork();
+    checker++;
     vTaskDelayUntil(&xLastWakeTime, loggingPeriod2 / portTICK_PERIOD_MS); // 1ms = 1000Hz
   }
 }
@@ -234,4 +237,8 @@ void setup()
 void loop()
 {
   // put your main code here, to run repeatedly:
+  if (checker > 0)
+  {
+    RoutineWork();
+  }
 }
