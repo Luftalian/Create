@@ -11,7 +11,7 @@
 #define MOSI1 26
 #define H3LIS331CS 32
 #define LPSCS 14
-#define ICMCS 12
+#define ICMCS 13
 
 // センサのクラス
 H3LIS331 H3lis331;
@@ -159,9 +159,13 @@ IRAM_ATTR void logging(void *parameters)
 void setup()
 {
   digitalWrite(flashCS, HIGH);
+  delay(100);
   digitalWrite(H3LIS331CS, HIGH);
+  delay(100);
   digitalWrite(ICMCS, HIGH);
+  delay(100);
   digitalWrite(LPSCS, HIGH);
+  delay(100);
   // put your setup code here, to run once:
   Serial.begin(115200);
   Serial.println("start");
@@ -176,6 +180,7 @@ void setup()
   Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
   Serial.println("Lps25hb");
   micros();
+  delay(100);
   Serial.println("Timer Start!");
 
   // WhoAmI

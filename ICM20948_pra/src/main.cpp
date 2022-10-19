@@ -5,7 +5,7 @@
 #define ICMSCK 33  // 18
 #define ICMMISO 25 // 19
 #define ICMMOSI 26 // 23
-#define ICMCS 12   // 27//33
+#define ICMCS 13   // 27//33
 #define SPIFREQ 1200000
 
 ICM icm20948;

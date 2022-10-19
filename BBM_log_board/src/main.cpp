@@ -35,7 +35,7 @@
 
 #define LPSCS 14
 
-#define ICMCS 35
+#define ICMCS 13
 
 // bool WhoAmI_Ok_H3LIS331 = false;
 // bool WhoAmI_Ok_LPS25HB = false;
@@ -107,9 +107,13 @@ unsigned long Record_time;
 void setup()
 {
   digitalWrite(flashCS, HIGH);
+  delay(1000);
   digitalWrite(H3LIS331CS, HIGH);
+  delay(1000);
   digitalWrite(ICMCS, HIGH);
+  delay(1000);
   digitalWrite(LPSCS, HIGH);
+  delay(1000);
   // put your setup code here, to run once:
   Serial.begin(115200);
   Serial.println("start");
@@ -124,6 +128,8 @@ void setup()
   Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
   Serial.println("Lps25hb");
 
+  micros();
+  delay(100);
   Serial.println("Timer Start!");
 
   // WhoAmI
@@ -157,12 +163,12 @@ void setup()
     Serial.println("LPS25HB is NG");
   }
 
-  for (int i = 0; i < 5; i++)
-  {
-    delay(1000);
-    Serial.print(".");
-  }
-  Serial.println();
+  // for (int i = 0; i < 5; i++)
+  // {
+  //   delay(1000);
+  //   Serial.print(".");
+  // }
+  // Serial.println();
 
   a = icm20948.WhoAmI();
   Serial.print("WhoAmI:");
