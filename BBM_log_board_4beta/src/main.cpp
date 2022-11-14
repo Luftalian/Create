@@ -79,6 +79,8 @@ void RoutineWork()
   // From SPI, Get data is tx
   H3lisReceiveData[3] = {};
   H3lis_rx_buf[6] = {};
+  Icm20948ReceiveData[6] = {};
+  Icm20948_rx_buf[12] = {};
   // CountSPIFlashDataSetExistInBuffは列。indexは行。
   //時間をとる
   for (int index = 0; index < 4; index++)
@@ -162,21 +164,31 @@ IRAM_ATTR void logging(void *parameters)
 void setup()
 {
   digitalWrite(flashCS, HIGH);
+  delay(100);
   digitalWrite(H3LIS331CS, HIGH);
+  delay(100);
   digitalWrite(ICMCS, HIGH);
+  delay(100);
   digitalWrite(LPSCS, HIGH);
+  delay(100);
   // put your setup code here, to run once:
   Serial.begin(115200);
   Serial.println("start");
+  delay(100);
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
+  delay(100);
   Serial.println("SPI1");
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
+  delay(100);
   Serial.println("flash1");
   H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
+  delay(100);
   Serial.println("H3lis331");
   icm20948.begin(&SPIC1, ICMCS, SPIFREQ);
+  delay(100);
   Serial.println("icm20948");
   Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
+  delay(100);
   Serial.println("Lps25hb");
 
   Serial.println("Timer Start!");
