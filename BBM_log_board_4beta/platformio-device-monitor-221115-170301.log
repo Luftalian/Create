@@ -1,0 +1,2622 @@
+start
+SPI1
+flash1
+H3lis331
+icm20948
+E (8017) spi_master: check_trans_valid(676): invalid dev handle
+Lps25hb
+Timer Start!
+WhoAmI:50
+H3LIS331 is OK
+E (8119) spi_master: check_trans_valid(676): invalid dev handle
+WhoAmI:0
+LPS25HB is NG
+
+WhoAmI:1
+ICM20948 is NG
+Running
+E (8131) spi_master: check_trans_valid(676): invalid dev handle
+E (8132) spi_master: check_trans_valid(676): invalid dev handle
+E (8134) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (8228) spi_master: check_trans_valid(676): invalid dev handle
+E (8228) spi_master: check_trans_valid(676): invalid dev handle
+E (8228) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (8344) spi_master: check_trans_valid(676): invalid dev handle
+E (8344) spi_master: check_trans_valid(676): invalid dev handle
+E (8344) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (8438) spi_master: check_trans_valid(676): invalid dev handle
+E (8439) spi_master: check_trans_valid(676): invalid dev handle
+E (8439) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (8554) spi_master: check_trans_valid(676): invalid dev handle
+E (8554) spi_master: check_trans_valid(676): invalid dev handle
+E (8554) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (8649) spi_master: check_trans_valid(676): invalid dev handle
+E (8649) spi_master: check_trans_valid(676): invalid dev handle
+E (8649) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (8765) spi_master: check_trans_valid(676): invalid dev handle
+E (8765) spi_master: check_trans_valid(676): invalid dev handle
+E (8765) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (8859) spi_master: check_trans_valid(676): invalid dev handle
+E (8859) spi_master: check_trans_valid(676): invalid dev handle
+E (8859) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (8975) spi_master: check_trans_valid(676): invalid dev handle
+E (8975) spi_master: check_trans_valid(676): invalid dev handle
+E (8975) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9069) spi_master: check_trans_valid(676): invalid dev handle
+E (9070) spi_master: check_trans_valid(676): invalid dev handle
+E (9070) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9185) spi_master: check_trans_valid(676): invalid dev handle
+E (9186) spi_master: check_trans_valid(676): invalid dev handle
+E (9186) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9280) spi_master: check_trans_valid(676): invalid dev handle
+E (9280) spi_master: check_trans_valid(676): invalid dev handle
+E (9280) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9396) spi_master: check_trans_valid(676): invalid dev handle
+E (9396) spi_master: check_trans_valid(676): invalid dev handle
+E (9396) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9490) spi_master: check_trans_valid(676): invalid dev handle
+E (9491) spi_master: check_trans_valid(676): invalid dev handle
+E (9491) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9606) spi_master: check_trans_valid(676): invalid dev handle
+E (9606) spi_master: check_trans_valid(676): invalid dev handle
+E (9606) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9701) spi_master: check_trans_valid(676): invalid dev handle
+E (9701) spi_master: check_trans_valid(676): invalid dev handle
+E (9701) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9817) spi_master: check_trans_valid(676): invalid dev handle
+E (9817) spi_master: check_trans_valid(676): invalid dev handle
+E (9817) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (9911) spi_master: check_trans_valid(676): invalid dev handle
+E (9912) spi_master: check_trans_valid(676): invalid dev handle
+E (9912) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10027) spi_master: check_trans_valid(676): invalid dev handle
+E (10027) spi_master: check_trans_valid(676): invalid dev handle
+E (10028) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10122) spi_master: check_trans_valid(676): invalid dev handle
+E (10122) spi_master: check_trans_valid(676): invalid dev handle
+E (10122) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10238) spi_master: check_trans_valid(676): invalid dev handle
+E (10238) spi_master: check_trans_valid(676): invalid dev handle
+E (10238) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10333) spi_master: check_trans_valid(676): invalid dev handle
+E (10333) spi_master: check_trans_valid(676): invalid dev handle
+E (10333) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10449) spi_master: check_trans_valid(676): invalid dev handle
+E (10449) spi_master: check_trans_valid(676): invalid dev handle
+E (10449) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10544) spi_master: check_trans_valid(676): invalid dev handle
+E (10544) spi_master: check_trans_valid(676): invalid dev handle
+E (10544) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10660) spi_master: check_trans_valid(676): invalid dev handle
+E (10660) spi_master: check_trans_valid(676): invalid dev handle
+E (10660) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10755) spi_master: check_trans_valid(676): invalid dev handle
+E (10755) spi_master: check_trans_valid(676): invalid dev handle
+E (10755) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10871) spi_master: check_trans_valid(676): invalid dev handle
+E (10871) spi_master: check_trans_valid(676): invalid dev handle
+E (10871) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (10965) spi_master: check_trans_valid(676): invalid dev handle
+E (10966) spi_master: check_trans_valid(676): invalid dev handle
+E (10966) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11081) spi_master: check_trans_valid(676): invalid dev handle
+E (11082) spi_master: check_trans_valid(676): invalid dev handle
+E (11082) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11176) spi_master: check_trans_valid(676): invalid dev handle
+E (11176) spi_master: check_trans_valid(676): invalid dev handle
+E (11177) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11292) spi_master: check_trans_valid(676): invalid dev handle
+E (11292) spi_master: check_trans_valid(676): invalid dev handle
+E (11293) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11387) spi_master: check_trans_valid(676): invalid dev handle
+E (11387) spi_master: check_trans_valid(676): invalid dev handle
+E (11388) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11503) spi_master: check_trans_valid(676): invalid dev handle
+E (11503) spi_master: check_trans_valid(676): invalid dev handle
+E (11504) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11598) spi_master: check_trans_valid(676): invalid dev handle
+E (11598) spi_master: check_trans_valid(676): invalid dev handle
+E (11598) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11714) spi_master: check_trans_valid(676): invalid dev handle
+E (11714) spi_master: check_trans_valid(676): invalid dev handle
+E (11714) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11809) spi_master: check_trans_valid(676): invalid dev handle
+E (11809) spi_master: check_trans_valid(676): invalid dev handle
+E (11809) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (11925) spi_master: check_trans_valid(676): invalid dev handle
+E (11925) spi_master: check_trans_valid(676): invalid dev handle
+E (11925) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12020) spi_master: check_trans_valid(676): invalid dev handle
+E (12020) spi_master: check_trans_valid(676): invalid dev handle
+E (12020) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12136) spi_master: check_trans_valid(676): invalid dev handle
+E (12136) spi_master: check_trans_valid(676): invalid dev handle
+E (12136) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12231) spi_master: check_trans_valid(676): invalid dev handle
+E (12231) spi_master: check_trans_valid(676): invalid dev handle
+E (12231) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12347) spi_master: check_trans_valid(676): invalid dev handle
+E (12347) spi_master: check_trans_valid(676): invalid dev handle
+E (12347) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12442) spi_master: check_trans_valid(676): invalid dev handle
+E (12442) spi_master: check_trans_valid(676): invalid dev handle
+E (12442) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12558) spi_master: check_trans_valid(676): invalid dev handle
+E (12558) spi_master: check_trans_valid(676): invalid dev handle
+E (12558) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12653) spi_master: check_trans_valid(676): invalid dev handle
+E (12653) spi_master: check_trans_valid(676): invalid dev handle
+E (12653) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12769) spi_master: check_trans_valid(676): invalid dev handle
+E (12770) spi_master: check_trans_valid(676): invalid dev handle
+E (12770) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12864) spi_master: check_trans_valid(676): invalid dev handle
+E (12864) spi_master: check_trans_valid(676): invalid dev handle
+E (12865) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (12980) spi_master: check_trans_valid(676): invalid dev handle
+E (12980) spi_master: check_trans_valid(676): invalid dev handle
+E (12981) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13075) spi_master: check_trans_valid(676): invalid dev handle
+E (13075) spi_master: check_trans_valid(676): invalid dev handle
+E (13076) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13191) spi_master: check_trans_valid(676): invalid dev handle
+E (13191) spi_master: check_trans_valid(676): invalid dev handle
+E (13192) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13287) spi_master: check_trans_valid(676): invalid dev handle
+E (13287) spi_master: check_trans_valid(676): invalid dev handle
+E (13287) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13403) spi_master: check_trans_valid(676): invalid dev handle
+E (13403) spi_master: check_trans_valid(676): invalid dev handle
+E (13403) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13498) spi_master: check_trans_valid(676): invalid dev handle
+E (13498) spi_master: check_trans_valid(676): invalid dev handle
+E (13498) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13614) spi_master: check_trans_valid(676): invalid dev handle
+E (13614) spi_master: check_trans_valid(676): invalid dev handle
+E (13614) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13709) spi_master: check_trans_valid(676): invalid dev handle
+E (13709) spi_master: check_trans_valid(676): invalid dev handle
+E (13709) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13826) spi_master: check_trans_valid(676): invalid dev handle
+E (13826) spi_master: check_trans_valid(676): invalid dev handle
+E (13826) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (13920) spi_master: check_trans_valid(676): invalid dev handle
+E (13920) spi_master: check_trans_valid(676): invalid dev handle
+E (13921) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14036) spi_master: check_trans_valid(676): invalid dev handle
+E (14036) spi_master: check_trans_valid(676): invalid dev handle
+E (14037) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14131) spi_master: check_trans_valid(676): invalid dev handle
+E (14131) spi_master: check_trans_valid(676): invalid dev handle
+E (14132) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14247) spi_master: check_trans_valid(676): invalid dev handle
+E (14247) spi_master: check_trans_valid(676): invalid dev handle
+E (14248) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14343) spi_master: check_trans_valid(676): invalid dev handle
+E (14343) spi_master: check_trans_valid(676): invalid dev handle
+E (14343) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14459) spi_master: check_trans_valid(676): invalid dev handle
+E (14459) spi_master: check_trans_valid(676): invalid dev handle
+E (14459) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14554) spi_master: check_trans_valid(676): invalid dev handle
+E (14554) spi_master: check_trans_valid(676): invalid dev handle
+E (14554) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14670) spi_master: check_trans_valid(676): invalid dev handle
+E (14670) spi_master: check_trans_valid(676): invalid dev handle
+E (14670) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14765) spi_master: check_trans_valid(676): invalid dev handle
+E (14765) spi_master: check_trans_valid(676): invalid dev handle
+E (14765) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14882) spi_master: check_trans_valid(676): invalid dev handle
+E (14882) spi_master: check_trans_valid(676): invalid dev handle
+E (14882) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (14976) spi_master: check_trans_valid(676): invalid dev handle
+E (14976) spi_master: check_trans_valid(676): invalid dev handle
+E (14977) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15092) spi_master: check_trans_valid(676): invalid dev handle
+E (15092) spi_master: check_trans_valid(676): invalid dev handle
+E (15093) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15187) spi_master: check_trans_valid(676): invalid dev handle
+E (15187) spi_master: check_trans_valid(676): invalid dev handle
+E (15188) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15303) spi_master: check_trans_valid(676): invalid dev handle
+E (15303) spi_master: check_trans_valid(676): invalid dev handle
+E (15304) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15398) spi_master: check_trans_valid(676): invalid dev handle
+E (15398) spi_master: check_trans_valid(676): invalid dev handle
+E (15399) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15514) spi_master: check_trans_valid(676): invalid dev handle
+E (15514) spi_master: check_trans_valid(676): invalid dev handle
+E (15515) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15609) spi_master: check_trans_valid(676): invalid dev handle
+E (15609) spi_master: check_trans_valid(676): invalid dev handle
+E (15609) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15725) spi_master: check_trans_valid(676): invalid dev handle
+E (15725) spi_master: check_trans_valid(676): invalid dev handle
+E (15725) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15820) spi_master: check_trans_valid(676): invalid dev handle
+E (15820) spi_master: check_trans_valid(676): invalid dev handle
+E (15820) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (15936) spi_master: check_trans_valid(676): invalid dev handle
+E (15936) spi_master: check_trans_valid(676): invalid dev handle
+E (15936) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16031) spi_master: check_trans_valid(676): invalid dev handle
+E (16031) spi_master: check_trans_valid(676): invalid dev handle
+E (16031) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16147) spi_master: check_trans_valid(676): invalid dev handle
+E (16147) spi_master: check_trans_valid(676): invalid dev handle
+E (16147) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16242) spi_master: check_trans_valid(676): invalid dev handle
+E (16242) spi_master: check_trans_valid(676): invalid dev handle
+E (16242) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16358) spi_master: check_trans_valid(676): invalid dev handle
+E (16358) spi_master: check_trans_valid(676): invalid dev handle
+E (16358) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16452) spi_master: check_trans_valid(676): invalid dev handle
+E (16452) spi_master: check_trans_valid(676): invalid dev handle
+E (16453) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16568) spi_master: check_trans_valid(676): invalid dev handle
+E (16568) spi_master: check_trans_valid(676): invalid dev handle
+E (16569) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16663) spi_master: check_trans_valid(676): invalid dev handle
+E (16663) spi_master: check_trans_valid(676): invalid dev handle
+E (16664) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16779) spi_master: check_trans_valid(676): invalid dev handle
+E (16779) spi_master: check_trans_valid(676): invalid dev handle
+E (16780) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16875) spi_master: check_trans_valid(676): invalid dev handle
+E (16875) spi_master: check_trans_valid(676): invalid dev handle
+E (16875) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (16991) spi_master: check_trans_valid(676): invalid dev handle
+E (16991) spi_master: check_trans_valid(676): invalid dev handle
+E (16991) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17085) spi_master: check_trans_valid(676): invalid dev handle
+E (17086) spi_master: check_trans_valid(676): invalid dev handle
+E (17086) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17201) spi_master: check_trans_valid(676): invalid dev handle
+E (17202) spi_master: check_trans_valid(676): invalid dev handle
+E (17202) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17296) spi_master: check_trans_valid(676): invalid dev handle
+E (17296) spi_master: check_trans_valid(676): invalid dev handle
+E (17297) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17413) spi_master: check_trans_valid(676): invalid dev handle
+E (17413) spi_master: check_trans_valid(676): invalid dev handle
+E (17414) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17508) spi_master: check_trans_valid(676): invalid dev handle
+E (17508) spi_master: check_trans_valid(676): invalid dev handle
+E (17508) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17624) spi_master: check_trans_valid(676): invalid dev handle
+E (17624) spi_master: check_trans_valid(676): invalid dev handle
+E (17624) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17719) spi_master: check_trans_valid(676): invalid dev handle
+E (17719) spi_master: check_trans_valid(676): invalid dev handle
+E (17719) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17835) spi_master: check_trans_valid(676): invalid dev handle
+E (17835) spi_master: check_trans_valid(676): invalid dev handle
+E (17835) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (17931) spi_master: check_trans_valid(676): invalid dev handle
+E (17931) spi_master: check_trans_valid(676): invalid dev handle
+E (17931) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18047) spi_master: check_trans_valid(676): invalid dev handle
+E (18047) spi_master: check_trans_valid(676): invalid dev handle
+E (18047) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18141) spi_master: check_trans_valid(676): invalid dev handle
+E (18142) spi_master: check_trans_valid(676): invalid dev handle
+E (18142) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18257) spi_master: check_trans_valid(676): invalid dev handle
+E (18258) spi_master: check_trans_valid(676): invalid dev handle
+E (18258) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18352) spi_master: check_trans_valid(676): invalid dev handle
+E (18352) spi_master: check_trans_valid(676): invalid dev handle
+E (18353) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18468) spi_master: check_trans_valid(676): invalid dev handle
+E (18468) spi_master: check_trans_valid(676): invalid dev handle
+E (18469) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18563) spi_master: check_trans_valid(676): invalid dev handle
+E (18563) spi_master: check_trans_valid(676): invalid dev handle
+E (18564) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18679) spi_master: check_trans_valid(676): invalid dev handle
+E (18679) spi_master: check_trans_valid(676): invalid dev handle
+E (18680) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18774) spi_master: check_trans_valid(676): invalid dev handle
+E (18774) spi_master: check_trans_valid(676): invalid dev handle
+E (18774) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18890) spi_master: check_trans_valid(676): invalid dev handle
+E (18890) spi_master: check_trans_valid(676): invalid dev handle
+E (18890) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (18985) spi_master: check_trans_valid(676): invalid dev handle
+E (18985) spi_master: check_trans_valid(676): invalid dev handle
+E (18985) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19101) spi_master: check_trans_valid(676): invalid dev handle
+E (19101) spi_master: check_trans_valid(676): invalid dev handle
+E (19101) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19196) spi_master: check_trans_valid(676): invalid dev handle
+E (19196) spi_master: check_trans_valid(676): invalid dev handle
+E (19196) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19312) spi_master: check_trans_valid(676): invalid dev handle
+E (19312) spi_master: check_trans_valid(676): invalid dev handle
+E (19312) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19407) spi_master: check_trans_valid(676): invalid dev handle
+E (19407) spi_master: check_trans_valid(676): invalid dev handle
+E (19407) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19523) spi_master: check_trans_valid(676): invalid dev handle
+E (19523) spi_master: check_trans_valid(676): invalid dev handle
+E (19523) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19617) spi_master: check_trans_valid(676): invalid dev handle
+E (19618) spi_master: check_trans_valid(676): invalid dev handle
+E (19618) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19733) spi_master: check_trans_valid(676): invalid dev handle
+E (19734) spi_master: check_trans_valid(676): invalid dev handle
+E (19734) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19828) spi_master: check_trans_valid(676): invalid dev handle
+E (19828) spi_master: check_trans_valid(676): invalid dev handle
+E (19829) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (19944) spi_master: check_trans_valid(676): invalid dev handle
+E (19944) spi_master: check_trans_valid(676): invalid dev handle
+E (19945) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+E (20039) spi_master: check_trans_valid(676): invalid dev handle
+E (20039) spi_master: check_trans_valid(676): invalid dev handle
+E (20040) spi_master: check_trans_valid(676): invalid dev handle
+Running
+Running
+Running

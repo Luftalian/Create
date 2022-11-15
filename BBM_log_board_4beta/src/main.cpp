@@ -13,12 +13,14 @@
 #define LPSCS 14
 #define ICMCS 13
 
+bool setcheck = false;
+
 // センサのクラス
 H3LIS331 H3lis331;
 
 ICM icm20948;
 
-LPS25 Lps25;
+LPS Lps25;
 
 SPICREATE::SPICreate SPIC1;
 Flash flash1;
@@ -35,6 +37,7 @@ uint8_t H3lis_rx_buf[6];
 
 int16_t Icm20948ReceiveData[6];
 uint8_t Icm20948_rx_buf[12];
+uint8_t lps_rx[3];
 
 uint32_t SPIFlashLatestAddress = 0x000;
 // uint32_t SPIFlashLatestAddress_READ = 0x100;
@@ -66,6 +69,87 @@ public:
 };
 
 Timer timer;
+void setupcheck()
+{
+  delay(5000);
+  digitalWrite(flashCS, HIGH);
+  delay(100);
+  digitalWrite(H3LIS331CS, HIGH);
+  delay(100);
+  digitalWrite(ICMCS, HIGH);
+  delay(100);
+  digitalWrite(LPSCS, HIGH);
+  delay(100);
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  delay(2000);
+  Serial.println("start");
+  delay(100);
+  SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
+  delay(100);
+  Serial.println("SPI1");
+  flash1.begin(&SPIC1, flashCS, SPIFREQ);
+  delay(100);
+  Serial.println("flash1");
+  H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
+  delay(100);
+  Serial.println("H3lis331");
+  icm20948.begin(&SPIC1, ICMCS, SPIFREQ);
+  delay(100);
+  Serial.println("icm20948");
+  // Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
+  delay(100);
+  Serial.println("Lps25hb");
+
+  Serial.println("Timer Start!");
+
+  // WhoAmI
+  uint8_t a;
+  a = H3lis331.WhoAmI();
+  Serial.print("WhoAmI:");
+  Serial.println(a);
+  if (a == 0x32)
+  {
+    Serial.println("H3LIS331 is OK");
+  }
+  else
+  {
+    Serial.println("H3LIS331 is NG");
+    // while (1)
+    // {
+    //   delay(1000);
+    // }
+  }
+
+  // a = Lps25.WhoAmI();
+  // Serial.print("WhoAmI:");
+  // Serial.println(a);
+  // if (a == 0b10111101)
+  // {
+  //   Serial.println("LPS25HB is OK");
+  //   // WhoAmI_Ok_LPS25HB = true;
+  // }
+  // else
+  // {
+  //   Serial.println("LPS25HB is NG");
+  // }
+
+  Serial.println();
+
+  a = icm20948.WhoAmI();
+  Serial.print("WhoAmI:");
+  Serial.println(a);
+  if (a == 0xEA)
+  {
+    Serial.println("ICM20948 is OK");
+    // WhoAmI_Ok_ICM20948 = true;
+  }
+  else
+  {
+    Serial.println("ICM20948 is NG");
+  }
+  setcheck = true;
+}
 
 void RoutineWork()
 {
@@ -81,6 +165,7 @@ void RoutineWork()
   H3lis_rx_buf[6] = {};
   Icm20948ReceiveData[6] = {};
   Icm20948_rx_buf[12] = {};
+  lps_rx[3] = {};
   // CountSPIFlashDataSetExistInBuffは列。indexは行。
   //時間をとる
   for (int index = 0; index < 4; index++)
@@ -117,6 +202,7 @@ void RoutineWork()
   // LPSの気圧をとる
   if (count_lps % 20 == 0)
   {
+    // Lps25.Get(lps_rx);
     for (int index = 28; index < 31; index++)
     {
       // SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = LPS_rx_buf[index - 28];
@@ -163,6 +249,7 @@ IRAM_ATTR void logging(void *parameters)
 
 void setup()
 {
+  delay(5000);
   digitalWrite(flashCS, HIGH);
   delay(100);
   digitalWrite(H3LIS331CS, HIGH);
@@ -173,9 +260,10 @@ void setup()
   delay(100);
   // put your setup code here, to run once:
   Serial.begin(115200);
+  delay(2000);
   Serial.println("start");
   delay(100);
-  SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
+  SPIC1.begin(HSPI, SCK1, MISO1, MOSI1);
   delay(100);
   Serial.println("SPI1");
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
@@ -187,7 +275,7 @@ void setup()
   icm20948.begin(&SPIC1, ICMCS, SPIFREQ);
   delay(100);
   Serial.println("icm20948");
-  Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
+  // Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
   delay(100);
   Serial.println("Lps25hb");
 
@@ -211,24 +299,19 @@ void setup()
     // }
   }
 
-  a = Lps25.WhoAmI();
-  Serial.print("WhoAmI:");
-  Serial.println(a);
-  if (a == 0b10111101)
-  {
-    Serial.println("LPS25HB is OK");
-    // WhoAmI_Ok_LPS25HB = true;
-  }
-  else
-  {
-    Serial.println("LPS25HB is NG");
-  }
+  // a = Lps25.WhoAmI();
+  // Serial.print("WhoAmI:");
+  // Serial.println(a);
+  // if (a == 0b10111101)
+  // {
+  //   Serial.println("LPS25HB is OK");
+  //   // WhoAmI_Ok_LPS25HB = true;
+  // }
+  // else
+  // {
+  //   Serial.println("LPS25HB is NG");
+  // }
 
-  for (int i = 0; i < 5; i++)
-  {
-    delay(1000);
-    Serial.print(".");
-  }
   Serial.println();
 
   a = icm20948.WhoAmI();
@@ -249,6 +332,10 @@ void setup()
 void loop()
 {
   // put your main code here, to run repeatedly:
+  // if (!setcheck)
+  // {
+  //   setupcheck();
+  // }
   if (checker > 0)
   {
     RoutineWork();
