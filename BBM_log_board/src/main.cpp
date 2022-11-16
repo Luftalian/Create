@@ -27,6 +27,9 @@
 #define SCK1 33
 #define MISO1 25
 #define MOSI1 26
+#define SCK2 19
+#define MISO2 22
+#define MOSI2 23
 
 // #define H3LIS331SCK 14
 // #define H3LIS331MISO 12
@@ -59,6 +62,7 @@ LPS25 Lps25;
 ICM icm20948;
 
 SPICREATE::SPICreate SPIC1;
+SPICREATE::SPICreate SPIC2;
 Flash flash1;
 
 // 無駄なものを書いてしまった。
@@ -106,26 +110,36 @@ unsigned long Record_time;
 
 void setup()
 {
+  delay(5000);
   digitalWrite(flashCS, HIGH);
-  delay(1000);
+  delay(100);
   digitalWrite(H3LIS331CS, HIGH);
-  delay(1000);
+  delay(100);
   digitalWrite(ICMCS, HIGH);
-  delay(1000);
+  delay(100);
   digitalWrite(LPSCS, HIGH);
-  delay(1000);
+  delay(100);
   // put your setup code here, to run once:
   Serial.begin(115200);
+  delay(2000);
   Serial.println("start");
+  delay(100);
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
-  Serial.println("SPIC1");
+  delay(100);
+  // SPIC2.begin(HSPI, SCK2, MISO2, MOSI2);
+  delay(100);
+  Serial.println("SPI1");
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
+  delay(100);
   Serial.println("flash1");
   H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
+  delay(100);
   Serial.println("H3lis331");
   icm20948.begin(&SPIC1, ICMCS, SPIFREQ);
+  delay(100);
   Serial.println("icm20948");
-  Lps25.begin(&SPIC1, LPSCS, SPIFREQ);
+  Lps25.begin(&SPIC2, LPSCS, SPIFREQ);
+  delay(100);
   Serial.println("Lps25hb");
 
   micros();
@@ -169,7 +183,7 @@ void setup()
   //   Serial.print(".");
   // }
   // Serial.println();
-
+  delay(1000);
   a = icm20948.WhoAmI();
   Serial.print("WhoAmI:");
   Serial.println(a);
