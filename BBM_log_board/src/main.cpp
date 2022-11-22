@@ -19,9 +19,9 @@
 #include <Arduino.h>
 #include <SPICREATE.h>
 #include <S25FL512S.h>
-#include <H3LIS331.h>
-#include <LPS25HB.h>
+#include <H3LIS331_beta.h>
 #include <ICM20948_beta.h>
+#include <LPS25HB.h>
 
 #define flashCS 27
 #define SCK1 33
@@ -58,7 +58,7 @@ uint32_t H3LIS331FlashLatestAddress = 0x000;
 #define SPIFREQ 100000
 
 H3LIS331 H3lis331;
-LPS25 Lps25;
+LPS Lps25;
 ICM icm20948;
 
 SPICREATE::SPICreate SPIC1;
@@ -110,7 +110,7 @@ unsigned long Record_time;
 
 void setup()
 {
-  delay(5000);
+  delay(1000);
   digitalWrite(flashCS, HIGH);
   delay(100);
   digitalWrite(H3LIS331CS, HIGH);
@@ -126,7 +126,7 @@ void setup()
   delay(100);
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
   delay(100);
-  // SPIC2.begin(HSPI, SCK2, MISO2, MOSI2);
+  SPIC2.begin(HSPI, SCK2, MISO2, MOSI2);
   delay(100);
   Serial.println("SPI1");
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
@@ -135,12 +135,12 @@ void setup()
   H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
   delay(100);
   Serial.println("H3lis331");
-  icm20948.begin(&SPIC1, ICMCS, SPIFREQ);
+  icm20948.begin(&SPIC2, ICMCS, SPIFREQ);
   delay(100);
-  Serial.println("icm20948");
-  Lps25.begin(&SPIC2, LPSCS, SPIFREQ);
-  delay(100);
-  Serial.println("Lps25hb");
+  // Serial.println("icm20948");
+  // Lps25.begin(&SPIC2, LPSCS, SPIFREQ);
+  // delay(100);
+  // Serial.println("Lps25hb");
 
   micros();
   delay(100);
@@ -148,7 +148,7 @@ void setup()
 
   // WhoAmI
   uint8_t a;
-  a = H3lis331.WhoImI();
+  a = H3lis331.WhoAmI();
   Serial.print("WhoAmI:");
   Serial.println(a);
   if (a == 0x32)
@@ -164,18 +164,18 @@ void setup()
     // }
   }
 
-  a = Lps25.WhoAmI();
-  Serial.print("WhoAmI:");
-  Serial.println(a);
-  if (a == 0b10111101)
-  {
-    Serial.println("LPS25HB is OK");
-    // WhoAmI_Ok_LPS25HB = true;
-  }
-  else
-  {
-    Serial.println("LPS25HB is NG");
-  }
+  // a = Lps25.WhoAmI();
+  // Serial.print("WhoAmI:");
+  // Serial.println(a);
+  // if (a == 0b10111101)
+  // {
+  //   Serial.println("LPS25HB is OK");
+  //   // WhoAmI_Ok_LPS25HB = true;
+  // }
+  // else
+  // {
+  //   Serial.println("LPS25HB is NG");
+  // }
 
   // for (int i = 0; i < 5; i++)
   // {
@@ -353,23 +353,23 @@ void loop()
           // FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index - 10];
           FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = 111;
         }
-        // LPSの気圧をとる
-        if (count % 20 == 0)
-        {
-          Lps25.Get(Lps_rx_buf);
-          for (int index = 28; index < 31; index++)
-          {
-            FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = Lps_rx_buf[index - 28];
-            count = 0;
-          }
-        }
+        // // LPSの気圧をとる
+        // if (count % 20 == 0)
+        // {
+        //   Lps25.Get(Lps_rx_buf);
+        //   for (int index = 28; index < 31; index++)
+        //   {
+        //     FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = Lps_rx_buf[index - 28];
+        //     count = 0;
+        //   }
+        // }
         // Serial.println("--------");
         // Serial.println(a);
         // a++;
-        delay(100); // 1000Hzより早くたたいてない？
+        delay(1000); // 1000Hzより早くたたいてない？
         count++;
       }
-
+      delay(1000);
       Serial.println("rx");
       for (int i = 0; i < 256; i++)
       {
@@ -383,8 +383,10 @@ void loop()
       Serial.println();
       Serial.print("CountH3LIS331DataSetExistInBuff: ");
       Serial.println(CountH3LIS331DataSetExistInBuff);
+      delay(1000);
       flash1.write(H3LIS331FlashLatestAddress, FlashBuff);
       delay(100);
+      delay(1000);
       flash1.read(H3LIS331FlashLatestAddress, tx);
       Serial.println("tx");
       for (int i = 0; i < 256; i++)

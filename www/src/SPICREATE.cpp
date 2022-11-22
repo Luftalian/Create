@@ -13,60 +13,36 @@ SPICREATE_BEGIN
 
 bool SPICreate::begin(uint8_t spi_bus, int8_t sck, int8_t miso, int8_t mosi, uint32_t f)
 {
-    Serial.print(1);
 
     frequency = f;
-    Serial.print(2);
     if ((sck == -1) && (miso == -1) && (mosi == -1))
     {
-        Serial.print(3);
         bus_cfg.sclk_io_num = (spi_bus == VSPI) ? SCK : 14;
         bus_cfg.miso_io_num = (spi_bus == VSPI) ? MISO : 12;
         bus_cfg.mosi_io_num = (spi_bus == VSPI) ? MOSI : 13;
     }
     else
     {
-        Serial.print(3);
         bus_cfg.sclk_io_num = sck;
         bus_cfg.miso_io_num = miso;
         bus_cfg.mosi_io_num = mosi;
     }
-    Serial.print(4);
 
     bus_cfg.max_transfer_sz = max_size;
-    Serial.print(5);
+
     if ((mode != SPI_MODE1) && (mode != SPI_MODE3))
     {
-        Serial.print("5 5");
         mode = SPI_MODE3;
     }
-    Serial.print(6);
 
     host = (spi_bus == HSPI) ? HSPI_HOST : VSPI_HOST;
-    Serial.print(7);
     dma_chan = 1;
-    Serial.print(8);
-    if (spi_bus == VSPI)
-    {
-        Serial.print("8 8");
-        Serial.print("\n");
-        dma_chan = 1;
-    }
-    if (spi_bus == HSPI)
-    {
-        Serial.print("8 8 8");
-        Serial.print("\n");
-        dma_chan = 2;
-    }
     esp_err_t e = spi_bus_initialize(host, &bus_cfg, dma_chan);
-    Serial.print(9);
     if (e != ESP_OK)
     {
-        Serial.print(9.5);
         // printf("[ERROR] SPI bus initialize failed : %d\n", e);
         return false;
     }
-    Serial.print(10);
 
     return true;
 }
