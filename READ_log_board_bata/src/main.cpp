@@ -102,6 +102,7 @@ void loop()
             delay(1000);
           }
           Serial.print("\n");
+          H3LIS331FlashLatestAddress_READ = 0x00;
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -172,6 +173,7 @@ void loop()
             delay(1000);
           }
           Serial.print("\n");
+          H3LIS331FlashLatestAddress_READ = 0x00;
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -196,14 +198,17 @@ void loop()
           // Serial.print(time);
           // Serial.print(",");
 
-          // MPUの加速度をとる
+          // // MPUの加速度をとる
           rx[3] = {};
-          rx[0] = tx[32 * CountH3LIS331DataSetExistInBuff + 10];
-          rx[0] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 11]) << 8;
-          rx[1] = tx[32 * CountH3LIS331DataSetExistInBuff + 12];
-          rx[1] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 13]) << 8;
-          rx[2] = tx[32 * CountH3LIS331DataSetExistInBuff + 14];
-          rx[2] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 15]) << 8;
+          // rx[0] = tx[32 * CountH3LIS331DataSetExistInBuff + 10];
+          // rx[0] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 11]) << 8;
+          // rx[1] = tx[32 * CountH3LIS331DataSetExistInBuff + 12];
+          // rx[1] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 13]) << 8;
+          // rx[2] = tx[32 * CountH3LIS331DataSetExistInBuff + 14];
+          // rx[2] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 15]) << 8;
+          rx[0] = (tx[32 * CountH3LIS331DataSetExistInBuff + 10] << 8 | tx[32 * CountH3LIS331DataSetExistInBuff + 11]);
+          rx[1] = (tx[32 * CountH3LIS331DataSetExistInBuff + 12] << 8 | tx[32 * CountH3LIS331DataSetExistInBuff + 13]);
+          rx[2] = (tx[32 * CountH3LIS331DataSetExistInBuff + 14] << 8 | tx[32 * CountH3LIS331DataSetExistInBuff + 15]);
           for (int i = 0; i < 3; i++)
           {
             Serial.print(rx[i]);
@@ -241,6 +246,7 @@ void loop()
             delay(1000);
           }
           Serial.print("\n");
+          H3LIS331FlashLatestAddress_READ = 0x00;
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -265,14 +271,17 @@ void loop()
           // Serial.print(time);
           // Serial.print(",");
 
-          // MPUの角速度をとる
+          // // MPUの角速度をとる
           rx[3] = {};
-          rx[0] = tx[32 * CountH3LIS331DataSetExistInBuff + 16];
-          rx[0] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 17]) << 8;
-          rx[1] = tx[32 * CountH3LIS331DataSetExistInBuff + 18];
-          rx[1] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 19]) << 8;
-          rx[2] = tx[32 * CountH3LIS331DataSetExistInBuff + 20];
-          rx[2] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 21]) << 8;
+          // rx[0] = tx[32 * CountH3LIS331DataSetExistInBuff + 16];
+          // rx[0] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 17]) << 8;
+          // rx[1] = tx[32 * CountH3LIS331DataSetExistInBuff + 18];
+          // rx[1] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 19]) << 8;
+          // rx[2] = tx[32 * CountH3LIS331DataSetExistInBuff + 20];
+          // rx[2] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 21]) << 8;
+          rx[0] = (tx[32 * CountH3LIS331DataSetExistInBuff + 16] << 8 | tx[32 * CountH3LIS331DataSetExistInBuff + 17]);
+          rx[1] = (tx[32 * CountH3LIS331DataSetExistInBuff + 18] << 8 | tx[32 * CountH3LIS331DataSetExistInBuff + 19]);
+          rx[2] = (tx[32 * CountH3LIS331DataSetExistInBuff + 20] << 8 | tx[32 * CountH3LIS331DataSetExistInBuff + 21]);
           for (int i = 0; i < 3; i++)
           {
             Serial.print(rx[i]);
@@ -310,6 +319,7 @@ void loop()
             delay(1000);
           }
           Serial.print("\n");
+          H3LIS331FlashLatestAddress_READ = 0x00;
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
@@ -379,58 +389,64 @@ void loop()
             delay(1000);
           }
           Serial.print("\n");
+          H3LIS331FlashLatestAddress_READ = 0x00;
           break;
         }
         for (int CountH3LIS331DataSetExistInBuff = 0; CountH3LIS331DataSetExistInBuff < 8; CountH3LIS331DataSetExistInBuff++)
         {
-          // 時間をとる
-          // Serial.println("time");
-          time = tx[32 * CountH3LIS331DataSetExistInBuff + 0];
-          for (int i = 1; i < 4; i++)
+          int PlessureRaw = (uint32_t)tx[32 * CountH3LIS331DataSetExistInBuff + 28] << 16 | (uint32_t)tx[32 * CountH3LIS331DataSetExistInBuff + 29] << 8 | (uint32_t)tx[32 * CountH3LIS331DataSetExistInBuff + 30];
+          if (PlessureRaw != 0)
           {
-            gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
-            time |= gettime << (8 * i);
-          }
-          Serial.print(time);
-          Serial.print(",");
-
-          // time = tx[32 * CountH3LIS331DataSetExistInBuff + 3];
-          // for (int i = 2; i >= 0; i--)
-          // {
-          //   gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
-          //   time |= gettime << (8 * i);
-          // }
-          // Serial.print(time);
-          // Serial.print(",");
-
-          // / LPSの気圧をとる
-
-          // for (int index = 28; index < 31; index++)
-          // {
-          //   Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
-          //   if (index != 30)
-          //   {
-          //     Serial.print(",");
-          //   }
-          // }
-
-          // rx[3] = {};
-          // rx[0] = tx[32 * CountH3LIS331DataSetExistInBuff + 22];
-          // rx[0] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 23]) << 8;
-          // rx[1] = tx[32 * CountH3LIS331DataSetExistInBuff + 24];
-          // rx[1] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 25]) << 8;
-          // rx[2] = tx[32 * CountH3LIS331DataSetExistInBuff + 26];
-          // rx[2] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 27]) << 8;
-
-          for (int i = 0; i < 3; i++)
-          {
-            Serial.print(rx[i]);
-            if (i != 2)
+            // 時間をとる
+            // Serial.println("time");
+            time = tx[32 * CountH3LIS331DataSetExistInBuff + 0];
+            for (int i = 1; i < 4; i++)
             {
-              Serial.print(",");
+              gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
+              time |= gettime << (8 * i);
             }
+            Serial.print(time);
+            Serial.print(",");
+
+            // time = tx[32 * CountH3LIS331DataSetExistInBuff + 3];
+            // for (int i = 2; i >= 0; i--)
+            // {
+            //   gettime = tx[32 * CountH3LIS331DataSetExistInBuff + i];
+            //   time |= gettime << (8 * i);
+            // }
+            // Serial.print(time);
+            // Serial.print(",");
+
+            // / LPSの気圧をとる
+
+            // for (int index = 28; index < 31; index++)
+            // {
+            //   Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + index]);
+            //   if (index != 30)
+            //   {
+            //     Serial.print(",");
+            //   }
+            // }
+
+            // rx[3] = {};
+            // rx[0] = tx[32 * CountH3LIS331DataSetExistInBuff + 22];
+            // rx[0] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 23]) << 8;
+            // rx[1] = tx[32 * CountH3LIS331DataSetExistInBuff + 24];
+            // rx[1] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 25]) << 8;
+            // rx[2] = tx[32 * CountH3LIS331DataSetExistInBuff + 26];
+            // rx[2] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 27]) << 8;
+            Serial.print(PlessureRaw);
+
+            // for (int i = 0; i < 3; i++)
+            // {
+            //   Serial.print(rx[i]);
+            //   if (i != 2)
+            //   {
+            //     Serial.print(",");
+            //   }
+            // }
+            Serial.print("\n");
           }
-          Serial.print("\n");
           CountH3LIS331DataSetExistInBuff_READ++;
           if (CountH3LIS331DataSetExistInBuff_READ == 8)
           {

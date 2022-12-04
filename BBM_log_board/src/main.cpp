@@ -125,10 +125,11 @@ void setup()
   Serial.println("start");
   delay(100);
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
+  Serial.println("SPI1");
   delay(100);
   SPIC2.begin(HSPI, SCK2, MISO2, MOSI2);
   delay(100);
-  Serial.println("SPI1");
+  Serial.println("SPI2");
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
   delay(100);
   Serial.println("flash1");
@@ -137,10 +138,10 @@ void setup()
   Serial.println("H3lis331");
   icm20948.begin(&SPIC2, ICMCS, SPIFREQ);
   delay(100);
-  // Serial.println("icm20948");
-  // Lps25.begin(&SPIC2, LPSCS, SPIFREQ);
-  // delay(100);
-  // Serial.println("Lps25hb");
+  Serial.println("icm20948");
+  Lps25.begin(&SPIC2, LPSCS, SPIFREQ);
+  delay(100);
+  Serial.println("Lps25hb");
 
   micros();
   delay(100);
@@ -164,18 +165,18 @@ void setup()
     // }
   }
 
-  // a = Lps25.WhoAmI();
-  // Serial.print("WhoAmI:");
-  // Serial.println(a);
-  // if (a == 0b10111101)
-  // {
-  //   Serial.println("LPS25HB is OK");
-  //   // WhoAmI_Ok_LPS25HB = true;
-  // }
-  // else
-  // {
-  //   Serial.println("LPS25HB is NG");
-  // }
+  a = Lps25.WhoAmI();
+  Serial.print("WhoAmI:");
+  Serial.println(a);
+  if (a == 0b10111101)
+  {
+    Serial.println("LPS25HB is OK");
+    // WhoAmI_Ok_LPS25HB = true;
+  }
+  else
+  {
+    Serial.println("LPS25HB is NG");
+  }
 
   // for (int i = 0; i < 5; i++)
   // {
@@ -220,6 +221,7 @@ void loop()
       {
         uint8_t rx[256];
         flash1.read(256 * i, rx);
+        delay(100);
         for (int i = 0; i < 256; i++)
         {
           if (i % 16 == 0)
@@ -327,15 +329,7 @@ void loop()
           Serial.println(a);
           a++;
         }
-        //加速度をとる
-        H3lis331.Get(H3lisReceiveData, rx_buf);
-        for (int index = 4; index < 10; index++)
-        {
-          FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index - 4];
-          Serial.print("\t");
-          Serial.println(a);
-          a++;
-        }
+        // 加速度
         // ICM20948の加速度をとる
         icm20948.Get(IcmReceiveData, icm_rx_buf);
         for (int index = 10; index < 16; index++)
@@ -353,22 +347,29 @@ void loop()
           // FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = rx_buf[index - 10];
           FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = 111;
         }
-        // // LPSの気圧をとる
-        // if (count % 20 == 0)
-        // {
-        //   Lps25.Get(Lps_rx_buf);
-        //   for (int index = 28; index < 31; index++)
-        //   {
-        //     FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = Lps_rx_buf[index - 28];
-        //     count = 0;
-        //   }
-        // }
-        // Serial.println("--------");
-        // Serial.println(a);
-        // a++;
+        // LPSの気圧をとる
+        if (count % 20 == 0)
+        {
+          Lps25.Get(Lps_rx_buf);
+          for (int index = 28; index < 31; index++)
+          {
+            FlashBuff[32 * CountH3LIS331DataSetExistInBuff + index] = Lps_rx_buf[index - 28];
+            count = 0;
+          }
+        }
+        Serial.println("--------");
+        Serial.println(a);
+        a++;
         delay(1000); // 1000Hzより早くたたいてない？
         count++;
       }
+
+      // // try
+      // for (int i = 0; i < 256; i++)
+      // {
+      //   FlashBuff[i] = i;
+      // }
+
       delay(1000);
       Serial.println("rx");
       for (int i = 0; i < 256; i++)
