@@ -1,4 +1,5 @@
 # Rocket Making!!!!!!
+
 For making Create's Board
 
 Create is the club in Tokyo Institute of Technology.
@@ -16,20 +17,19 @@ Also I will make Board for logging data.
 Our team will log data of two accelerometer & angular velocity & LPS25 which is barometric pressure sensor.
 
 # About branch
+
 "main" is not main branch.
 "betabeta" is main branch.
 
-
 # File
+
 If you want to erase,
 
 ### BBM_log_board
 
-
 If you want to write,
 
 ### BBM_log_board_beta
-
 
 If you want to read,
 
@@ -37,6 +37,6 @@ If you want to read,
 
 If you want to write by using Sensor,
 
-### BBM_log_board_betabeta
+### BBM_log_board_5beta
 
 Now I am making ###BBM_log_3beta

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "SPIflash_S25FL512S",
+			"path": "../../Avi_ESP_Libs/SPIflash_S25FL512S"
+		},
+		{
+			"name": "H3LIS331",
+			"path": "../../Avi_ESP_Libs/H3LIS331"
+		}
+	],
+	"settings": {}
+}
