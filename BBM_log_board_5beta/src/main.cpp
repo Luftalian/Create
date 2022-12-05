@@ -360,6 +360,7 @@ void loop()
   // }
   if (checker > 0)
   {
+    checker = 0;
     RoutineWork();
   }
 }
