@@ -53,22 +53,22 @@ uint32_t SPIFlashLatestAddress = 0x000;
 TimerHandle_t thand_test;
 xTaskHandle xlogHandle;
 
-// error関数用
-// 10: "H3LIS331 is OK"
-// 11: "H3LIS331 is NG"
-// 20: "ICM20948 is OK"
-// 21: "ICM20948 is NG"
-// 30: "LPS25HB is OK"
-// 31: "LPS25HB is NG"
-// 100: "No error"
-// 300: "Serial2 is not available"
-// 301: "Serial2 is available"
-// 400: "Setup is end"
-// 500: "'p' is pushed"
-// 501: "'d' is pushed"
-// 502: "'s' is pushed"
-// 503: "'l' is pushed"
-// 600: "Logging is start"
+/* error関数用
+10: "H3LIS331 is OK"
+11: "H3LIS331 is NG"
+20: "ICM20948 is OK"
+21: "ICM20948 is NG"
+30: "LPS25HB is OK"
+31: "LPS25HB is NG"
+100: "No error"
+300: "Serial2 is not available"
+301: "Serial2 is available"
+400: "Setup is end"
+500: "'p' is pushed"
+501: "'d' is pushed"
+502: "'s' is pushed"
+503: "'l' is pushed"
+600: "Logging is start" */
 int err = 0;
 
 // 時間
@@ -178,6 +178,7 @@ IRAM_ATTR void logging(void *parameters)
   }
 }
 
+// LEDでエラーを表示する
 IRAM_ATTR void LedErrorChecking(void *parameters)
 {
   portTickType xLastWakeTime = xTaskGetTickCount();
@@ -353,6 +354,7 @@ void loop()
     err = 301;
     if (Serial2.read() == COMMANDPREPARATION) // 'p'
     {
+      Serial2.write(COMMANDPREPARATION); // 'p'
       Serial.println("Preparation mode");
       err = 500;
       while (1)
@@ -360,7 +362,8 @@ void loop()
         receive = Serial2.read();
         switch (receive)
         {
-        case COMMANDLOG: // 'l'
+        case COMMANDLOG:             // 'l'
+          Serial2.write(COMMANDLOG); // 'l'
           err = 503;
           Serial.println("Logging mode");
           while (1)
@@ -373,18 +376,21 @@ void loop()
             }
             if (Serial2.read() == COMMANDSTOP) // 's'
             {
+              Serial2.write(COMMANDSTOP); // 's'
               err = 502;
               Serial.println("Stop logging");
               goto exit_loop;
             }
           }
           break;
-        case COMMANDDELETE: // 'd'
+        case COMMANDDELETE:             // 'd'
+          Serial2.write(COMMANDDELETE); // 'd'
           err = 501;
           Serial.println("Delete mode");
           flash1.erase();                    // いずれerase中にも's'が入っていたら削除を中止するようにする
           if (Serial2.read() == COMMANDSTOP) // 's'
           {
+            Serial2.write(COMMANDSTOP); // 's'
             err = 502;
             goto exit_loop;
           }
