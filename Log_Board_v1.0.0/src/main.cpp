@@ -43,7 +43,12 @@ int CountSPIFlashDataSetExistInBuff = 0;
 uint8_t SPI_FlashBuff[256] = {};
 
 // SPIFlashLatestAddressは書き込むアドレス。初期値は0x000
+// 0x000はreboot対策のどこまでSPI Flashに書き込んだかを記録するページ
+// setup()で初期値でも0x100にしている
 uint32_t SPIFlashLatestAddress = 0x000;
+
+// SPI Flashの最大のアドレス (1回で1/2ページ書き込んでいる点に注意)
+#define SPI_FLASH_MAX_ADDRESS ? ? ? ? ;
 
 #define SPIFREQ 100000
 
@@ -99,6 +104,11 @@ Timer timer;
 
 void RoutineWork()
 {
+  if (SPIFlashLatestAddress >= SPI_FLASH_MAX_ADDRESS)
+  {
+    Serial.Printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
+    return;
+  }
   Serial.println("Running");
   if (timer.start_flag)
   {
@@ -162,8 +172,14 @@ void RoutineWork()
   // 8個のデータが溜まったらSPIFlashに書き込む
   if (CountSPIFlashDataSetExistInBuff >= 8)
   {
+    // データの書き込み
     flash1.write(SPIFlashLatestAddress, SPI_FlashBuff);
+    // データ書き込み回数の記録
+    dataCount = {1};
+    flash1.write(SPIFlashLatestAddress / 0x100, dataCount);
+    // アドレスの更新
     SPIFlashLatestAddress += 0x100;
+    // 列の番号の初期化
     CountSPIFlashDataSetExistInBuff = 0;
   }
 }
@@ -344,6 +360,14 @@ void setup()
   xTaskCreateUniversal(LedErrorChecking, "logging", 8192, NULL, 1, &xlogHandle, PRO_CPU_NUM);
 
   err = 400;
+
+  // SPI Flashがどこまで書き込まれているか確認
+  uint8_t flashRead[1] = {1};
+  while (flashRead[0] == 0)
+  {
+    flash.read(1, flashRead);
+    SPIFlashLatestAddress += 0x100;
+  }
 }
 
 void loop()
