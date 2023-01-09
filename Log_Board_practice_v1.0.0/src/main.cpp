@@ -370,7 +370,7 @@ void setup()
   err = 400;
 
   // SPI Flashがどこまで書き込まれているか確認
-  uint8_t flashRead[256];
+  uint8_t flashRead[256]; // 256でないとflash.read()でRebootした。
   // uint8_t SPIFlashLatestAddress = 0x000;
   while (1)
   {

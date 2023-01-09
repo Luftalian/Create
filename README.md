@@ -3,7 +3,7 @@
 For making Create's Board
 
 Create is the club in Tokyo Institute of Technology.
-We make rocket!!!
+We make rockets!!!
 
 My last goal of this repository is to make a board which can measure two types of acceleraion (16g & 400g), gyroscope, barometric pressure, and magnetometation.
 
@@ -38,5 +38,3 @@ If you want to read,
 If you want to write by using Sensor,
 
 ### BBM_log_board_5beta
-
-Now I am making ###BBM_log_3beta
