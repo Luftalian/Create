@@ -1,0 +1,135 @@
+start Serial
+start Serial2
+123456788 8
+910123456788 8 8
+910SPI1
+flash1
+H3lis331
+icm20948
+Lps25hb
+Timer Start!
+WhoAmI:50
+H3LIS331 is OK
+WhoAmI:189
+LPS25HB is OK
+WhoAmI:1
+ICM20948 is NG
+flashReadGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4008c77c  PS      : 0x00060031  A0      : 0x800817e1  A1      : 0x3ffbee8c  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000014  A5      : 0x00000004  
+A6      : 0x3ffc2dec  A7      : 0x80000001  A8      : 0x8008b374  A9      : 0x3ffc3170  
+A10     : 0x00000003  A11     : 0x00060023  A12     : 0x00060023  A13     : 0x80000000  
+A14     : 0x007beef8  A15     : 0x003fffff  SAR     : 0x0000001b  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000038  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace:0x4008c779:0x3ffbee8c |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+start Serial
+start Serial2
+123456788 8
+910123456788 8 8
+910SPI1
+flash1
+H3lis331
+icm20948
+Lps25hb
+Timer Start!
+WhoAmI:50
+H3LIS331 is OK
+WhoAmI:189
+LPS25HB is OK
+WhoAmI:1
+ICM20948 is NG
+flashReadGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4008c77c  PS      : 0x00060031  A0      : 0x800817e1  A1      : 0x3ffbee8c  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000014  A5      : 0x00000004  
+A6      : 0x3ffc2dec  A7      : 0x80000001  A8      : 0x8008b374  A9      : 0x3ffc3170  
+A10     : 0x00000003  A11     : 0x00060023  A12     : 0x00060023  A13     : 0x80000000  
+A14     : 0x007beef8  A15     : 0x003fffff  SAR     : 0x0000001b  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000038  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace:0x4008c779:0x3ffbee8c |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4
+start Serial
+start Serial2
+123456788 8
+910123456788 8 8
+910SPI1
+flash1
+H3lis331
+icm20948
+Lps25hb
+Timer Start!
+WhoAmI:50
+H3LIS331 is OK
+WhoAmI:189
+LPS25HB is OK
+WhoAmI:1
+ICM20948 is NG
+flashReadGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4008c77c  PS      : 0x00060031  A0      : 0x800817e1  A1      : 0x3ffbee8c  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000014  A5      : 0x00000004  
+A6      : 0x3ffc2dec  A7      : 0x80000001  A8      : 0x8008b374  A9      : 0x3ffc3170  
+A10     : 0x00000003  A11     : 0x00060023  A12     : 0x00060023  A13     : 0x80000000  
+A14     : 0x007beef8  A15     : 0x003fffff  SAR     : 0x0000001b  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000038  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace:0x4008c779:0x3ffbee8c |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 0000000000000000
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:12776
+load:0x40080400,len:3032
+entry 0x400805e4

@@ -1,0 +1,400 @@
+start Serial
+start Serial2
+123456788 8
+910123456788 8 8
+910SPI1
+flash1
+H3lis331
+icm20948
+Lps25hb
+Timer Start!
+WhoAmI:50
+H3LIS331 is OK
+WhoAmI:189
+LPS25HB is OK
+WhoAmI:1
+ICM20948 is NG
+flashReadSPIFlashLatestAddress: 256
+0
+flashReadSPIFlashLatestAddress: 512
+63
+flashReadSPIFlashLatestAddress: 768
+92
+flashReadSPIFlashLatestAddress: 1024
+55
+flashReadSPIFlashLatestAddress: 1280
+86
+flashReadSPIFlashLatestAddress: 1536
+115
+flashReadSPIFlashLatestAddress: 1792
+88
+flashReadSPIFlashLatestAddress: 2048
+115
+flashReadSPIFlashLatestAddress: 2304
+82
+flashReadSPIFlashLatestAddress: 2560
+106
+flashReadSPIFlashLatestAddress: 2816
+125
+flashReadSPIFlashLatestAddress: 3072
+103
+flashReadSPIFlashLatestAddress: 3328
+141
+flashReadSPIFlashLatestAddress: 3584
+104
+flashReadSPIFlashLatestAddress: 3840
+136
+flashReadSPIFlashLatestAddress: 4096
+167
+flashReadSPIFlashLatestAddress: 4352
+139
+flashReadSPIFlashLatestAddress: 4608
+163
+flashReadSPIFlashLatestAddress: 4864
+143
+flashReadSPIFlashLatestAddress: 5120
+159
+flashReadSPIFlashLatestAddress: 5376
+188
+flashReadSPIFlashLatestAddress: 5632
+155
+flashReadSPIFlashLatestAddress: 5888
+186
+flashReadSPIFlashLatestAddress: 6144
+161
+flashReadSPIFlashLatestAddress: 6400
+188
+flashReadSPIFlashLatestAddress: 6656
+215
+flashReadSPIFlashLatestAddress: 6912
+179
+flashReadSPIFlashLatestAddress: 7168
+204
+flashReadSPIFlashLatestAddress: 7424
+189
+flashReadSPIFlashLatestAddress: 7680
+215
+flashReadSPIFlashLatestAddress: 7936
+248
+flashReadSPIFlashLatestAddress: 8192
+215
+flashReadSPIFlashLatestAddress: 8448
+245
+flashReadSPIFlashLatestAddress: 8704
+225
+flashReadSPIFlashLatestAddress: 8960
+250
+flashReadSPIFlashLatestAddress: 9216
+18
+flashReadSPIFlashLatestAddress: 9472
+0
+flashReadSPIFlashLatestAddress: 9728
+16
+flashReadSPIFlashLatestAddress: 9984
+250
+flashReadSPIFlashLatestAddress: 10240
+16
+flashReadSPIFlashLatestAddress: 10496
+53
+flashReadSPIFlashLatestAddress: 10752
+30
+flashReadSPIFlashLatestAddress: 11008
+57
+flashReadSPIFlashLatestAddress: 11264
+29
+flashReadSPIFlashLatestAddress: 11520
+45
+flashReadSPIFlashLatestAddress: 11776
+63
+flashReadSPIFlashLatestAddress: 12032
+36
+flashReadSPIFlashLatestAddress: 12288
+62
+flashReadSPIFlashLatestAddress: 12544
+57
+flashReadSPIFlashLatestAddress: 12800
+76
+flashReadSPIFlashLatestAddress: 13056
+106
+flashReadSPIFlashLatestAddress: 13312
+87
+flashReadSPIFlashLatestAddress: 13568
+120
+flashReadSPIFlashLatestAddress: 13824
+93
+flashReadSPIFlashLatestAddress: 14080
+120
+flashReadSPIFlashLatestAddress: 14336
+144
+flashReadSPIFlashLatestAddress: 14592
+116
+flashReadSPIFlashLatestAddress: 14848
+143
+flashReadSPIFlashLatestAddress: 15104
+120
+flashReadSPIFlashLatestAddress: 15360
+154
+flashReadSPIFlashLatestAddress: 15616
+187
+flashReadSPIFlashLatestAddress: 15872
+166
+flashReadSPIFlashLatestAddress: 16128
+182
+flashReadSPIFlashLatestAddress: 16384
+145
+flashReadSPIFlashLatestAddress: 16640
+173
+flashReadSPIFlashLatestAddress: 16896
+194
+flashReadSPIFlashLatestAddress: 17152
+177
+flashReadSPIFlashLatestAddress: 17408
+196
+flashReadSPIFlashLatestAddress: 17664
+171
+flashReadSPIFlashLatestAddress: 17920
+197
+flashReadSPIFlashLatestAddress: 18176
+229
+flashReadSPIFlashLatestAddress: 18432
+196
+flashReadSPIFlashLatestAddress: 18688
+232
+flashReadSPIFlashLatestAddress: 18944
+204
+flashReadSPIFlashLatestAddress: 19200
+229
+flashReadSPIFlashLatestAddress: 19456
+255
+255
+pPreparation mode
+p
+Not NULL
+pPreparation mode
+p
+Not NULL
+pPreparation mode
+p
+Not NULL
+pPreparation mode
+p
+Not NULL
+pPreparation mode
+lLogging mode
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+Running
+sStop logging
