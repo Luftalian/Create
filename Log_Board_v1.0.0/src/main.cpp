@@ -48,7 +48,8 @@ uint8_t SPI_FlashBuff[256] = {};
 uint32_t SPIFlashLatestAddress = 0x000;
 
 // SPI Flashの最大のアドレス (1回で1/2ページ書き込んでいる点に注意)
-#define SPI_FLASH_MAX_ADDRESS ? ? ? ? ;
+// (512 * 1024 * 1024 / 8 / 256) * 2 = 524288
+uint32_t SPI_FLASH_MAX_ADDRESS = 0x80000;
 
 #define SPIFREQ 100000
 
@@ -106,7 +107,7 @@ void RoutineWork()
 {
   if (SPIFlashLatestAddress >= SPI_FLASH_MAX_ADDRESS)
   {
-    Serial.Printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
+    Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
     return;
   }
   Serial.println("Running");
@@ -175,7 +176,7 @@ void RoutineWork()
     // データの書き込み
     flash1.write(SPIFlashLatestAddress, SPI_FlashBuff);
     // データ書き込み回数の記録
-    dataCount = {1};
+    uint8_t dataCount[] = {1};
     flash1.write(SPIFlashLatestAddress / 0x100, dataCount);
     // アドレスの更新
     SPIFlashLatestAddress += 0x100;
@@ -365,7 +366,7 @@ void setup()
   uint8_t flashRead[1] = {1};
   while (flashRead[0] == 0)
   {
-    flash.read(1, flashRead);
+    flash1.read(1, flashRead);
     SPIFlashLatestAddress += 0x100;
   }
 }
@@ -403,7 +404,7 @@ void loop()
               Serial2.write(COMMANDSTOP); // 's'
               err = 502;
               Serial.println("Stop logging");
-              goto exit_loop;
+              // goto exit_loop;
             }
           }
           break;
@@ -416,16 +417,16 @@ void loop()
           {
             Serial2.write(COMMANDSTOP); // 's'
             err = 502;
-            goto exit_loop;
+            // goto exit_loop;
           }
-          goto exit_loop;
+          // goto exit_loop;
           break;
         default: // もしかして入力がない場合もここに入る？たぶん入らない。receiveには何か値が入ってるはず。
-          goto exit_loop;
+          // goto exit_loop;
           break;
         }
       }
-    exit_loop:
+      // exit_loop:
     }
   }
 }
