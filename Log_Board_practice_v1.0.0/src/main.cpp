@@ -113,7 +113,7 @@ void RoutineWork()
     Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
     return;
   }
-  Serial.println("Running");
+  // Serial.println("Running");
   if (timer.start_flag)
   {
     timer.start_time = micros();
@@ -378,6 +378,11 @@ void setup()
     if (flashRead[0] == 0xFF)
     {
       Serial.println("255");
+      break;
+    }
+    if (SPIFlashLatestAddress >= SPI_FLASH_MAX_ADDRESS)
+    {
+      Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
       break;
     }
   }
