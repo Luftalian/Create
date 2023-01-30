@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-#define LED1 19
+#define LED1 18
 
 void setup()
 {
@@ -16,22 +16,23 @@ void loop()
 {
   // put your main code here, to run repeatedly:
   // Serial2.write('e');
-  // while (Serial2.available())
-  // {
-  char receive;
-  receive = Serial2.read();
-  Serial2.write(receive);
-  Serial.println(receive);
-  delay(1000);
-  Serial.println("a");
-  if (receive == 'e')
+  while (Serial2.available())
   {
-    Serial2.println("OK");
-    Serial.println("OK");
-    digitalWrite(LED1, HIGH);
-    delay(100);
-    digitalWrite(LED1, LOW);
-    delay(100);
+    char receive;
+    receive = Serial2.read();
+    Serial2.write(receive);
+    Serial.println(receive);
+    // delay(1000);
+    // Serial.println("a");
+    // if (receive == 'e')
+    // {
+    //   Serial2.println("OK");
+    //   Serial.println("OK");
+    // digitalWrite(LED1, HIGH);
+    // Serial.println("OK");
+    // delay(100);
+    // digitalWrite(LED1, LOW);
+    // delay(100);
+    // }
   }
-  // }
 }
