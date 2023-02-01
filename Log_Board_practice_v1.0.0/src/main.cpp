@@ -23,6 +23,7 @@
 #define COMMANDDELETE 'd'
 #define COMMANDSTOP 's'
 #define COMMANDLOG 'l'
+#define COMMANDFINISHSETUP 'r'
 
 SPICREATE::SPICreate SPIC1;
 SPICREATE::SPICreate SPIC2;
@@ -271,41 +272,27 @@ IRAM_ATTR void logging(void *parameters)
 
 void setup()
 {
-  delay(1000);
   digitalWrite(flashCS, HIGH);
-  delay(100);
   digitalWrite(H3LIS331CS, HIGH);
-  delay(100);
   digitalWrite(ICMCS, HIGH);
-  delay(100);
   digitalWrite(LPSCS, HIGH);
-  delay(100);
   Serial.begin(115200);
-  delay(2000);
+  delay(1);
   Serial.println("start Serial");
-  Serial2.begin(9600);
   Serial.println("start Serial2");
-  delay(100);
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
-  delay(100);
   SPIC2.begin(HSPI, SCK2, MISO2, MOSI2);
-  delay(100);
   Serial.println("SPI1");
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
-  delay(100);
   Serial.println("flash1");
   H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
-  delay(100);
   Serial.println("H3lis331");
   icm20948.begin(&SPIC2, ICMCS, SPIFREQ);
-  delay(100);
   Serial.println("icm20948");
   Lps25.begin(&SPIC2, LPSCS, SPIFREQ);
-  delay(100);
   Serial.println("Lps25hb");
 
   micros();
-  delay(100);
   Serial.println("Timer Start!");
 
   // err = 100;
@@ -386,6 +373,7 @@ void setup()
       break;
     }
   }
+  Serial.write(COMMANDFINISHSETUP); // 'r'
 }
 
 void loop()

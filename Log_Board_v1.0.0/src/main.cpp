@@ -23,6 +23,7 @@
 #define COMMANDDELETE 'd'
 #define COMMANDSTOP 's'
 #define COMMANDLOG 'l'
+#define COMMANDFINISHSETUP 'r'
 
 SPICREATE::SPICreate SPIC1;
 SPICREATE::SPICreate SPIC2;
@@ -48,10 +49,10 @@ uint8_t SPI_FlashBuff[256] = {};
 uint32_t SPIFlashLatestAddress = 0x000;
 
 // SPI Flashの最大のアドレス (1回で1/2ページ書き込んでいる点に注意)
-// (512 * 1024 * 1024 / 8 / 256) * 2 = 524288
-uint32_t SPI_FLASH_MAX_ADDRESS = 0x80000;
+// (512 * 1024 * 1024 / 8 / 256 ページ * 256) * 2 = 524288 * 256
+uint32_t SPI_FLASH_MAX_ADDRESS = 0x8000000;
 
-#define SPIFREQ 100000
+#define SPIFREQ 5000000
 
 // #define loggingPeriod 2
 #define loggingPeriod2 1
@@ -59,23 +60,23 @@ uint32_t SPI_FLASH_MAX_ADDRESS = 0x80000;
 TimerHandle_t thand_test;
 xTaskHandle xlogHandle;
 
-/* error関数用
-10: "H3LIS331 is OK"
-11: "H3LIS331 is NG"
-20: "ICM20948 is OK"
-21: "ICM20948 is NG"
-30: "LPS25HB is OK"
-31: "LPS25HB is NG"
-100: "No error"
-300: "Serial2 is not available"
-301: "Serial2 is available"
-400: "Setup is end"
-500: "'p' is pushed"
-501: "'d' is pushed"
-502: "'s' is pushed"
-503: "'l' is pushed"
-600: "Logging is start" */
-int err = 0;
+// /* error関数用
+// 10: "H3LIS331 is OK"
+// 11: "H3LIS331 is NG"
+// 20: "ICM20948 is OK"
+// 21: "ICM20948 is NG"
+// 30: "LPS25HB is OK"
+// 31: "LPS25HB is NG"
+// 100: "No error"
+// 300: "Serial2 is not available"
+// 301: "Serial2 is available"
+// 400: "Setup is end"
+// 500: "'p' is pushed"
+// 501: "'d' is pushed"
+// 502: "'s' is pushed"
+// 503: "'l' is pushed"
+// 600: "Logging is start" */
+// int err = 0;
 
 // 時間
 unsigned long Record_time;
@@ -85,6 +86,9 @@ uint8_t checker = 0;
 
 // Serial2で受け取るchar型の変数
 char receive;
+
+// Serial2で使う
+bool exitLoop = false;
 
 class Timer
 {
@@ -110,7 +114,7 @@ void RoutineWork()
     Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
     return;
   }
-  Serial.println("Running");
+  // Serial.println("Running");
   if (timer.start_flag)
   {
     timer.start_time = micros();
@@ -175,9 +179,6 @@ void RoutineWork()
   {
     // データの書き込み
     flash1.write(SPIFlashLatestAddress, SPI_FlashBuff);
-    // データ書き込み回数の記録
-    uint8_t dataCount[] = {1};
-    flash1.write(SPIFlashLatestAddress / 0x100, dataCount);
     // アドレスの更新
     SPIFlashLatestAddress += 0x100;
     // 列の番号の初期化
@@ -195,119 +196,107 @@ IRAM_ATTR void logging(void *parameters)
   }
 }
 
-// LEDでエラーを表示する
-IRAM_ATTR void LedErrorChecking(void *parameters)
-{
-  portTickType xLastWakeTime = xTaskGetTickCount();
-  for (;;)
-  {
-    if (err != 0)
-    {
-      int err100 = err % 100;
-      int err10 = err % 10;
-      int err1 = err % 1;
+// // LEDでエラーを表示する
+// IRAM_ATTR void LedErrorChecking(void *parameters)
+// {
+//   portTickType xLastWakeTime = xTaskGetTickCount();
+//   for (;;)
+//   {
+//     if (err != 0)
+//     {
+//       int err100 = err % 100;
+//       int err10 = err % 10;
+//       int err1 = err % 1;
 
-      for (int i = 0; i < err100; i++)
-      {
-        digitalWrite(LEDPIN, HIGH);
-        delay(1000);
-        digitalWrite(LEDPIN, LOW);
-        delay(1000);
-      }
-      if (err100 == 0)
-      {
-        digitalWrite(LEDPIN, HIGH);
-        delay(300);
-        digitalWrite(LEDPIN, LOW);
-        delay(300);
-      }
-      else
-      {
-        delay(2000);
-      }
+//       for (int i = 0; i < err100; i++)
+//       {
+//         digitalWrite(LEDPIN, HIGH);
+//         delay(1000);
+//         digitalWrite(LEDPIN, LOW);
+//         delay(1000);
+//       }
+//       if (err100 == 0)
+//       {
+//         digitalWrite(LEDPIN, HIGH);
+//         delay(300);
+//         digitalWrite(LEDPIN, LOW);
+//         delay(300);
+//       }
+//       else
+//       {
+//         delay(2000);
+//       }
 
-      for (int i = 0; i < err10; i++)
-      {
-        digitalWrite(LEDPIN, HIGH);
-        delay(1000);
-        digitalWrite(LEDPIN, LOW);
-        delay(1000);
-      }
-      if (err10 == 0)
-      {
-        digitalWrite(LEDPIN, HIGH);
-        delay(300);
-        digitalWrite(LEDPIN, LOW);
-        delay(300);
-      }
-      else
-      {
-        delay(2000);
-      }
+//       for (int i = 0; i < err10; i++)
+//       {
+//         digitalWrite(LEDPIN, HIGH);
+//         delay(1000);
+//         digitalWrite(LEDPIN, LOW);
+//         delay(1000);
+//       }
+//       if (err10 == 0)
+//       {
+//         digitalWrite(LEDPIN, HIGH);
+//         delay(300);
+//         digitalWrite(LEDPIN, LOW);
+//         delay(300);
+//       }
+//       else
+//       {
+//         delay(2000);
+//       }
 
-      for (int i = 0; i < err1; i++)
-      {
-        digitalWrite(LEDPIN, HIGH);
-        delay(1000);
-        digitalWrite(LEDPIN, LOW);
-        delay(1000);
-      }
-      if (err1 == 0)
-      {
-        digitalWrite(LEDPIN, HIGH);
-        delay(300);
-        digitalWrite(LEDPIN, LOW);
-        delay(300);
-      }
-      else
-      {
-        delay(2000);
-      }
-    }
-    vTaskDelayUntil(&xLastWakeTime, loggingPeriod2 / portTICK_PERIOD_MS); // 1ms = 1000Hz
-  }
-}
+//       for (int i = 0; i < err1; i++)
+//       {
+//         digitalWrite(LEDPIN, HIGH);
+//         delay(1000);
+//         digitalWrite(LEDPIN, LOW);
+//         delay(1000);
+//       }
+//       if (err1 == 0)
+//       {
+//         digitalWrite(LEDPIN, HIGH);
+//         delay(300);
+//         digitalWrite(LEDPIN, LOW);
+//         delay(300);
+//       }
+//       else
+//       {
+//         delay(2000);
+//       }
+//     }
+//     vTaskDelayUntil(&xLastWakeTime, loggingPeriod2 / portTICK_PERIOD_MS); // 1ms = 1000Hz
+//   }
+// }
 
 void setup()
 {
-  delay(1000);
   digitalWrite(flashCS, HIGH);
-  delay(100);
   digitalWrite(H3LIS331CS, HIGH);
-  delay(100);
   digitalWrite(ICMCS, HIGH);
-  delay(100);
   digitalWrite(LPSCS, HIGH);
-  delay(100);
   Serial.begin(115200);
-  delay(2000);
+  delay(1);
   Serial.println("start Serial");
   Serial2.begin(9600);
+  delay(1);
   Serial.println("start Serial2");
-  delay(100);
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);
-  delay(100);
   SPIC2.begin(HSPI, SCK2, MISO2, MOSI2);
-  delay(100);
   Serial.println("SPI1");
   flash1.begin(&SPIC1, flashCS, SPIFREQ);
-  delay(100);
   Serial.println("flash1");
   H3lis331.begin(&SPIC1, H3LIS331CS, SPIFREQ);
-  delay(100);
   Serial.println("H3lis331");
   icm20948.begin(&SPIC2, ICMCS, SPIFREQ);
-  delay(100);
   Serial.println("icm20948");
   Lps25.begin(&SPIC2, LPSCS, SPIFREQ);
-  delay(100);
   Serial.println("Lps25hb");
 
   micros();
-  delay(100);
   Serial.println("Timer Start!");
 
-  err = 100;
+  // err = 100;
 
   // WhoAmI
   uint8_t a;
@@ -318,12 +307,12 @@ void setup()
   if (a == 0x32)
   {
     Serial.println("H3LIS331 is OK");
-    err = 10;
+    // err = 10;
   }
   else
   {
     Serial.println("H3LIS331 is NG");
-    err = 11;
+    // err = 11;
   }
 
   a = Lps25.WhoAmI();
@@ -332,12 +321,12 @@ void setup()
   if (a == 0b10111101)
   {
     Serial.println("LPS25HB is OK");
-    err = 30;
+    // err = 30;
   }
   else
   {
     Serial.println("LPS25HB is NG");
-    err = 31;
+    // err = 31;
   }
 
   a = icm20948.WhoAmI();
@@ -346,42 +335,59 @@ void setup()
   if (a == 0xEA)
   {
     Serial.println("ICM20948 is OK");
-    err = 20;
+    // err = 20;
   }
   else
   {
     Serial.println("ICM20948 is NG");
-    err = 21;
+    // err = 21;
   }
 
   // logging関数を起動
   xTaskCreateUniversal(logging, "logging", 8192, NULL, 1, &xlogHandle, PRO_CPU_NUM);
 
-  // logging関数を起動
-  xTaskCreateUniversal(LedErrorChecking, "logging", 8192, NULL, 1, &xlogHandle, PRO_CPU_NUM);
+  // // logging関数を起動
+  // xTaskCreateUniversal(LedErrorChecking, "logging", 8192, NULL, 1, &xlogHandle, PRO_CPU_NUM);
 
-  err = 400;
+  // err = 400;
 
   // SPI Flashがどこまで書き込まれているか確認
-  uint8_t flashRead[1] = {1};
-  while (flashRead[0] == 0)
+  uint8_t flashRead[256]; // 256でないとflash.read()でRebootした。
+  // uint8_t SPIFlashLatestAddress = 0x000;
+  while (1)
   {
-    flash1.read(1, flashRead);
+    Serial.print("flashRead");
+    flash1.read(SPIFlashLatestAddress, flashRead);
     SPIFlashLatestAddress += 0x100;
+    Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
+    Serial.print(flashRead[0]);
+    delay(1);
+    Serial.print("\n");
+    if (flashRead[0] == 0xFF)
+    {
+      Serial.println("255");
+      break;
+    }
+    if (SPIFlashLatestAddress >= SPI_FLASH_MAX_ADDRESS)
+    {
+      Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
+      break;
+    }
   }
+  Serial2.write(COMMANDFINISHSETUP); // 'r'
 }
 
 void loop()
 {
-  err = 300;
+  // err = 300;
   while (Serial2.available())
   {
-    err = 301;
+    // err = 301;
     if (Serial2.read() == COMMANDPREPARATION) // 'p'
     {
       Serial2.write(COMMANDPREPARATION); // 'p'
       Serial.println("Preparation mode");
-      err = 500;
+      // err = 500;
       while (1)
       {
         receive = Serial2.read();
@@ -389,7 +395,7 @@ void loop()
         {
         case COMMANDLOG:             // 'l'
           Serial2.write(COMMANDLOG); // 'l'
-          err = 503;
+          // err = 503;
           Serial.println("Logging mode");
           while (1)
           {
@@ -397,36 +403,41 @@ void loop()
             {
               checker = 0;
               RoutineWork();
-              err = 600;
+              // err = 600;
             }
             if (Serial2.read() == COMMANDSTOP) // 's'
             {
               Serial2.write(COMMANDSTOP); // 's'
-              err = 502;
+              // err = 502;
               Serial.println("Stop logging");
-              // goto exit_loop;
+              exitLoop = true;
+              break;
             }
           }
           break;
         case COMMANDDELETE:             // 'd'
           Serial2.write(COMMANDDELETE); // 'd'
-          err = 501;
+          // err = 501;
           Serial.println("Delete mode");
-          flash1.erase();                    // いずれerase中にも's'が入っていたら削除を中止するようにする
-          if (Serial2.read() == COMMANDSTOP) // 's'
-          {
-            Serial2.write(COMMANDSTOP); // 's'
-            err = 502;
-            // goto exit_loop;
-          }
-          // goto exit_loop;
+          flash1.erase();
+          SPIFlashLatestAddress = 0x100;
+          exitLoop = true;
           break;
-        default: // もしかして入力がない場合もここに入る？たぶん入らない。receiveには何か値が入ってるはず。
-          // goto exit_loop;
+        default:
+          if ('a' < receive && receive < 'z')
+          {
+            Serial.println(receive);
+            Serial.println("Exit Preparation mode");
+            exitLoop = true;
+          }
+          break;
+        }
+        if (exitLoop)
+        {
+          exitLoop = false;
           break;
         }
       }
-      // exit_loop:
     }
   }
 }
