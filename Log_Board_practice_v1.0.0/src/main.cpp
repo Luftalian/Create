@@ -51,7 +51,7 @@ uint32_t SPIFlashLatestAddress = 0x000;
 // (512 * 1024 * 1024 / 8 / 256 ページ * 256) * 2 = 524288 * 256
 uint32_t SPI_FLASH_MAX_ADDRESS = 0x8000000;
 
-#define SPIFREQ 100000
+#define SPIFREQ 5000000
 
 // #define loggingPeriod 2
 #define loggingPeriod2 1
@@ -431,6 +431,7 @@ void loop()
           // err = 501;
           Serial.println("Delete mode");
           flash1.erase();
+          SPIFlashLatestAddress = 0x100;
           exitLoop = true;
           break;
         default:

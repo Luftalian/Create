@@ -41,7 +41,7 @@ int CountH3LIS331DataSetExistInBuff_READ = 0;
 // uint8_t H3LIS331FlashBuff[256] = {0};
 
 // uint32_t H3LIS331FlashLatestAddress = 0x00;
-uint32_t H3LIS331FlashLatestAddress_READ = 0x00;
+uint32_t H3LIS331FlashLatestAddress_READ = 0x100;
 
 #define SPIFREQ 100000
 
@@ -127,8 +127,8 @@ void loop()
           // Serial.print(time);
           // Serial.print(",");
 
-          //加速度をとる
-          // Serial.println("acceleration");
+          // 加速度をとる
+          //  Serial.println("acceleration");
           rx[3] = {};
           rx[0] = tx[32 * CountH3LIS331DataSetExistInBuff + 4];
           rx[0] |= ((uint16_t)tx[32 * CountH3LIS331DataSetExistInBuff + 5]) << 8;
