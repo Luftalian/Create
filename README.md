@@ -23,20 +23,12 @@ Our team will log data of two accelerometer & angular velocity & LPS25 which is 
 "main" is not main branch.
 "betabeta" is main branch.
 
-# File
+# directory
 
-If you want to erase,
+`Log_Board_practice_v1.0.0` latest version.
+This can measure two types of acceleraion (16g & 400g), gyroscope, barometric pressure, and magnetometation in **1000Hz**.
 
-### BBM_log_board
+`Log_Board_v1.0.0`
+This is version which use for production environment.
+This is able to contact with other board.
 
-If you want to write,
-
-### BBM_log_board_beta
-
-If you want to read,
-
-### READ_log_board_beta
-
-If you want to write by using Sensor,
-
-### BBM_log_board_5beta
