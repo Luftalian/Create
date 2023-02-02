@@ -112,6 +112,11 @@ void RoutineWork()
   if (SPIFlashLatestAddress >= SPI_FLASH_MAX_ADDRESS)
   {
     Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
+    Serial2.write("SPI Flash is full");
+    Serial2.write("Started At: ");
+    Serial2.write(timer.start_time);
+    Serial2.write("Now: ");
+    Serial2.write(timer.Gettime_record());
     return;
   }
   // Serial.println("Running");
@@ -295,6 +300,8 @@ void setup()
 
   micros();
   Serial.println("Timer Start!");
+  Serial2.write("Started At: ");
+  Serial2.write(timer.start_time);
 
   // err = 100;
 
@@ -385,8 +392,8 @@ void loop()
     // err = 301;
     if (Serial2.read() == COMMANDPREPARATION) // 'p'
     {
-      Serial2.write(COMMANDPREPARATION); // 'p'
-      Serial.println("Preparation mode");
+      Serial2.write(COMMANDPREPARATION);   // 'p'
+      Serial2.println("Preparation mode"); // 1
       // err = 500;
       while (1)
       {
@@ -396,7 +403,7 @@ void loop()
         case COMMANDLOG:             // 'l'
           Serial2.write(COMMANDLOG); // 'l'
           // err = 503;
-          Serial.println("Logging mode");
+          Serial2.println("Logging mode"); // 1
           while (1)
           {
             if (checker > 0)
@@ -414,6 +421,8 @@ void loop()
               break;
             }
           }
+          Serial2.write("Done Recorded:");
+          Serial2.write(timer.Gettime_record());
           break;
         case COMMANDDELETE:             // 'd'
           Serial2.write(COMMANDDELETE); // 'd'
@@ -426,8 +435,8 @@ void loop()
         default:
           if ('a' < receive && receive < 'z')
           {
-            Serial.println(receive);
-            Serial.println("Exit Preparation mode");
+            Serial2.println(receive);                 // 1
+            Serial2.println("Exit Preparation mode"); // 1
             exitLoop = true;
           }
           break;

@@ -1,0 +1,37 @@
+08:13:26.764 > ets Jul 29 2019 12:21:46
+08:13:26.765 > 
+08:13:26.765 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+08:13:26.765 > configsip: 0, SPIWP:0xee
+08:13:26.765 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+08:13:26.765 > mode:DIO, clock div:2
+08:13:26.765 > load:0x3fff0030,len:1184
+08:13:26.765 > load:0x40078000,len:12776
+08:13:26.765 > load:0x40080400,len:3032
+08:13:26.765 > entry 0x400805e4
+08:13:26.892 > start Serial
+08:13:26.893 > start Serial2
+08:13:26.893 > 123456788 8
+08:13:26.893 > 910123456788 8 8
+08:13:26.909 > 910SPI1
+08:13:27.023 > flash1
+08:13:27.023 > H3lis331
+08:13:27.023 > icm20948
+08:13:27.023 > Lps25hb
+08:13:27.023 > Timer Start!
+08:13:27.023 > WhoAmI:0
+08:13:27.023 > H3LIS331 is NG
+08:13:27.023 > WhoAmI:0
+08:13:27.023 > LPS25HB is NG
+08:13:27.023 > WhoAmI:0
+08:13:27.023 > ICM20948 is NG
+08:13:27.023 > flashReadSPIFlashLatestAddress: 256
+08:13:27.023 > 0
+08:13:27.023 > flashReadSPIFlashLatestAddress: 512
+08:13:27.023 > 255
+08:13:27.023 > 255
+08:13:31.229 > Preparation mode
+08:13:33.964 > r
+08:13:33.965 > Exit Preparation mode
+08:13:36.555 > Preparation mode
+08:13:38.298 > r
+08:13:38.299 > Exit Preparation mode

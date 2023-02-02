@@ -1,0 +1,4 @@
+08:45:45.854 > ets Jul 29 2019 12:21:46
+08:45:45.854 > 
+08:45:45.854 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+08:45:45.854 > waiting for download
