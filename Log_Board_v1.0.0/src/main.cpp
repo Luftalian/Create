@@ -276,6 +276,7 @@ IRAM_ATTR void logging(void *parameters)
 
 void setup()
 {
+  delay(1000);
   digitalWrite(flashCS, HIGH);
   digitalWrite(H3LIS331CS, HIGH);
   digitalWrite(ICMCS, HIGH);
@@ -284,6 +285,8 @@ void setup()
   delay(1);
   Serial.println("start Serial");
   Serial2.begin(9600);
+  while (!Serial2)
+    ;
   delay(1);
   Serial.println("start Serial2");
   SPIC1.begin(VSPI, SCK1, MISO1, MOSI1);

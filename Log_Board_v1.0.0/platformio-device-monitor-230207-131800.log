@@ -1,0 +1,31 @@
+13:18:00.858 > ets Jul 29 2019 12:21:46
+13:18:00.858 > 
+13:18:00.858 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:18:00.858 > configsip: 0, SPIWP:0xee
+13:18:00.858 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:18:00.858 > mode:DIO, clock div:2
+13:18:00.858 > load:0x3fff0030,len:1184
+13:18:00.858 > load:0x40078000,len:12776
+13:18:00.858 > load:0x40080400,len:3032
+13:18:00.858 > entry 0x400805e4
+13:18:00.985 > start Serial
+13:18:00.986 > start Serial2
+13:18:00.986 > 123456788 8
+13:18:01.002 > 910123456788 8 8
+13:18:01.002 > 910SPI1
+13:18:01.117 > flash1
+13:18:01.118 > H3lis331
+13:18:01.118 > icm20948
+13:18:01.118 > Lps25hb
+13:18:01.118 > Timer Start!
+13:18:01.118 > WhoAmI:50
+13:18:01.118 > H3LIS331 is OK
+13:18:01.118 > WhoAmI:189
+13:18:01.118 > LPS25HB is OK
+13:18:01.118 > WhoAmI:1
+13:18:01.118 > ICM20948 is NG
+13:18:01.118 > flashReadSPIFlashLatestAddress: 256
+13:18:01.118 > 0
+13:18:01.118 > flashReadSPIFlashLatestAddress: 512
+13:18:01.118 > 255
+13:18:01.118 > 255

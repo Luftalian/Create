@@ -1,0 +1,2850 @@
+16:28:18.983 > ets Jul 29 2019 12:21:46
+16:28:18.983 > 
+16:28:18.983 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+16:28:18.983 > configsip: 0, SPIWP:0xee
+16:28:18.983 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+16:28:18.983 > mode:DIO, clock div:2
+16:28:18.983 > load:0x3fff0030,len:1184
+16:28:18.983 > load:0x40078000,len:12776
+16:28:18.983 > load:0x40080400,len:3032
+16:28:18.983 > entry 0x400805e4
+16:28:20.135 > start Serial
+16:28:20.135 > start Serial2
+16:28:20.135 > 123456788 8
+16:28:20.135 > 910123456788 8 8
+16:28:20.135 > 910SPI1
+16:28:20.557 > flash1
+16:28:20.557 > H3lis331
+16:28:20.557 > icm20948
+16:28:20.557 > Lps25hb
+16:28:20.557 > Timer Start!
+16:28:20.557 > WhoAmI:50
+16:28:20.557 > H3LIS331 is OK
+16:28:20.557 > WhoAmI:189
+16:28:20.557 > LPS25HB is OK
+16:28:20.557 > WhoAmI:1
+16:28:20.557 > ICM20948 is NG
+16:28:20.557 > flashReadSPIFlashLatestAddress: 256
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 512
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 768
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 1024
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 1280
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 1536
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 1792
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 2048
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 2304
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 2560
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 2816
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 3072
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 3328
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 3584
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 3840
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 4096
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 4352
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 4608
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 4864
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 5120
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 5376
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 5632
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 5888
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 6144
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 6400
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 6656
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 6912
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 7168
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 7424
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 7680
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 7936
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 8192
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 8448
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 8704
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 8960
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 9216
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 9472
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 9728
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 9984
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 10240
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 10496
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 10752
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 11008
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 11264
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 11520
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 11776
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 12032
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 12288
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 12544
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 12800
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 13056
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 13312
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 13568
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 13824
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 14080
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 14336
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 14592
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 14848
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 15104
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 15360
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 15616
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 15872
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 16128
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 16384
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 16640
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 16896
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 17152
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 17408
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 17664
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 17920
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 18176
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 18432
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 18688
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 18944
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 19200
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 19456
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 19712
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 19968
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 20224
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 20480
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 20736
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 20992
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 21248
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 21504
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 21760
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 22016
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 22272
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 22528
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 22784
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 23040
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 23296
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 23552
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 23808
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 24064
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 24320
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 24576
+16:28:20.557 > 0
+16:28:20.557 > flashReadSPIFlashLatestAddress: 24832
+16:28:20.557 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 25088
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 25344
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 25600
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 25856
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 26112
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 26368
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 26624
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 26880
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 27136
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 27392
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 27648
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 27904
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 28160
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 28416
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 28672
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 28928
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 29184
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 29440
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 29696
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 29952
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 30208
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 30464
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 30720
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 30976
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 31232
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 31488
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 31744
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 32000
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 32256
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 32512
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 32768
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 33024
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 33280
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 33536
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 33792
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 34048
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 34304
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 34560
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 34816
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 35072
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 35328
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 35584
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 35840
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 36096
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 36352
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 36608
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 36864
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 37120
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 37376
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 37632
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 37888
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 38144
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 38400
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 38656
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 38912
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 39168
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 39424
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 39680
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 39936
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 40192
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 40448
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 40704
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 40960
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 41216
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 41472
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 41728
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 41984
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 42240
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 42496
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 42752
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 43008
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 43264
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 43520
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 43776
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 44032
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 44288
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 44544
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 44800
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 45056
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 45312
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 45568
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 45824
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 46080
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 46336
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 46592
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 46848
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 47104
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 47360
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 47616
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 47872
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 48128
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 48384
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 48640
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 48896
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 49152
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 49408
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 49664
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 49920
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 50176
+16:28:20.907 > 0
+16:28:20.907 > flashReadSPIFlashLatestAddress: 50432
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 50688
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 50944
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 51200
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 51456
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 51712
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 51968
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 52224
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 52480
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 52736
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 52992
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 53248
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 53504
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 53760
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 54016
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 54272
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 54528
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 54784
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 55040
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 55296
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 55552
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 55808
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 56064
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 56320
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 56576
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 56832
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 57088
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 57344
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 57600
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 57856
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 58112
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 58368
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 58624
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 58880
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 59136
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 59392
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 59648
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 59904
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 60160
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 60416
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 60672
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 60928
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 61184
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 61440
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 61696
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 61952
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 62208
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 62464
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 62720
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 62976
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 63232
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 63488
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 63744
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 64000
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 64256
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 64512
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 64768
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 65024
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 65280
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 65536
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 65792
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 66048
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 66304
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 66560
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 66816
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 67072
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 67328
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 67584
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 67840
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 68096
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 68352
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 68608
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 68864
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 69120
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 69376
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 69632
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 69888
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 70144
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 70400
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 70656
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 70912
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 71168
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 71424
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 71680
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 71936
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 72192
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 72448
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 72704
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 72960
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 73216
+16:28:21.250 > 0
+16:28:21.250 > flashReadSPIFlashLatestAddress: 73472
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 73728
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 73984
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 74240
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 74496
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 74752
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 75008
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 75264
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 75520
+16:28:21.266 > 0
+16:28:21.266 > flashReadSPIFlashLatestAddress: 75776
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 76032
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 76288
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 76544
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 76800
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 77056
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 77312
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 77568
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 77824
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 78080
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 78336
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 78592
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 78848
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 79104
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 79360
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 79616
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 79872
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 80128
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 80384
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 80640
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 80896
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 81152
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 81408
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 81664
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 81920
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 82176
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 82432
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 82688
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 82944
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 83200
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 83456
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 83712
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 83968
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 84224
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 84480
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 84736
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 84992
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 85248
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 85504
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 85760
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 86016
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 86272
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 86528
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 86784
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 87040
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 87296
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 87552
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 87808
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 88064
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 88320
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 88576
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 88832
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 89088
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 89344
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 89600
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 89856
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 90112
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 90368
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 90624
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 90880
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 91136
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 91392
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 91648
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 91904
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 92160
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 92416
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 92672
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 92928
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 93184
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 93440
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 93696
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 93952
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 94208
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 94464
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 94720
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 94976
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 95232
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 95488
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 95744
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 96000
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 96256
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 96512
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 96768
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 97024
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 97280
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 97536
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 97792
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 98048
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 98304
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 98560
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 98816
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 99072
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 99328
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 99584
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 99840
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 100096
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 100352
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 100608
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 100864
+16:28:21.590 > 0
+16:28:21.590 > flashReadSPIFlashLatestAddress: 101120
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 101376
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 101632
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 101888
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 102144
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 102400
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 102656
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 102912
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 103168
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 103424
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 103680
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 103936
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 104192
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 104448
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 104704
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 104960
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 105216
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 105472
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 105728
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 105984
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 106240
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 106496
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 106752
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 107008
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 107264
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 107520
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 107776
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 108032
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 108288
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 108544
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 108800
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 109056
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 109312
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 109568
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 109824
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 110080
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 110336
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 110592
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 110848
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 111104
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 111360
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 111616
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 111872
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 112128
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 112384
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 112640
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 112896
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 113152
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 113408
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 113664
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 113920
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 114176
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 114432
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 114688
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 114944
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 115200
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 115456
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 115712
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 115968
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 116224
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 116480
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 116736
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 116992
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 117248
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 117504
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 117760
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 118016
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 118272
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 118528
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 118784
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 119040
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 119296
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 119552
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 119808
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 120064
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 120320
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 120576
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 120832
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 121088
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 121344
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 121600
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 121856
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 122112
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 122368
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 122624
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 122880
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 123136
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 123392
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 123648
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 123904
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 124160
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 124416
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 124672
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 124928
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 125184
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 125440
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 125696
+16:28:21.940 > 0
+16:28:21.940 > flashReadSPIFlashLatestAddress: 125952
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 126208
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 126464
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 126720
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 126976
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 127232
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 127488
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 127744
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 128000
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 128256
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 128512
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 128768
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 129024
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 129280
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 129536
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 129792
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 130048
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 130304
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 130560
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 130816
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 131072
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 131328
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 131584
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 131840
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 132096
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 132352
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 132608
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 132864
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 133120
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 133376
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 133632
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 133888
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 134144
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 134400
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 134656
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 134912
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 135168
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 135424
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 135680
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 135936
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 136192
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 136448
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 136704
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 136960
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 137216
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 137472
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 137728
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 137984
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 138240
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 138496
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 138752
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 139008
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 139264
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 139520
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 139776
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 140032
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 140288
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 140544
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 140800
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 141056
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 141312
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 141568
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 141824
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 142080
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 142336
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 142592
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 142848
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 143104
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 143360
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 143616
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 143872
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 144128
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 144384
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 144640
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 144896
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 145152
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 145408
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 145664
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 145920
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 146176
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 146432
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 146688
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 146944
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 147200
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 147456
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 147712
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 147968
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 148224
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 148480
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 148736
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 148992
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 149248
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 149504
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 149760
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 150016
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 150272
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 150528
+16:28:22.282 > 0
+16:28:22.282 > flashReadSPIFlashLatestAddress: 150784
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 151040
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 151296
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 151552
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 151808
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 152064
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 152320
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 152576
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 152832
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 153088
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 153344
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 153600
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 153856
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 154112
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 154368
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 154624
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 154880
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 155136
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 155392
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 155648
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 155904
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 156160
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 156416
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 156672
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 156928
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 157184
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 157440
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 157696
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 157952
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 158208
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 158464
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 158720
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 158976
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 159232
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 159488
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 159744
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 160000
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 160256
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 160512
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 160768
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 161024
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 161280
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 161536
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 161792
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 162048
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 162304
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 162560
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 162816
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 163072
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 163328
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 163584
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 163840
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 164096
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 164352
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 164608
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 164864
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 165120
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 165376
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 165632
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 165888
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 166144
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 166400
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 166656
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 166912
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 167168
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 167424
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 167680
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 167936
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 168192
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 168448
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 168704
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 168960
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 169216
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 169472
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 169728
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 169984
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 170240
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 170496
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 170752
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 171008
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 171264
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 171520
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 171776
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 172032
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 172288
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 172544
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 172800
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 173056
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 173312
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 173568
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 173824
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 174080
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 174336
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 174592
+16:28:22.628 > 0
+16:28:22.628 > flashReadSPIFlashLatestAddress: 174848
+16:28:22.644 > 0
+16:28:22.644 > flashReadSPIFlashLatestAddress: 175104
+16:28:22.644 > 0
+16:28:22.644 > flashReadSPIFlashLatestAddress: 175360
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 175616
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 175872
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 176128
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 176384
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 176640
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 176896
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 177152
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 177408
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 177664
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 177920
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 178176
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 178432
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 178688
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 178944
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 179200
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 179456
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 179712
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 179968
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 180224
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 180480
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 180736
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 180992
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 181248
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 181504
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 181760
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 182016
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 182272
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 182528
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 182784
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 183040
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 183296
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 183552
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 183808
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 184064
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 184320
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 184576
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 184832
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 185088
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 185344
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 185600
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 185856
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 186112
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 186368
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 186624
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 186880
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 187136
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 187392
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 187648
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 187904
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 188160
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 188416
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 188672
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 188928
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 189184
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 189440
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 189696
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 189952
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 190208
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 190464
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 190720
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 190976
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 191232
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 191488
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 191744
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 192000
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 192256
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 192512
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 192768
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 193024
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 193280
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 193536
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 193792
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 194048
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 194304
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 194560
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 194816
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 195072
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 195328
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 195584
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 195840
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 196096
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 196352
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 196608
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 196864
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 197120
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 197376
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 197632
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 197888
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 198144
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 198400
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 198656
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 198912
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 199168
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 199424
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 199680
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 199936
+16:28:22.974 > 0
+16:28:22.974 > flashReadSPIFlashLatestAddress: 200192
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 200448
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 200704
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 200960
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 201216
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 201472
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 201728
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 201984
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 202240
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 202496
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 202752
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 203008
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 203264
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 203520
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 203776
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 204032
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 204288
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 204544
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 204800
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 205056
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 205312
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 205568
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 205824
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 206080
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 206336
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 206592
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 206848
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 207104
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 207360
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 207616
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 207872
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 208128
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 208384
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 208640
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 208896
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 209152
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 209408
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 209664
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 209920
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 210176
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 210432
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 210688
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 210944
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 211200
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 211456
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 211712
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 211968
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 212224
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 212480
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 212736
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 212992
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 213248
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 213504
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 213760
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 214016
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 214272
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 214528
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 214784
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 215040
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 215296
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 215552
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 215808
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 216064
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 216320
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 216576
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 216832
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 217088
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 217344
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 217600
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 217856
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 218112
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 218368
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 218624
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 218880
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 219136
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 219392
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 219648
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 219904
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 220160
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 220416
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 220672
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 220928
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 221184
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 221440
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 221696
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 221952
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 222208
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 222464
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 222720
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 222976
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 223232
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 223488
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 223744
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 224000
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 224256
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 224512
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 224768
+16:28:23.320 > 0
+16:28:23.320 > flashReadSPIFlashLatestAddress: 225024
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 225280
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 225536
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 225792
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 226048
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 226304
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 226560
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 226816
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 227072
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 227328
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 227584
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 227840
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 228096
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 228352
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 228608
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 228864
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 229120
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 229376
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 229632
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 229888
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 230144
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 230400
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 230656
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 230912
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 231168
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 231424
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 231680
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 231936
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 232192
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 232448
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 232704
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 232960
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 233216
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 233472
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 233728
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 233984
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 234240
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 234496
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 234752
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 235008
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 235264
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 235520
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 235776
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 236032
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 236288
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 236544
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 236800
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 237056
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 237312
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 237568
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 237824
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 238080
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 238336
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 238592
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 238848
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 239104
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 239360
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 239616
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 239872
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 240128
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 240384
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 240640
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 240896
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 241152
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 241408
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 241664
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 241920
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 242176
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 242432
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 242688
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 242944
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 243200
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 243456
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 243712
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 243968
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 244224
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 244480
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 244736
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 244992
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 245248
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 245504
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 245760
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 246016
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 246272
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 246528
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 246784
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 247040
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 247296
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 247552
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 247808
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 248064
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 248320
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 248576
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 248832
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 249088
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 249344
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 249600
+16:28:23.662 > 0
+16:28:23.662 > flashReadSPIFlashLatestAddress: 249856
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 250112
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 250368
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 250624
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 250880
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 251136
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 251392
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 251648
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 251904
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 252160
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 252416
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 252672
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 252928
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 253184
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 253440
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 253696
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 253952
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 254208
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 254464
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 254720
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 254976
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 255232
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 255488
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 255744
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 256000
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 256256
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 256512
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 256768
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 257024
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 257280
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 257536
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 257792
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 258048
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 258304
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 258560
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 258816
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 259072
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 259328
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 259584
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 259840
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 260096
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 260352
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 260608
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 260864
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 261120
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 261376
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 261632
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 261888
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 262144
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 262400
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 262656
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 262912
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 263168
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 263424
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 263680
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 263936
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 264192
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 264448
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 264704
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 264960
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 265216
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 265472
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 265728
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 265984
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 266240
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 266496
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 266752
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 267008
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 267264
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 267520
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 267776
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 268032
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 268288
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 268544
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 268800
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 269056
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 269312
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 269568
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 269824
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 270080
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 270336
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 270592
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 270848
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 271104
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 271360
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 271616
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 271872
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 272128
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 272384
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 272640
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 272896
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 273152
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 273408
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 273664
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 273920
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 274176
+16:28:24.008 > 0
+16:28:24.008 > flashReadSPIFlashLatestAddress: 274432
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 274688
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 274944
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 275200
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 275456
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 275712
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 275968
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 276224
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 276480
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 276736
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 276992
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 277248
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 277504
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 277760
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 278016
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 278272
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 278528
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 278784
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 279040
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 279296
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 279552
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 279808
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 280064
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 280320
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 280576
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 280832
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 281088
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 281344
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 281600
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 281856
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 282112
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 282368
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 282624
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 282880
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 283136
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 283392
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 283648
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 283904
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 284160
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 284416
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 284672
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 284928
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 285184
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 285440
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 285696
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 285952
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 286208
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 286464
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 286720
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 286976
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 287232
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 287488
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 287744
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 288000
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 288256
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 288512
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 288768
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 289024
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 289280
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 289536
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 289792
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 290048
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 290304
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 290560
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 290816
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 291072
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 291328
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 291584
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 291840
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 292096
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 292352
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 292608
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 292864
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 293120
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 293376
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 293632
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 293888
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 294144
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 294400
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 294656
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 294912
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 295168
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 295424
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 295680
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 295936
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 296192
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 296448
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 296704
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 296960
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 297216
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 297472
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 297728
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 297984
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 298240
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 298496
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 298752
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 299008
+16:28:24.349 > 0
+16:28:24.349 > flashReadSPIFlashLatestAddress: 299264
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 299520
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 299776
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 300032
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 300288
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 300544
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 300800
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 301056
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 301312
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 301568
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 301824
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 302080
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 302336
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 302592
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 302848
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 303104
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 303360
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 303616
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 303872
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 304128
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 304384
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 304640
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 304896
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 305152
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 305408
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 305664
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 305920
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 306176
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 306432
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 306688
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 306944
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 307200
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 307456
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 307712
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 307968
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 308224
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 308480
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 308736
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 308992
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 309248
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 309504
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 309760
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 310016
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 310272
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 310528
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 310784
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 311040
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 311296
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 311552
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 311808
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 312064
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 312320
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 312576
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 312832
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 313088
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 313344
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 313600
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 313856
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 314112
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 314368
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 314624
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 314880
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 315136
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 315392
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 315648
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 315904
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 316160
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 316416
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 316672
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 316928
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 317184
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 317440
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 317696
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 317952
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 318208
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 318464
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 318720
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 318976
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 319232
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 319488
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 319744
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 320000
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 320256
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 320512
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 320768
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 321024
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 321280
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 321536
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 321792
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 322048
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 322304
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 322560
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 322816
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 323072
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 323328
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 323584
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 323840
+16:28:24.699 > 0
+16:28:24.699 > flashReadSPIFlashLatestAddress: 324096
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 324352
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 324608
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 324864
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 325120
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 325376
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 325632
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 325888
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 326144
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 326400
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 326656
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 326912
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 327168
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 327424
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 327680
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 327936
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 328192
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 328448
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 328704
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 328960
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 329216
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 329472
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 329728
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 329984
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 330240
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 330496
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 330752
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 331008
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 331264
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 331520
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 331776
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 332032
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 332288
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 332544
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 332800
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 333056
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 333312
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 333568
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 333824
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 334080
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 334336
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 334592
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 334848
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 335104
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 335360
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 335616
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 335872
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 336128
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 336384
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 336640
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 336896
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 337152
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 337408
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 337664
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 337920
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 338176
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 338432
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 338688
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 338944
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 339200
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 339456
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 339712
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 339968
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 340224
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 340480
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 340736
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 340992
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 341248
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 341504
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 341760
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 342016
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 342272
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 342528
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 342784
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 343040
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 343296
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 343552
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 343808
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 344064
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 344320
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 344576
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 344832
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 345088
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 345344
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 345600
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 345856
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 346112
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 346368
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 346624
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 346880
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 347136
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 347392
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 347648
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 347904
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 348160
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 348416
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 348672
+16:28:25.043 > 0
+16:28:25.043 > flashReadSPIFlashLatestAddress: 348928
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 349184
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 349440
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 349696
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 349952
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 350208
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 350464
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 350720
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 350976
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 351232
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 351488
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 351744
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 352000
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 352256
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 352512
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 352768
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 353024
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 353280
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 353536
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 353792
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 354048
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 354304
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 354560
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 354816
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 355072
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 355328
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 355584
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 355840
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 356096
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 356352
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 356608
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 356864
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 357120
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 357376
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 357632
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 357888
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 358144
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 358400
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 358656
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 358912
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 359168
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 359424
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 359680
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 359936
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 360192
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 360448
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 360704
+16:28:25.222 > 0
+16:28:25.222 > flashReadSPIFlashLatestAddress: 360960
+16:28:25.222 > 255
+16:28:25.222 > 255
+16:29:31.551 > Delete mode
+16:29:31.567 > start erase
+16:29:31.567 > ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bulk Erased
