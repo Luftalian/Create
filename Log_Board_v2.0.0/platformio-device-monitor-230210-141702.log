@@ -1,0 +1,131 @@
+14:17:02.857 > start Serial
+14:17:02.857 > start Serial2
+14:17:02.857 > Timer Start!
+14:17:02.972 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+14:17:02.972 > 
+14:17:02.972 > Core  1 register dump:
+14:17:02.972 > PC      : 0x400d10b7  PS      : 0x00060d30  A0      : 0x800d11d7  A1      : 0x3ffb2780  
+14:17:02.972 > A2      : 0xfffffffc  A3      : 0x0000008f  A4      : 0xfffffffc  A5      : 0x00000010  
+14:17:02.972 > A6      : 0x00000011  A7      : 0x3ffbdb7c  A8      : 0x800d10b5  A9      : 0x3ffb2770  
+14:17:02.972 > A10     : 0x3ffb278c  A11     : 0x00000000  A12     : 0x00000024  A13     : 0x3ffb27b0  
+14:17:02.972 > A14     : 0x00ff0000  A15     : 0x00000002  SAR     : 0x00000010  EXCCAUSE: 0x0000001c  
+14:17:02.972 > EXCVADDR: 0x00000054  LBEG    : 0x400864f0  LEND    : 0x400864fb  LCOUNT  : 0x00000000  
+14:17:02.972 > 
+14:17:02.972 > 
+14:17:02.972 > Backtrace:0x400d10b4:0x3ffb27800x400d11d4:0x3ffb27d0 0x400d1670:0x3ffb27f0 0x400d28ba:0x3ffb2820 
+14:17:02.972 > 
+14:17:02.972 > 
+14:17:02.972 > 
+14:17:02.972 > 
+14:17:02.972 > ELF file SHA256: 0000000000000000
+14:17:02.972 > 
+14:17:02.972 > Rebooting...
+14:17:02.972 > ets Jul 29 2019 12:21:46
+14:17:02.972 > 
+14:17:02.972 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+14:17:02.972 > configsip: 0, SPIWP:0xee
+14:17:02.972 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+14:17:02.972 > mode:DIO, clock div:2
+14:17:02.972 > load:0x3fff0030,len:1184
+14:17:02.972 > load:0x40078000,len:12776
+14:17:02.972 > load:0x40080400,len:3032
+14:17:02.972 > entry 0x400805e4
+14:17:04.085 > start Serial
+14:17:04.085 > start Serial2
+14:17:04.085 > Timer Start!
+14:17:04.085 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+14:17:04.198 > 
+14:17:04.198 > Core  1 register dump:
+14:17:04.198 > PC      : 0x400d10b7  PS      : 0x00060d30  A0      : 0x800d11d7  A1      : 0x3ffb2780  
+14:17:04.198 > A2      : 0xfffffffc  A3      : 0x0000008f  A4      : 0xfffffffc  A5      : 0x00000010  
+14:17:04.198 > A6      : 0x00000011  A7      : 0x3ffbdb7c  A8      : 0x800d10b5  A9      : 0x3ffb2770  
+14:17:04.198 > A10     : 0x3ffb278c  A11     : 0x00000000  A12     : 0x00000024  A13     : 0x3ffb27b0  
+14:17:04.198 > A14     : 0x00ff0000  A15     : 0x00000002  SAR     : 0x00000010  EXCCAUSE: 0x0000001c  
+14:17:04.198 > EXCVADDR: 0x00000054  LBEG    : 0x400864f0  LEND    : 0x400864fb  LCOUNT  : 0x00000000  
+14:17:04.198 > 
+14:17:04.198 > 
+14:17:04.198 > Backtrace:0x400d10b4:0x3ffb27800x400d11d4:0x3ffb27d0 0x400d1670:0x3ffb27f0 0x400d28ba:0x3ffb2820 
+14:17:04.198 > 
+14:17:04.198 > 
+14:17:04.198 > 
+14:17:04.198 > 
+14:17:04.198 > ELF file SHA256: 0000000000000000
+14:17:04.198 > 
+14:17:04.198 > Rebooting...
+14:17:04.198 > ets Jul 29 2019 12:21:46
+14:17:04.198 > 
+14:17:04.198 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+14:17:04.198 > configsip: 0, SPIWP:0xee
+14:17:04.198 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+14:17:04.198 > mode:DIO, clock div:2
+14:17:04.198 > load:0x3fff0030,len:1184
+14:17:04.198 > load:0x40078000,len:12776
+14:17:04.198 > load:0x40080400,len:3032
+14:17:04.198 > entry 0x400805e4
+14:17:05.313 > start Serial
+14:17:05.426 > start Serial2
+14:17:05.426 > Timer Start!
+14:17:05.426 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+14:17:05.426 > 
+14:17:05.426 > Core  1 register dump:
+14:17:05.426 > PC      : 0x400d10b7  PS      : 0x00060d30  A0      : 0x800d11d7  A1      : 0x3ffb2780  
+14:17:05.426 > A2      : 0xfffffffc  A3      : 0x0000008f  A4      : 0xfffffffc  A5      : 0x00000010  
+14:17:05.426 > A6      : 0x00000011  A7      : 0x3ffbdb7c  A8      : 0x800d10b5  A9      : 0x3ffb2770  
+14:17:05.426 > A10     : 0x3ffb278c  A11     : 0x00000000  A12     : 0x00000024  A13     : 0x3ffb27b0  
+14:17:05.426 > A14     : 0x00ff0000  A15     : 0x00000002  SAR     : 0x00000010  EXCCAUSE: 0x0000001c  
+14:17:05.426 > EXCVADDR: 0x00000054  LBEG    : 0x400864f0  LEND    : 0x400864fb  LCOUNT  : 0x00000000  
+14:17:05.426 > 
+14:17:05.426 > 
+14:17:05.426 > Backtrace:0x400d10b4:0x3ffb27800x400d11d4:0x3ffb27d0 0x400d1670:0x3ffb27f0 0x400d28ba:0x3ffb2820 
+14:17:05.426 > 
+14:17:05.426 > 
+14:17:05.426 > 
+14:17:05.426 > 
+14:17:05.426 > ELF file SHA256: 0000000000000000
+14:17:05.426 > 
+14:17:05.426 > Rebooting...
+14:17:05.426 > ets Jul 29 2019 12:21:46
+14:17:05.426 > 
+14:17:05.426 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+14:17:05.426 > configsip: 0, SPIWP:0xee
+14:17:05.426 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+14:17:05.426 > mode:DIO, clock div:2
+14:17:05.426 > load:0x3fff0030,len:1184
+14:17:05.426 > load:0x40078000,len:12776
+14:17:05.426 > load:0x40080400,len:3032
+14:17:05.426 > entry 0x400805e4
+14:17:06.543 > start Serial
+14:17:06.543 > start Serial2
+14:17:06.664 > Timer Start!
+14:17:06.664 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+14:17:06.664 > 
+14:17:06.664 > Core  1 register dump:
+14:17:06.664 > PC      : 0x400d10b7  PS      : 0x00060d30  A0      : 0x800d11d7  A1      : 0x3ffb2780  
+14:17:06.664 > A2      : 0xfffffffc  A3      : 0x0000008f  A4      : 0xfffffffc  A5      : 0x00000010  
+14:17:06.664 > A6      : 0x00000011  A7      : 0x3ffbdb7c  A8      : 0x800d10b5  A9      : 0x3ffb2770  
+14:17:06.664 > A10     : 0x3ffb278c  A11     : 0x00000000  A12     : 0x00000024  A13     : 0x3ffb27b0  
+14:17:06.664 > A14     : 0x00ff0000  A15     : 0x00000002  SAR     : 0x00000010  EXCCAUSE: 0x0000001c  
+14:17:06.664 > EXCVADDR: 0x00000054  LBEG    : 0x400864f0  LEND    : 0x400864fb  LCOUNT  : 0x00000000  
+14:17:06.664 > 
+14:17:06.664 > 
+14:17:06.664 > Backtrace:0x400d10b4:0x3ffb27800x400d11d4:0x3ffb27d0 0x400d1670:0x3ffb27f0 0x400d28ba:0x3ffb2820 
+14:17:06.664 > 
+14:17:06.664 > 
+14:17:06.664 > 
+14:17:06.664 > 
+14:17:06.664 > ELF file SHA256: 0000000000000000
+14:17:06.664 > 
+14:17:06.664 > Rebooting...
+14:17:06.664 > ets Jul 29 2019 12:21:46
+14:17:06.664 > 
+14:17:06.664 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+14:17:06.664 > configsip: 0, SPIWP:0xee
+14:17:06.664 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+14:17:06.664 > mode:DIO, clock div:2
+14:17:06.664 > load:0x3fff0030,len:1184
+14:17:06.664 > load:0x40078000,len:12776
+14:17:06.664 > load:0x40080400,len:3032
+14:17:06.664 > entry 0x400805e4
+14:17:07.777 > start Serial
+14:17:07.777 > start Serial2
+14:17:07.777 > Timer Start!
