@@ -43,15 +43,6 @@ int CountSPIFlashDataSetExistInBuff = 0;
 // SPI_FlashBuffは送る配列
 uint8_t SPI_FlashBuff[256] = {};
 
-// SPIFlashLatestAddressは書き込むアドレス。初期値は0x000
-// 0x000はreboot対策のどこまでSPI Flashに書き込んだかを記録するページ
-// setup()で初期値でも0x100にしている
-uint32_t SPIFlashLatestAddress = 0x000;
-
-// SPI Flashの最大のアドレス (1回で1/2ページ書き込んでいる点に注意)
-// (512 * 1024 * 1024 / 8 / 256 ページ * 256) * 2 = 524288 * 256
-uint32_t SPI_FLASH_MAX_ADDRESS = 0x8000000;
-
 #define SPIFREQ 5000000
 
 // #define loggingPeriod 2
@@ -88,64 +79,6 @@ public:
 
 // Timerクラスのインスタンス化
 Timer timer;
-
-uint32_t FlashAddress = 0x00;
-uint8_t flashRead[256];
-uint8_t flashRead1[256];
-uint8_t flashRead2[256];
-uint8_t count = 1;
-
-// uint32_t checkAddress(uint32_t FlashAddress)
-// {
-//   count++;
-//   // if (count >= 20) // これ以上行くとページの途中を読むことになる。
-//   // {
-//   //   Serial.printf("FlashAddress: %u\n", FlashAddress);
-//   //   return FlashAddress;
-//   // }
-//   if ((FlashAddress + 0x100) >= SPI_FLASH_MAX_ADDRESS)
-//   {
-//     Serial.printf("FlashAddress: %u\n", FlashAddress);
-//     Serial.printf("count: %u\n", count);
-//     return SPI_FLASH_MAX_ADDRESS;
-//   }
-//   flash1.read(FlashAddress, flashRead1);
-//   delay(1);
-//   flash1.read(FlashAddress + 0x100, flashRead2);
-//   delay(1);
-//   if (flashRead1[0] != 0xFF)
-//   {
-//     if (flashRead2[0] != 0xFF)
-//     {
-//       // ++
-//       Serial.println("---");
-//       uint32_t a = FlashAddress + SPI_FLASH_MAX_ADDRESS / pow(2, count);
-//       Serial.printf("FlashAddress: %u\n", a);
-//       Serial.printf("count: %u\n", count);
-//       return checkAddress(FlashAddress + SPI_FLASH_MAX_ADDRESS / pow(2, count));
-//     }
-//     else
-//     {
-//       Serial.printf("FlashAddress: %u\n", FlashAddress);
-//       return FlashAddress;
-//     }
-//   }
-//   else
-//   {
-//     if (flashRead2[0] != 0xFF)
-//     {
-//       Serial.printf("FlashAddress: %u\n", FlashAddress);
-//       Serial.println("error");
-//       return 0;
-//     }
-//     else
-//     {
-//       // --
-//       Serial.printf("FlashAddress: %u\n", FlashAddress);
-//       return checkAddress(FlashAddress - SPI_FLASH_MAX_ADDRESS / pow(2, count));
-//     }
-//   }
-// }
 
 void RoutineWork()
 {
@@ -270,8 +203,8 @@ void setup()
 
   micros();
   Serial.println("Timer Start!");
-  // Serial2.write("Started At: ");
-  // Serial2.write(timer.start_time);
+  Serial.write("Started At: ");
+  Serial.write(timer.start_time);
 
   // WhoAmI
   uint8_t a;
@@ -315,39 +248,8 @@ void setup()
   // logging関数を起動
   xTaskCreateUniversal(logging, "logging", 8192, NULL, 1, &xlogHandle, PRO_CPU_NUM);
 
-  // SPI Flashがどこまで書き込まれているか確認→二分岐探索作る
-  // uint8_t flashRead[256]; // 256でないとflash.read()でRebootした。
-  // uint8_t SPIFlashLatestAddress = 0x000;
-
-  // Serial2.write(COMMANDFINISHSETUP); // 'r'
-  while (1)
-  {
-    if (SPIFlashLatestAddress <= 0x1000)
-    {
-      flash1.read(SPIFlashLatestAddress, flashRead);
-      SPIFlashLatestAddress += 0x100;
-      Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
-      Serial.print(flashRead[0]);
-      delay(1);
-      Serial.print("\n");
-      if (flashRead[0] == 0xFF)
-      {
-        Serial.println("255");
-        break;
-      }
-      if (SPIFlashLatestAddress >= SPI_FLASH_MAX_ADDRESS)
-      {
-        Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
-        break;
-      }
-    }
-    else
-    {
-      SPIFlashLatestAddress = checkAddress(SPI_FLASH_MAX_ADDRESS / 2);
-      break;
-    }
-  }
-  Serial.println(SPIFlashLatestAddress);
+  SPIFlashLatestAddress = flash1.setFlashAddress();
+  Serial.printf("SPIFlashLatestAddress: %d\n", SPIFlashLatestAddress);
   Serial2.write(COMMANDFINISHSETUP); // 'r'
 }
 
@@ -358,16 +260,16 @@ void loop()
     // err = 301;
     if (Serial2.read() == COMMANDPREPARATION) // 'p'
     {
-      Serial2.write(COMMANDPREPARATION); // 'p'
-      // Serial2.println("Preparation mode"); // 1
+      Serial2.write(COMMANDPREPARATION);  // 'p'
+      Serial.println("Preparation mode"); // 1
       while (1)
       {
         receive = Serial2.read();
         switch (receive)
         {
-        case COMMANDLOG:             // 'l'
-          Serial2.write(COMMANDLOG); // 'l'
-          // Serial2.println("Logging mode"); // 1
+        case COMMANDLOG:                  // 'l'
+          Serial2.write(COMMANDLOG);      // 'l'
+          Serial.println("Logging mode"); // 1
           while (1)
           {
             if (checker > 0)
@@ -378,13 +280,13 @@ void loop()
             if (Serial2.read() == COMMANDSTOP) // 's'
             {
               Serial2.write(COMMANDSTOP); // 's'
-              // Serial.println("Stop logging");
+              Serial.println("Stop logging");
               exitLoop = true;
               break;
             }
           }
-          // Serial2.write("Done Recorded:");
-          // Serial2.write(timer.Gettime_record());
+          Serial.write("Done Recorded:");
+          Serial.write(timer.Gettime_record());
           break;
         case COMMANDDELETE:             // 'd'
           Serial2.write(COMMANDDELETE); // 'd'
@@ -396,8 +298,8 @@ void loop()
         default:
           if ('a' < receive && receive < 'z')
           {
-            Serial2.println(receive); // 1
-            // Serial2.println("Exit Preparation mode"); // 1
+            Serial2.println(receive);                // 1
+            Serial.println("Exit Preparation mode"); // 1
             exitLoop = true;
           }
           break;
