@@ -1,0 +1,100 @@
+13:01:14.783 > ets Jul 29 2019 12:21:46
+13:01:14.783 > 
+13:01:14.783 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:01:14.783 > configsip: 0, SPIWP:0xee
+13:01:14.783 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:01:14.783 > mode:DIO, clock div:2
+13:01:14.783 > load:0x3fff0030,len:1184
+13:01:14.783 > load:0x40078000,len:12776
+13:01:14.783 > load:0x40080400,len:3032
+13:01:14.783 > entry 0x400805e4
+13:01:15.934 > start Serial
+13:01:15.934 > start Serial2
+13:01:15.934 > 123456788 8
+13:01:15.934 > 910123456788 8 8
+13:01:15.934 > 910SPI1
+13:01:16.159 > flash1
+13:01:16.159 > H3lis331
+13:01:16.159 > icm20948
+13:01:16.159 > Lps25hb
+13:01:16.159 > Timer Start!
+13:01:16.159 > WhoAmI:50
+13:01:16.159 > H3LIS331 is OK
+13:01:16.159 > WhoAmI:189
+13:01:16.159 > LPS25HB is OK
+13:01:16.159 > WhoAmI:1
+13:01:16.159 > ICM20948 is NG
+13:01:16.159 > SPIFlashLatestAddress: 256
+13:01:16.159 > 0
+13:01:16.159 > SPIFlashLatestAddress: 512
+13:01:16.159 > 28
+13:01:16.159 > SPIFlashLatestAddress: 768
+13:01:16.159 > 0
+13:01:16.159 > SPIFlashLatestAddress: 1024
+13:01:16.159 > 152
+13:01:16.159 > SPIFlashLatestAddress: 1280
+13:01:16.159 > 216
+13:01:16.159 > SPIFlashLatestAddress: 1536
+13:01:16.159 > 28
+13:01:16.159 > SPIFlashLatestAddress: 1792
+13:01:16.159 > 92
+13:01:16.159 > SPIFlashLatestAddress: 2048
+13:01:16.159 > 156
+13:01:16.159 > SPIFlashLatestAddress: 2304
+13:01:16.159 > 220
+13:01:16.159 > SPIFlashLatestAddress: 2560
+13:01:16.159 > 28
+13:01:16.159 > SPIFlashLatestAddress: 2816
+13:01:16.159 > 92
+13:01:16.159 > SPIFlashLatestAddress: 3072
+13:01:16.159 > 156
+13:01:16.159 > SPIFlashLatestAddress: 3328
+13:01:16.159 > 220
+13:01:16.159 > SPIFlashLatestAddress: 3584
+13:01:16.159 > 28
+13:01:16.159 > SPIFlashLatestAddress: 3840
+13:01:16.159 > 92
+13:01:16.159 > SPIFlashLatestAddress: 4096
+13:01:16.159 > 156
+13:01:16.159 > SPIFlashLatestAddress: 4352
+13:01:16.159 > 220
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > ---
+13:01:16.159 > FlashAddress: 0
+13:01:16.159 > FlashAddress: 134217600
+13:01:16.159 > 134217728

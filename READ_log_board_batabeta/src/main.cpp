@@ -138,10 +138,8 @@ void loop()
         Serial.print(",");
       }
       // 気圧をとる
-      if (tx[32 * CountH3LIS331DataSetExistInBuff + 27] != 0 || tx[32 * CountH3LIS331DataSetExistInBuff + 27] != 0 || tx[32 * CountH3LIS331DataSetExistInBuff + 27])
-      {
-        Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + 30] << 16 | tx[32 * CountH3LIS331DataSetExistInBuff + 29] << 8 | tx[32 * CountH3LIS331DataSetExistInBuff + 28]);
-      }
+      Serial.print(tx[32 * CountH3LIS331DataSetExistInBuff + 30] << 16 | tx[32 * CountH3LIS331DataSetExistInBuff + 29] << 8 | tx[32 * CountH3LIS331DataSetExistInBuff + 28]);
+
       Serial.print("\n");
       CountH3LIS331DataSetExistInBuff_READ++;
       if (CountH3LIS331DataSetExistInBuff_READ == 8)

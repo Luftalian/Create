@@ -1,0 +1,243 @@
+12:52:30.655 > start Serial
+12:52:30.655 > start Serial2
+12:52:30.655 > 123456788 8
+12:52:30.655 > 910123456788 8 8
+12:52:30.655 > 910SPI1
+12:52:30.913 > flash1
+12:52:30.913 > H3lis331
+12:52:30.913 > icm20948
+12:52:30.913 > Lps25hb
+12:52:30.913 > Timer Start!
+12:52:30.913 > WhoAmI:50
+12:52:30.913 > H3LIS331 is OK
+12:52:30.913 > WhoAmI:189
+12:52:30.913 > LPS25HB is OK
+12:52:30.913 > WhoAmI:1
+12:52:30.913 > ICM20948 is NG
+12:52:30.913 > SPIFlashLatestAddress: 256
+12:52:30.913 > 0
+12:52:30.913 > SPIFlashLatestAddress: 512
+12:52:30.913 > 28
+12:52:30.913 > SPIFlashLatestAddress: 768
+12:52:30.913 > 0
+12:52:30.913 > SPIFlashLatestAddress: 1024
+12:52:30.913 > 152
+12:52:30.913 > SPIFlashLatestAddress: 1280
+12:52:30.913 > 216
+12:52:30.913 > SPIFlashLatestAddress: 1536
+12:52:30.913 > 28
+12:52:30.913 > SPIFlashLatestAddress: 1792
+12:52:30.913 > 92
+12:52:30.913 > SPIFlashLatestAddress: 2048
+12:52:30.913 > 156
+12:52:30.913 > SPIFlashLatestAddress: 2304
+12:52:30.913 > 220
+12:52:30.913 > SPIFlashLatestAddress: 2560
+12:52:30.913 > 28
+12:52:30.913 > SPIFlashLatestAddress: 2816
+12:52:30.913 > 92
+12:52:30.913 > SPIFlashLatestAddress: 3072
+12:52:30.913 > 156
+12:52:30.913 > SPIFlashLatestAddress: 3328
+12:52:30.913 > 220
+12:52:30.913 > SPIFlashLatestAddress: 3584
+12:52:30.913 > 28
+12:52:30.913 > SPIFlashLatestAddress: 3840
+12:52:30.913 > 92
+12:52:30.913 > SPIFlashLatestAddress: 4096
+12:52:30.913 > 156
+12:52:30.913 > SPIFlashLatestAddress: 4352
+12:52:30.913 > 220
+12:52:30.913 > aaa
+12:52:30.913 > 222
+12:52:30.913 > Guru Meditation Error: Core  1 panic'ed (IntegerDivideByZero). Exception was unhandled.
+12:52:30.913 > 
+12:52:30.913 > Core  1 register dump:
+12:52:30.913 > PC      : 0x400d1a6d  PS      : 0x00060f30  A0      : 0x800d1f7b  A1      : 0x3ffb27e0  
+12:52:30.913 > A2      : 0x04000000  A3      : 0x00000000  A4      : 0x08000000  A5      : 0x3ffbdb6c  
+12:52:30.913 > A6      : 0x0000001c  A7      : 0x000000dc  A8      : 0x800d1a60  A9      : 0x3ffb27c0  
+12:52:30.913 > A10     : 0x00000005  A11     : 0x00000003  A12     : 0x3ffc1288  A13     : 0x0000001b  
+12:52:30.913 > A14     : 0x3ffb2760  A15     : 0x00000008  SAR     : 0x00000005  EXCCAUSE: 0x00000006  
+12:52:30.913 > EXCVADDR: 0x00000000  LBEG    : 0x40086c41  LEND    : 0x40086c51  LCOUNT  : 0xffffffff  
+12:52:30.913 > 
+12:52:30.913 > 
+12:52:30.913 > Backtrace:0x400d1a6a:0x3ffb27e00x400d1f78:0x3ffb2800 0x400d3405:0x3ffb2820 
+12:52:30.913 > 
+12:52:30.913 > 
+12:52:30.913 > 
+12:52:30.913 > 
+12:52:30.913 > ELF file SHA256: 0000000000000000
+12:52:30.913 > 
+12:52:30.913 > Rebooting...
+12:52:30.913 > ets Jul 29 2019 12:21:46
+12:52:30.913 > 
+12:52:30.913 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:52:30.913 > configsip: 0, SPIWP:0xee
+12:52:30.913 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:52:30.913 > mode:DIO, clock div:2
+12:52:30.913 > load:0x3fff0030,len:1184
+12:52:30.913 > load:0x40078000,len:12776
+12:52:30.913 > load:0x40080400,len:3032
+12:52:30.913 > entry 0x400805e4
+12:52:32.053 > start Serial
+12:52:32.053 > start Serial2
+12:52:32.053 > 123456788 8
+12:52:32.053 > 910123456788 8 8
+12:52:32.053 > 910SPI1
+12:52:32.303 > flash1
+12:52:32.303 > H3lis331
+12:52:32.303 > icm20948
+12:52:32.303 > Lps25hb
+12:52:32.303 > Timer Start!
+12:52:32.303 > WhoAmI:50
+12:52:32.303 > H3LIS331 is OK
+12:52:32.303 > WhoAmI:189
+12:52:32.303 > LPS25HB is OK
+12:52:32.303 > WhoAmI:1
+12:52:32.303 > ICM20948 is NG
+12:52:32.303 > SPIFlashLatestAddress: 256
+12:52:32.303 > 0
+12:52:32.303 > SPIFlashLatestAddress: 512
+12:52:32.303 > 28
+12:52:32.303 > SPIFlashLatestAddress: 768
+12:52:32.303 > 0
+12:52:32.303 > SPIFlashLatestAddress: 1024
+12:52:32.303 > 152
+12:52:32.303 > SPIFlashLatestAddress: 1280
+12:52:32.303 > 216
+12:52:32.303 > SPIFlashLatestAddress: 1536
+12:52:32.303 > 28
+12:52:32.303 > SPIFlashLatestAddress: 1792
+12:52:32.303 > 92
+12:52:32.303 > SPIFlashLatestAddress: 2048
+12:52:32.303 > 156
+12:52:32.303 > SPIFlashLatestAddress: 2304
+12:52:32.303 > 220
+12:52:32.303 > SPIFlashLatestAddress: 2560
+12:52:32.303 > 28
+12:52:32.303 > SPIFlashLatestAddress: 2816
+12:52:32.303 > 92
+12:52:32.303 > SPIFlashLatestAddress: 3072
+12:52:32.303 > 156
+12:52:32.303 > SPIFlashLatestAddress: 3328
+12:52:32.303 > 220
+12:52:32.303 > SPIFlashLatestAddress: 3584
+12:52:32.303 > 28
+12:52:32.303 > SPIFlashLatestAddress: 3840
+12:52:32.303 > 92
+12:52:32.303 > SPIFlashLatestAddress: 4096
+12:52:32.303 > 156
+12:52:32.303 > SPIFlashLatestAddress: 4352
+12:52:32.303 > 220
+12:52:32.303 > aaa
+12:52:32.303 > 222
+12:52:32.303 > Guru Meditation Error: Core  1 panic'ed (IntegerDivideByZero). Exception was unhandled.
+12:52:32.303 > 
+12:52:32.303 > Core  1 register dump:
+12:52:32.303 > PC      : 0x400d1a6d  PS      : 0x00060f30  A0      : 0x800d1f7b  A1      : 0x3ffb27e0  
+12:52:32.303 > A2      : 0x04000000  A3      : 0x00000000  A4      : 0x08000000  A5      : 0x3ffbdb6c  
+12:52:32.303 > A6      : 0x0000001c  A7      : 0x000000dc  A8      : 0x800d1a60  A9      : 0x3ffb27c0  
+12:52:32.303 > A10     : 0x00000005  A11     : 0x00000003  A12     : 0x3ffc1288  A13     : 0x0000001b  
+12:52:32.303 > A14     : 0x3ffb2760  A15     : 0x00000008  SAR     : 0x00000005  EXCCAUSE: 0x00000006  
+12:52:32.303 > EXCVADDR: 0x00000000  LBEG    : 0x40086c41  LEND    : 0x40086c51  LCOUNT  : 0xffffffff  
+12:52:32.303 > 
+12:52:32.303 > 
+12:52:32.303 > Backtrace:0x400d1a6a:0x3ffb27e00x400d1f78:0x3ffb2800 0x400d3405:0x3ffb2820 
+12:52:32.303 > 
+12:52:32.303 > 
+12:52:32.303 > 
+12:52:32.303 > 
+12:52:32.303 > ELF file SHA256: 0000000000000000
+12:52:32.303 > 
+12:52:32.303 > Rebooting...
+12:52:32.303 > ets Jul 29 2019 12:21:46
+12:52:32.303 > 
+12:52:32.303 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:52:32.303 > configsip: 0, SPIWP:0xee
+12:52:32.303 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:52:32.303 > mode:DIO, clock div:2
+12:52:32.303 > load:0x3fff0030,len:1184
+12:52:32.303 > load:0x40078000,len:12776
+12:52:32.303 > load:0x40080400,len:3032
+12:52:32.303 > entry 0x400805e4
+12:52:33.438 > start Serial
+12:52:33.438 > start Serial2
+12:52:33.438 > 123456788 8
+12:52:33.438 > 910123456788 8 8
+12:52:33.438 > 910SPI1
+12:52:33.696 > flash1
+12:52:33.696 > H3lis331
+12:52:33.696 > icm20948
+12:52:33.696 > Lps25hb
+12:52:33.696 > Timer Start!
+12:52:33.696 > WhoAmI:50
+12:52:33.696 > H3LIS331 is OK
+12:52:33.696 > WhoAmI:189
+12:52:33.696 > LPS25HB is OK
+12:52:33.696 > WhoAmI:1
+12:52:33.696 > ICM20948 is NG
+12:52:33.696 > SPIFlashLatestAddress: 256
+12:52:33.696 > 0
+12:52:33.696 > SPIFlashLatestAddress: 512
+12:52:33.696 > 28
+12:52:33.696 > SPIFlashLatestAddress: 768
+12:52:33.696 > 0
+12:52:33.696 > SPIFlashLatestAddress: 1024
+12:52:33.696 > 152
+12:52:33.696 > SPIFlashLatestAddress: 1280
+12:52:33.696 > 216
+12:52:33.696 > SPIFlashLatestAddress: 1536
+12:52:33.696 > 28
+12:52:33.696 > SPIFlashLatestAddress: 1792
+12:52:33.696 > 92
+12:52:33.696 > SPIFlashLatestAddress: 2048
+12:52:33.696 > 156
+12:52:33.696 > SPIFlashLatestAddress: 2304
+12:52:33.696 > 220
+12:52:33.696 > SPIFlashLatestAddress: 2560
+12:52:33.696 > 28
+12:52:33.696 > SPIFlashLatestAddress: 2816
+12:52:33.696 > 92
+12:52:33.696 > SPIFlashLatestAddress: 3072
+12:52:33.696 > 156
+12:52:33.696 > SPIFlashLatestAddress: 3328
+12:52:33.696 > 220
+12:52:33.696 > SPIFlashLatestAddress: 3584
+12:52:33.696 > 28
+12:52:33.696 > SPIFlashLatestAddress: 3840
+12:52:33.696 > 92
+12:52:33.696 > SPIFlashLatestAddress: 4096
+12:52:33.696 > 156
+12:52:33.696 > SPIFlashLatestAddress: 4352
+12:52:33.696 > 220
+12:52:33.696 > aaa
+12:52:33.696 > 222
+12:52:33.696 > Guru Meditation Error: Core  1 panic'ed (IntegerDivideByZero). Exception was unhandled.
+12:52:33.696 > 
+12:52:33.696 > Core  1 register dump:
+12:52:33.696 > PC      : 0x400d1a6d  PS      : 0x00060f30  A0      : 0x800d1f7b  A1      : 0x3ffb27e0  
+12:52:33.696 > A2      : 0x04000000  A3      : 0x00000000  A4      : 0x08000000  A5      : 0x3ffbdb6c  
+12:52:33.696 > A6      : 0x0000001c  A7      : 0x000000dc  A8      : 0x800d1a60  A9      : 0x3ffb27c0  
+12:52:33.696 > A10     : 0x00000005  A11     : 0x00000003  A12     : 0x3ffc1288  A13     : 0x0000001b  
+12:52:33.696 > A14     : 0x3ffb2760  A15     : 0x00000008  SAR     : 0x00000005  EXCCAUSE: 0x00000006  
+12:52:33.696 > EXCVADDR: 0x00000000  LBEG    : 0x40086c41  LEND    : 0x40086c51  LCOUNT  : 0xffffffff  
+12:52:33.696 > 
+12:52:33.696 > 
+12:52:33.696 > Backtrace:0x400d1a6a:0x3ffb27e00x400d1f78:0x3ffb2800 0x400d3405:0x3ffb2820 
+12:52:33.696 > 
+12:52:33.696 > 
+12:52:33.696 > 
+12:52:33.696 > 
+12:52:33.696 > ELF file SHA256: 0000000000000000
+12:52:33.696 > 
+12:52:33.696 > Rebooting...
+12:52:33.696 > ets Jul 29 2019 12:21:46
+12:52:33.696 > 
+12:52:33.696 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:52:33.696 > configsip: 0, SPIWP:0xee
+12:52:33.696 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:52:33.696 > mode:DIO, clock div:2
+12:52:33.696 > load:0x3fff0030,len:1184
+12:52:33.696 > load:0x40078000,len:12776
+12:52:33.696 > load:0x40080400,len:3032
+12:52:33.696 > entry 0x400805e4

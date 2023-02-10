@@ -1,0 +1,10 @@
+13:29:26.131 > ets Jul 29 2019 12:21:46
+13:29:26.139 > 
+13:29:26.139 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+13:29:26.139 > configsip: 0, SPIWP:0xee
+13:29:26.139 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+13:29:26.139 > mode:DIO, clock div:2
+13:29:26.139 > load:0x3fff0030,len:1184
+13:29:26.139 > load:0x40078000,len:12776
+13:29:26.139 > load:0x40080400,len:3032
+13:29:26.139 > entry 0x400805e4
