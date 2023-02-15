@@ -8,11 +8,6 @@ class Timer
 {
 public:
     unsigned long Gettime_record();
-    // {
-    //     time = micros();
-    //     time -= start_time;
-    //     return time;
-    // }
     unsigned long start_time;
     unsigned long time;
     bool start_flag = true;
