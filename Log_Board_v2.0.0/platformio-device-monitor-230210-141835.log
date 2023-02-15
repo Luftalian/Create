@@ -8,3 +8,24 @@
 14:18:35.800 > load:0x40078000,len:12776
 14:18:35.800 > load:0x40080400,len:3032
 14:18:35.800 > entry 0x400805e4
+14:18:36.944 > start Serial
+14:18:36.944 > start Serial2
+14:18:36.944 > 123456788 8
+14:18:36.944 > 910123456788 8 8
+14:18:36.944 > 910SPI1
+14:18:37.046 > flash1
+14:18:37.046 > H3lis331
+14:18:37.046 > icm20948
+14:18:37.046 > Lps25hb
+14:18:37.046 > Timer Start!
+14:18:37.046 > Started At: ␀WhoAmI:50
+14:18:37.046 > H3LIS331 is OK
+14:18:37.046 > WhoAmI:189
+14:18:37.046 > LPS25HB is OK
+14:18:37.046 > WhoAmI:1
+14:18:37.046 > ICM20948 is NG
+14:18:37.146 > SPIFlashLatestAddress: 134217728
+14:18:45.862 > Preparation mode
+14:18:46.710 > Exit Preparation mode
+14:18:47.380 > Preparation mode
+14:18:47.566 > Exit Preparation mode

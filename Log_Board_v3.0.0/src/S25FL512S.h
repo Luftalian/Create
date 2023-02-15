@@ -1,4 +1,4 @@
-// version 1.2.0
+// version 1.2.1
 #pragma once
 
 #ifndef SPIFlash_H
@@ -145,16 +145,16 @@ uint32_t Flash::setFlashAddress()
     while (SPIFlashLatestAddress <= 0x1000)
     {
         Flash::read(SPIFlashLatestAddress, flashRead);
-        SPIFlashLatestAddress += 0x100;
         // Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
         // Serial.print(flashRead[0]);
         delay(1);
         // Serial.print("\n");
         if (flashRead[0] == 0xFF)
         {
-            // Serial.println("255");
+            Serial.println("255");
             return SPIFlashLatestAddress;
         }
+        SPIFlashLatestAddress += 0x100;
         if (SPIFlashLatestAddress >= SPI_FLASH_MAX_ADDRESS)
         {
             // Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);

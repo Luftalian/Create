@@ -1,9 +1,10 @@
 #include <Arduino.h>
 #include <SPICREATE.h> // 変更済みのものを使用
-#include <S25FL512S_beta.h>
+#include <S25FL512S.h>
 #include <H3LIS331.h>
 #include <ICM20948_beta.h>
 #include <LPS25HB.h>
+#include <LogBoard67.h>
 
 // ピンの定義
 #define flashCS 27
@@ -28,20 +29,7 @@
 SPICREATE::SPICreate SPIC1;
 SPICREATE::SPICreate SPIC2;
 
-// センサのクラス
-H3LIS331 H3lis331;
-ICM icm20948;
-LPS Lps25;
-Flash flash1;
-
-// 気圧の回数の測定(5回に1回)
-uint8_t count_lps = 0;
-
-// CountSPIFlashDataSetExistInBuffは列
-int CountSPIFlashDataSetExistInBuff = 0;
-
-// SPI_FlashBuffは送る配列
-uint8_t SPI_FlashBuff[256] = {};
+LogBoard67 logboard67;
 
 #define SPIFREQ 5000000
 
@@ -51,9 +39,6 @@ uint8_t SPI_FlashBuff[256] = {};
 TimerHandle_t thand_test;
 xTaskHandle xlogHandle;
 
-// 時間
-unsigned long Record_time;
-
 // チェッカー(logging関数でこれを動かす)
 uint8_t checker = 0;
 
@@ -62,107 +47,6 @@ char receive;
 
 // Serial2で使う
 bool exitLoop = false;
-
-class Timer
-{
-public:
-  unsigned long Gettime_record()
-  {
-    time = micros();
-    time -= start_time;
-    return time;
-  }
-  unsigned long start_time;
-  unsigned long time;
-  bool start_flag = true;
-};
-
-// Timerクラスのインスタンス化
-Timer timer;
-
-void RoutineWork()
-{
-  if (SPIFlashLatestAddress >= SPI_FLASH_MAX_ADDRESS)
-  {
-    Serial.printf("SPIFlashLatestAddress: %u\n", SPIFlashLatestAddress);
-    // Serial2.write("SPI Flash is full");
-    // Serial2.write("Started At: ");
-    // Serial2.write(timer.start_time);
-    // Serial2.write("Now: ");
-    // Serial2.write(timer.Gettime_record());
-    return;
-  }
-  // Serial.println("Running");
-  if (timer.start_flag)
-  {
-    timer.start_time = micros();
-    timer.start_flag = false;
-  }
-  Record_time = timer.Gettime_record();
-  // From SPI, Get data is tx
-  int16_t H3lisReceiveData[3] = {};
-  uint8_t H3lis_rx_buf[6] = {};
-  int16_t Icm20948ReceiveData[6] = {};
-  uint8_t Icm20948_rx_buf[12] = {};
-  uint8_t lps_rx[3] = {};
-  // CountSPIFlashDataSetExistInBuffは列。indexは行。
-  // 時間をとる
-  for (int index = 0; index < 4; index++)
-  {
-    SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = 0xFF & (Record_time >> (8 * index));
-  }
-
-  // 加速度をとる
-  H3lis331.Get2(H3lisReceiveData, H3lis_rx_buf);
-  icm20948.Get(Icm20948ReceiveData, Icm20948_rx_buf);
-  for (int index = 4; index < 10; index++)
-  {
-    SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = H3lis_rx_buf[index - 4];
-  }
-
-  // ICM20948の加速度をとる
-  for (int index = 10; index < 16; index++)
-  {
-    SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = Icm20948_rx_buf[index - 10];
-  }
-
-  // ICM20948の角速度をとる
-  for (int index = 16; index < 22; index++)
-  {
-    SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = Icm20948_rx_buf[index - 10];
-  }
-
-  // ICM20948の地磁気をとる
-  // for (int index = 22; index < 28; index++)
-  // {
-  //   SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = Icm20948_rx_buf[index - 10];
-  // }
-
-  // LPSの気圧をとる
-  if (count_lps % 20 == 0)
-  {
-    Lps25.Get(lps_rx);
-    for (int index = 28; index < 31; index++)
-    {
-      SPI_FlashBuff[32 * CountSPIFlashDataSetExistInBuff + index] = lps_rx[index - 28];
-      count_lps = 0;
-    }
-  }
-
-  count_lps++;
-  CountSPIFlashDataSetExistInBuff++;
-
-  // 8個のデータが溜まったらSPIFlashに書き込む
-  if (CountSPIFlashDataSetExistInBuff >= 8)
-  {
-    // データの書き込み
-    flash1.write(SPIFlashLatestAddress, SPI_FlashBuff);
-    // アドレスの更新
-    SPIFlashLatestAddress += 0x100;
-    // 列の番号の初期化
-    CountSPIFlashDataSetExistInBuff = 0;
-  }
-}
 
 IRAM_ATTR void logging(void *parameters)
 {
@@ -209,7 +93,7 @@ void setup()
   // WhoAmI
   uint8_t a;
 
-  a = H3lis331.WhoImI();
+  a = H3lis331.WhoAmI();
   Serial.print("WhoAmI:");
   Serial.println(a);
   if (a == 0x32)
@@ -257,7 +141,6 @@ void loop()
 {
   while (Serial2.available())
   {
-    // err = 301;
     if (Serial2.read() == COMMANDPREPARATION) // 'p'
     {
       Serial2.write(COMMANDPREPARATION);  // 'p'
@@ -275,7 +158,7 @@ void loop()
             if (checker > 0)
             {
               checker = 0;
-              RoutineWork();
+              logboard67.RoutineWork();
             }
             if (Serial2.read() == COMMANDSTOP) // 's'
             {
@@ -292,8 +175,10 @@ void loop()
           Serial2.write(COMMANDDELETE); // 'd'
           Serial.println("Delete mode");
           flash1.erase();
-          SPIFlashLatestAddress = 0x100;
+          SPIFlashLatestAddress = 0x000;
           exitLoop = true;
+          break;
+        case COMMANDPREPARATION: // 'p'
           break;
         default:
           if ('a' <= receive && receive <= 'z')
