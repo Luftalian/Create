@@ -28,6 +28,6 @@ Our team will log data of two accelerometer & angular velocity & LPS25 which is 
 `Log_Board_practice_v1.0.0` latest version.
 This can measure two types of acceleraion (16g & 400g), gyroscope, barometric pressure, and magnetometation in **1000Hz**.
 
-`Log_Board_v3.0.0`
+`Log_Board_v4.0.0`
 This is version which use for production environment.
 This is able to contact with other board.
