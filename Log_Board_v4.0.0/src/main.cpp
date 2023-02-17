@@ -25,6 +25,7 @@
 #define COMMANDSTOP 's'
 #define COMMANDLOG 'l'
 #define COMMANDFINISHSETUP 'r'
+#define COMMANDDELETEDONE 'f'
 
 SPICREATE::SPICreate SPIC1;
 SPICREATE::SPICreate SPIC2;
@@ -175,6 +176,7 @@ void loop()
           Serial2.write(COMMANDDELETE); // 'd'
           Serial.println("Delete mode");
           flash1.erase();
+          Serial2.write(COMMANDDELETEDONE); // 'f'
           SPIFlashLatestAddress = 0x000;
           exitLoop = true;
           break;
