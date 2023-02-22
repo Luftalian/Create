@@ -30,7 +30,7 @@ class LogBoard67
     // 時間
     unsigned long Record_time;
 
-    // 気圧の回数の測定(5回に1回)
+    // 気圧の回数の測定(40回に1回) 25Hz
     uint8_t count_lps = 0;
 
 public:
@@ -96,7 +96,7 @@ void LogBoard67::RoutineWork()
     // }
 
     // LPSの気圧をとる
-    if (count_lps % 20 == 0)
+    if (count_lps % 40 == 0)
     {
         Lps25.Get(lps_rx);
         for (int index = 28; index < 31; index++)
